@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Nuestro viaje · Barcelona y dos escapadas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FAF3E6; --paper-2:#F2E6D0; --card:#FFFBF3;
+  --ink:#241C12; --ink-soft:#6A5B45; --ink-faint:#9A8A70;
+  --terra:#C2562F; --terra-deep:#9E3F1E; --sea:#2B746C; --gold:#C2922F; --plum:#7A4A52;
+  --line:rgba(36,28,18,.14); --line-soft:rgba(36,28,18,.07);
+  --shadow:0 1px 2px rgba(36,28,18,.05), 0 12px 30px -12px rgba(36,28,18,.18);
+  --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Hanken Grotesk",sans-serif;
+  background:var(--paper); color:var(--ink);
+  font-size:17px; line-height:1.55; letter-spacing:-.01em;
+  overflow-x:hidden;
+}
+/* grain */
+body::before{
+  content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
+  mix-blend-mode:multiply;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+h1,h2,h3,.serif{font-family:"Fraunces",serif;font-optical-sizing:auto;line-height:1.04;letter-spacing:-.02em}
+
+/* sticky nav */
+nav{
+  position:sticky;top:0;z-index:50;background:rgba(250,243,230,.82);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);
+}
+nav .wrap{display:flex;gap:6px;overflow-x:auto;padding-top:11px;padding-bottom:11px;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{
+  flex:0 0 auto;text-decoration:none;color:var(--ink-soft);font-size:13px;font-weight:600;
+  padding:7px 13px;border:1px solid var(--line);border-radius:999px;white-space:nowrap;
+  transition:.25s;
+}
+nav a:active,nav a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* hero */
+header{position:relative;padding:60px 0 46px;overflow:hidden}
+header::after{
+  content:"";position:absolute;left:-15%;top:-30%;width:130%;height:90%;z-index:0;
+  background:radial-gradient(60% 55% at 30% 20%,rgba(194,86,47,.20),transparent 70%),
+             radial-gradient(50% 50% at 85% 15%,rgba(43,116,108,.18),transparent 70%);
+  filter:blur(6px);
+}
+header .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:18px}
+h1{font-size:clamp(44px,13.5vw,80px);font-weight:600;font-style:italic;color:var(--ink)}
+h1 .blk{font-style:normal;font-weight:800;display:block}
+.lede{margin-top:22px;font-size:18.5px;color:var(--ink-soft);max-width:30ch}
+.dates{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px;
+  background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:999px}
+.dates b{color:var(--gold);font-weight:700}
+
+.skyline{display:block;width:100%;height:auto;margin-top:34px;color:var(--ink);opacity:.9}
+
+/* sections */
+section{padding:46px 0;position:relative}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sea);margin-bottom:12px}
+.h2{font-size:clamp(30px,8vw,44px);font-weight:600;margin-bottom:10px}
+.sub{color:var(--ink-soft);max-width:46ch;margin-bottom:30px;font-size:16.5px}
+
+/* how it works */
+.steps{display:grid;gap:14px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px;display:flex;gap:16px;align-items:flex-start;box-shadow:var(--shadow)}
+.step .n{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--terra);color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600;font-size:19px}
+.step h3{font-size:19px;font-weight:600;margin-bottom:3px}
+.step p{font-size:15.5px;color:var(--ink-soft)}
+.budget{margin-top:18px;background:linear-gradient(135deg,var(--ink),#3a2e1d);color:var(--paper);border-radius:var(--r);padding:24px;box-shadow:var(--shadow)}
+.budget .lbl{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.budget .big{font-family:"Fraunces",serif;font-size:clamp(30px,9vw,42px);font-weight:600;margin:6px 0 4px}
+.budget .eu{color:rgba(250,243,230,.7);font-size:15px}
+
+/* destination cards */
+.cards{display:grid;gap:18px}
+.card{
+  position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;
+  padding:24px 22px 22px;box-shadow:var(--shadow);overflow:hidden;
+  transition:transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s;
+}
+.card:active{transform:scale(.99)}
+.card .glyphs{position:absolute;right:-10px;top:-14px;opacity:.10;color:var(--ink);transform:rotate(-6deg)}
+.card .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:5px 11px;border-radius:999px;margin-bottom:14px}
+.tag.cheap{background:rgba(43,116,108,.14);color:var(--sea)}
+.tag.high{background:rgba(194,86,47,.15);color:var(--terra-deep)}
+.tag.mid{background:rgba(194,146,47,.16);color:var(--gold)}
+.card h3{font-size:27px;font-weight:600;font-style:italic;letter-spacing:-.02em}
+.card .route{font-size:14px;color:var(--ink-faint);margin-top:6px;font-weight:600}
+.price-row{display:flex;align-items:baseline;gap:12px;margin-top:18px;flex-wrap:wrap;
+  padding-top:16px;border-top:1px solid var(--line-soft)}
+.price-row .mxn{font-family:"Fraunces",serif;font-size:34px;font-weight:600;color:var(--ink)}
+.price-row .per{font-size:13.5px;color:var(--ink-soft)}
+.price-foot{margin-top:10px;font-size:13px;color:var(--ink-faint)}
+.price-foot b{color:var(--ink-soft);font-weight:600}
+
+.note-line{margin-top:24px;font-size:14px;color:var(--ink-soft);background:var(--paper-2);border-radius:14px;padding:14px 16px;border:1px solid var(--line-soft)}
+
+/* city accordions */
+.city{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow)}
+.city-head{width:100%;background:none;border:0;cursor:pointer;display:flex;align-items:center;gap:14px;
+  padding:18px 20px;text-align:left;font-family:inherit}
+.city-head .ico{flex:0 0 auto;width:46px;height:46px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center;color:var(--terra)}
+.city-head .t{flex:1}
+.city-head h3{font-size:22px;font-weight:600}
+.city-head .days{font-size:13px;color:var(--ink-faint);font-weight:600}
+.city-head .chev{transition:transform .35s;color:var(--ink-faint)}
+.city.open .city-head .chev{transform:rotate(180deg)}
+.city-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.4,0,.2,1)}
+.city-inner{padding:0 20px 22px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.pill{font-size:13.5px;font-weight:500;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);line-height:1.2}
+.pill .d{font-weight:700;margin-left:5px}
+.pill .g{color:var(--sea)} .pill .e{color:var(--terra)}
+.consider{display:flex;gap:12px;background:rgba(194,146,47,.10);border:1px solid rgba(194,146,47,.3);border-radius:14px;padding:14px 15px}
+.consider .w{flex:0 0 auto;font-size:18px;line-height:1.2}
+.consider p{font-size:14.5px;color:var(--ink-soft)}
+.consider b{color:var(--ink);font-weight:700}
+
+/* details */
+.det{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.det summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center}
+.det summary::-webkit-details-marker{display:none}
+.det summary .chev{transition:transform .3s;color:var(--ink-faint)}
+.det[open] summary .chev{transform:rotate(180deg)}
+.det .di{padding:0 16px 18px}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl th,.tbl td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line-soft)}
+.tbl th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-faint);font-weight:700}
+.tbl td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tbl tr.tot td{font-weight:700;border-top:2px solid var(--line);border-bottom:0;font-size:15px}
+.tbl .blk{font-family:"Fraunces",serif;font-weight:600;color:var(--terra);padding-top:14px;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+
+footer{padding:40px 0 70px;border-top:1px solid var(--line);margin-top:30px}
+footer p{font-size:13.5px;color:var(--ink-faint);max-width:50ch}
+footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:var(--ink-soft);margin-bottom:10px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+@media(min-width:680px){
+  body{font-size:18px}
+  .steps{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .card.feature{grid-column:1/-1}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#plan">El plan</a>
+    <a href="#destinos">Combinaciones</a>
+    <a href="#ciudades">Ciudades</a>
+    <a href="#costos">Costos</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow reveal">10 – 25 de julio · 5 viajeros</div>
+    <h1 class="reveal">Quince días<span class="blk">en Europa.</span></h1>
+    <p class="lede reveal">Barcelona como casa, una escapada a dos ciudades, y el resto para vivir la ciudad sin prisas. Aquí están las opciones para que elijamos juntos.</p>
+    <div class="dates reveal">Llegada y salida por <b>Madrid</b> · tren a Barcelona</div>
+    <!-- skyline -->
+    <svg class="skyline reveal" viewBox="0 0 760 90" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+      <path d="M0 88 H760" opacity=".25"/>
+      <!-- sagrada -->
+      <path d="M40 88 V44 q4-22 8 0 V88 M30 88 V52 q5-16 10 0 M50 88 V52 q5-16 10 0"/>
+      <!-- eiffel -->
+      <path d="M150 88 L165 30 L180 88 M156 64 H174 M159 50 H171"/>
+      <!-- colosseum -->
+      <path d="M250 88 V58 a30 14 0 0 1 60 0 V88 M250 70 H310 M262 58 V88 M280 56 V88 M298 58 V88"/>
+      <!-- duomo -->
+      <path d="M380 88 V60 q18-30 36 0 V88 M396 30 V60"/>
+      <!-- amsterdam canal houses -->
+      <path d="M470 88 V48 L478 40 L486 48 V88 M486 88 V46 L494 40 L502 46 V88 M502 88 V50 L510 44 L518 50 V88"/>
+      <!-- lisbon tram + arch -->
+      <path d="M600 88 V66 H650 V88 M608 66 V58 H642 V66 M614 88 V78 H624 V88 M628 88 V78 H638 V88"/>
+      <!-- sun -->
+      <circle cx="710" cy="40" r="16"/>
+      <path d="M710 14 V6 M710 74 V66 M736 40 H744 M676 40 H684 M729 21 L735 15 M685 65 L691 59 M729 59 L735 65 M685 15 L691 21" opacity=".7"/>
+    </svg>
+  </div>
+</header>
+
+<section id="plan">
+  <div class="wrap">
+    <div class="kicker reveal">Cómo funciona</div>
+    <h2 class="h2 serif reveal">El plan, en simple</h2>
+    <p class="sub reveal">Una sola escapada de siete noches a dos ciudades, y todo lo demás disfrutando Barcelona.</p>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><div><h3>Base en Barcelona</h3><p>Ocho noches en la ciudad, con tiempo de sobra y excursiones de un día.</p></div></div>
+      <div class="step reveal"><div class="n">2</div><div><h3>Escapada de 7 noches</h3><p>A dos ciudades europeas, cuatro días en cada una. Vuelos directos entre ellas.</p></div></div>
+      <div class="step reveal"><div class="n">3</div><div><h3>Dormir bien, gastar mejor</h3><p>Hostal en Ámsterdam por la experiencia; departamentos con cocina en el resto.</p></div></div>
+      <div class="step reveal"><div class="n">4</div><div><h3>Regreso por Madrid</h3><p>Tren de vuelta a Madrid y vuelo a casa el 25 de julio.</p></div></div>
+    </div>
+    <div class="budget reveal">
+      <div class="lbl">Presupuesto por persona</div>
+      <div class="big">35.000 – 40.000 MXN</div>
+      <div class="eu">≈ €1.730 – €1.980 · para pasear (los vuelos a Europa ya están pagados)</div>
+    </div>
+  </div>
+</section>
+
+<section id="destinos" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="kicker reveal">Elijan una</div>
+    <h2 class="h2 serif reveal">Cinco combinaciones</h2>
+    <p class="sub reveal">Cada precio es el total de la familia (4 personas) e incluye el tren a Madrid, la escapada y los días en Barcelona. Ordenadas de la más económica a la más cara.</p>
+    <div class="cards">
+
+      <div class="card feature reveal">
+        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V70 q18-30 36 0 V100 M38 40 V70 M70 100 V72 a18 9 0 0 1 36 0 V100 M70 82 H106"/></svg>
+        <span class="tag cheap">La más económica</span>
+        <h3>Roma + Florencia</h3>
+        <div class="route">Circuito de Italia · unidas por tren</div>
+        <div class="price-row"><span class="mxn">~126.550 MXN</span><span class="per">≈ €6.265 · ~31.600 por persona</span></div>
+        <div class="price-foot"><b>Por qué cuesta menos:</b> dos ciudades italianas sin vuelo extra entre ellas.</div>
+      </div>
+
+      <div class="card reveal">
+        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M80 100 V70 H110 V100 M86 70 V64 H104 V70"/></svg>
+        <span class="tag mid">Equilibrada</span>
+        <h3>Ámsterdam + Lisboa</h3>
+        <div class="route">Norte y sur · ambiente muy distinto</div>
+        <div class="price-row"><span class="mxn">~138.400 MXN</span><span class="per">≈ €6.850 · ~34.600 por persona</span></div>
+        <div class="price-foot">Cumple Ámsterdam y suma una ciudad bonita y barata.</div>
+      </div>
+
+      <div class="card reveal">
+        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M75 100 V72 a16 8 0 0 1 32 0 V100 M75 84 H107"/></svg>
+        <span class="tag mid">La favorita del grupo</span>
+        <h3>Ámsterdam + Roma</h3>
+        <div class="route">El deseo de todos en un solo viaje</div>
+        <div class="price-row"><span class="mxn">~138.800 MXN</span><span class="per">≈ €6.870 · ~34.700 por persona</span></div>
+        <div class="price-foot">Junta lo que quieren mamá y las hermanas con lo de papá.</div>
+      </div>
+
+      <div class="card reveal">
+        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M28 100 L44 40 L60 100 M34 78 H54 M80 100 V72 a16 8 0 0 1 32 0 V100 M80 84 H112"/></svg>
+        <span class="tag mid">Dos clásicos</span>
+        <h3>París + Roma</h3>
+        <div class="route">Dos capitales icónicas</div>
+        <div class="price-row"><span class="mxn">~140.200 MXN</span><span class="per">≈ €6.940 · ~35.050 por persona</span></div>
+        <div class="price-foot">Roma compensa lo caro de París.</div>
+      </div>
+
+      <div class="card reveal">
+        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M76 100 L92 40 L108 100 M82 78 H102"/></svg>
+        <span class="tag high">La más cara</span>
+        <h3>Ámsterdam + París</h3>
+        <div class="route">Las dos ciudades más glamurosas</div>
+        <div class="price-row"><span class="mxn">~144.250 MXN</span><span class="per">≈ €7.140 · ~36.060 por persona</span></div>
+        <div class="price-foot">La más costosa: dos ciudades caras juntas.</div>
+      </div>
+
+    </div>
+    <p class="note-line reveal">Todas las opciones caben dentro del presupuesto de 35–40 mil pesos por persona. Los precios son aproximados de julio (temporada alta) y se confirman al reservar.</p>
+  </div>
+</section>
+
+<section id="ciudades">
+  <div class="wrap">
+    <div class="kicker reveal">Qué hay en cada lugar</div>
+    <h2 class="h2 serif reveal">Las ciudades</h2>
+    <p class="sub reveal">Hay más opciones que días a propósito: así cada quien elige, y si alguien quiere hacer una cosa y otro otra, no hay problema. Toquen cada ciudad para ver las actividades.</p>
+
+    <div id="cityList"></div>
+  </div>
+</section>
+
+<section id="costos" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="kicker reveal">Para los curiosos</div>
+    <h2 class="h2 serif reveal">Los números a detalle</h2>
+    <p class="sub reveal">Por si quieren ver de dónde sale cada peso. Toquen para abrir.</p>
+
+    <details class="det reveal" style="margin-bottom:14px">
+      <summary>Ejemplo de desglose · Ámsterdam + Roma <span class="chev">⌄</span></summary>
+      <div class="di">
+        <table class="tbl">
+          <tr><th>Concepto</th><th class="num">€</th><th class="num">~MXN</th></tr>
+          <tr><td class="blk" colspan="3">Tren</td></tr>
+          <tr><td>Madrid ↔ Barcelona (ida y vuelta)</td><td class="num">400</td><td class="num">8.080</td></tr>
+          <tr><td class="blk" colspan="3">Escapada (7 noches)</td></tr>
+          <tr><td>Vuelos BCN→AMS→Roma→BCN</td><td class="num">1.020</td><td class="num">20.600</td></tr>
+          <tr><td>Alojamiento Ámsterdam (hostal)</td><td class="num">693</td><td class="num">14.000</td></tr>
+          <tr><td>Alojamiento Roma (Airbnb)</td><td class="num">528</td><td class="num">10.650</td></tr>
+          <tr><td>Comida</td><td class="num">864</td><td class="num">17.450</td></tr>
+          <tr><td>Bebidas</td><td class="num">212</td><td class="num">4.280</td></tr>
+          <tr><td>Transporte local</td><td class="num">184</td><td class="num">3.720</td></tr>
+          <tr><td>Entradas y museos</td><td class="num">268</td><td class="num">5.410</td></tr>
+          <tr><td>Recuerdos</td><td class="num">140</td><td class="num">2.830</td></tr>
+          <tr><td class="blk" colspan="3">Barcelona (8 noches)</td></tr>
+          <tr><td>Alojamiento 3 mujeres</td><td class="num">960</td><td class="num">19.400</td></tr>
+          <tr><td>Comida</td><td class="num">832</td><td class="num">16.800</td></tr>
+          <tr><td>Bebidas</td><td class="num">192</td><td class="num">3.880</td></tr>
+          <tr><td>Transporte local</td><td class="num">160</td><td class="num">3.230</td></tr>
+          <tr><td>Entradas y excursiones</td><td class="num">288</td><td class="num">5.820</td></tr>
+          <tr><td>Recuerdos</td><td class="num">128</td><td class="num">2.590</td></tr>
+          <tr class="tot"><td>Total familia (4)</td><td class="num">6.870</td><td class="num">138.800</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="det reveal" style="margin-bottom:14px">
+      <summary>Alojamiento por noche · grupo de 5 <span class="chev">⌄</span></summary>
+      <div class="di">
+        <table class="tbl">
+          <tr><th>Lugar</th><th class="num">Hostal</th><th class="num">Airbnb</th><th class="num">Hotel</th></tr>
+          <tr><td>Ámsterdam</td><td class="num">€215</td><td class="num">€700</td><td class="num">€400–550</td></tr>
+          <tr><td>Roma</td><td class="num">€150–200</td><td class="num">€200–260</td><td class="num">€280–380</td></tr>
+          <tr><td>París</td><td class="num">€200–260</td><td class="num">€280–340</td><td class="num">€400–550</td></tr>
+          <tr><td>Lisboa</td><td class="num">€120–160</td><td class="num">€160–220</td><td class="num">€220–300</td></tr>
+          <tr><td>Florencia</td><td class="num">€130–180</td><td class="num">€180–240</td><td class="num">€260–340</td></tr>
+          <tr><td>Barcelona (3 mujeres)</td><td class="num">€80–110</td><td class="num">€100–140</td><td class="num">€160–220</td></tr>
+        </table>
+        <p style="font-size:13px;color:var(--ink-faint);margin-top:12px">Multiplica por 20,2 para pesos. Default usado: Ámsterdam en hostal, las demás en Airbnb.</p>
+      </div>
+    </details>
+
+    <details class="det reveal">
+      <summary>Gasto por día · por persona <span class="chev">⌄</span></summary>
+      <div class="di">
+        <table class="tbl">
+          <tr><th>Ciudad</th><th class="num">€/día</th><th class="num">~MXN/día</th></tr>
+          <tr><td>Ámsterdam</td><td class="num">€63</td><td class="num">~1.270</td></tr>
+          <tr><td>París</td><td class="num">€63</td><td class="num">~1.270</td></tr>
+          <tr><td>Roma</td><td class="num">€55</td><td class="num">~1.110</td></tr>
+          <tr><td>Florencia</td><td class="num">€55</td><td class="num">~1.110</td></tr>
+          <tr><td>Lisboa</td><td class="num">€50</td><td class="num">~1.010</td></tr>
+          <tr><td>Barcelona</td><td class="num">€50</td><td class="num">~1.010</td></tr>
+        </table>
+        <p style="font-size:13px;color:var(--ink-faint);margin-top:12px">Incluye comida, bebidas, transporte local, entradas y recuerdos.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="sig">Nos vemos en julio.</p>
+    <p>Borrador para revisión familiar. Todos los precios son aproximados de temporada alta y se confirman al reservar. Tipo de cambio usado: 1 € ≈ 20,2 MXN.</p>
+  </div>
+</footer>
+
+<script>
+const cities = [
+  { name:"Ámsterdam", days:"≈ 4 días", icon:'<path d="M4 21 V11 L8 8 L12 11 V21 M12 21 V12 L16 9 L20 12 V21" stroke-width="1.6"/>',
+    acts:[["Casa de Ana Frank","€"],["Rijksmuseum","€"],["Museo Van Gogh","€"],["Crucero por los canales","€"],["Barrio Jordaan a pie","G"],["Vondelpark","G"],["Mercado de flores","G"],["Patio Begijnhof","G"],["Ferry + mirador A'DAM","G/€"],["Mercado Albert Cuyp","G"],["Heineken Experience","€"],["Molinos de Zaanse Schans","€"]],
+    warn:"<b>Casa de Ana Frank:</b> solo se vende en línea y se agota en minutos (sale a la venta unas 6 semanas antes). Rijksmuseum y Van Gogh también conviene reservar. Cuidado con las bicicletas al cruzar la calle." },
+  { name:"Roma", days:"≈ 4 días", icon:'<path d="M4 21 V12 a8 4 0 0 1 16 0 V21 M4 16 H20 M9 12 V21 M12 11 V21 M15 12 V21" stroke-width="1.5"/>',
+    acts:[["Coliseo + Foro + Palatino","€"],["Museos Vaticanos + Capilla Sixtina","€"],["Basílica de San Pedro","G"],["Fontana di Trevi","G"],["Panteón","€"],["Plaza Navona","G"],["Trastevere de noche","G"],["Plaza de España","G"],["Castel Sant'Angelo","€"],["Villa Borghese","G/€"],["Pompeya / Nápoles en tren","€"]],
+    warn:"<b>Coliseo y Vaticano se agotan;</b> reservar con franja horaria. Mucho calor en julio: museos temprano y mucha agua (hay fuentes gratis). En el Vaticano piden hombros y rodillas cubiertos. Ojo con quienes ponen pulseras 'de regalo'." },
+  { name:"París", days:"≈ 4 días", icon:'<path d="M12 3 L8 21 M12 3 L16 21 M9 15 H15 M7 21 H17" stroke-width="1.5"/>',
+    acts:[["Torre Eiffel","€"],["Museo del Louvre","€"],["Museo d'Orsay","€"],["Montmartre + Sacré-Cœur","G"],["Notre-Dame por fuera","G"],["Crucero por el Sena","€"],["Arco del Triunfo","G/€"],["Jardines de Luxemburgo","G"],["Barrio Le Marais","G"],["Sainte-Chapelle","€"],["Versalles","€"]],
+    warn:"<b>Louvre y Eiffel con reserva en línea.</b> Cuidado con estafas cerca de la Torre y Sacré-Cœur, y con carteristas en el metro. Versalles es enorme: ir temprano. Varios museos cierran lunes o martes." },
+  { name:"Florencia", days:"≈ 4 días", icon:'<path d="M4 21 V13 q8-12 16 0 V21 M12 4 V13" stroke-width="1.5"/>',
+    acts:[["Duomo y su cúpula","G/€"],["Galería Uffizi","€"],["El David (Accademia)","€"],["Ponte Vecchio","G"],["Piazzale Michelangelo","G"],["Palazzo Vecchio","G/€"],["Mercado de cuero San Lorenzo","G"],["Jardines de Bóboli","€"],["Pisa o la Toscana","€"]],
+    warn:"<b>Uffizi y Accademia con reserva</b> (sin ella, filas de horas). Subir la cúpula del Duomo son 414 escalones y reserva aparte. Calor de julio; centro peatonal, calzado cómodo." },
+  { name:"Lisboa", days:"≈ 4 días", icon:'<path d="M4 21 V9 H16 V21 M7 9 V6 H13 V9 M7 21 V16 H10 V21 M18 21 V13" stroke-width="1.5"/>',
+    acts:[["Belém + pasteles de Belém","€"],["Tranvía 28","€"],["Barrio de Alfama","G"],["Castillo de San Jorge","€"],["Miradores","G"],["Plaza del Comercio","G"],["Time Out Market","€"],["Elevador de Santa Justa","€"],["LX Factory","G"],["Sintra","€"]],
+    warn:"<b>Sintra es día completo;</b> entradas en línea y salir temprano (se llena muchísimo). El tranvía 28 va repleto y con carteristas. Ciudad de muchas cuestas: calzado cómodo." },
+  { name:"Barcelona", days:"≈ 8 noches · mucho tiempo libre", icon:'<path d="M6 21 V9 q2-9 4 0 V21 M14 21 V9 q2-9 4 0 V21 M10 21 V12 q1-6 2 0 V21" stroke-width="1.5"/>',
+    acts:[["Sagrada Familia","€"],["Park Güell","€"],["Casa Batlló / La Pedrera","€"],["Barrio Gótico","G/€"],["Mercado de la Boquería","G"],["Playa Barceloneta","G"],["Montjuïc","G/€"],["Búnkeres del Carmel","G"],["Parc de la Ciutadella","G"],["Museo Picasso / MNAC","€"],["Hiking Tibidabo / Carretera de les Aigües","G"],["Montserrat · Girona · Sitges","€"]],
+    warn:"<b>Sagrada, Park Güell y Casa Batlló se agotan;</b> reservar con días de anticipación. Cuidado con carteristas en Las Ramblas y el metro. Las excursiones conviene agruparlas por zona." }
+];
+
+const list = document.getElementById('cityList');
+cities.forEach(c=>{
+  const pills = c.acts.map(a=>{
+    const cls = a[1]==='G'?'g':(a[1]==='€'?'e':'');
+    const lbl = a[1]==='G'?'gratis':(a[1]==='€'?'€':a[1]);
+    return `<span class="pill">${a[0]}<span class="d ${cls}">${lbl}</span></span>`;
+  }).join('');
+  const el = document.createElement('div');
+  el.className='city reveal';
+  el.innerHTML = `
+    <button class="city-head" aria-expanded="false">
+      <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor">${c.icon}</svg></span>
+      <span class="t"><h3>${c.name}</h3><span class="days">${c.days}</span></span>
+      <span class="chev"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9 L12 15 L18 9"/></svg></span>
+    </button>
+    <div class="city-body"><div class="city-inner">
+      <div class="pills">${pills}</div>
+      <div class="consider"><span class="w">⚠️</span><p>${c.warn}</p></div>
+    </div></div>`;
+  list.appendChild(el);
+});
+
+document.querySelectorAll('.city-head').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const city = btn.closest('.city');
+    const body = city.querySelector('.city-body');
+    const open = city.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+    body.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
+  });
+});
+
+// reveal on scroll
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay=(i%4*60)+'ms'; io.observe(el); });
+</script>
+</body>
+</html>
