@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Nuestro viaje · Barcelona y dos escapadas</title>
+<title>Nuestro viaje · Barcelona y Europa</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -24,7 +24,6 @@ body{
   font-size:17px; line-height:1.55; letter-spacing:-.01em;
   overflow-x:hidden;
 }
-/* grain */
 body::before{
   content:""; position:fixed; inset:0; z-index:9999; pointer-events:none; opacity:.5;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
@@ -32,8 +31,6 @@ body::before{
 }
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
 h1,h2,h3,.serif{font-family:"Fraunces",serif;font-optical-sizing:auto;line-height:1.04;letter-spacing:-.02em}
-
-/* sticky nav */
 nav{
   position:sticky;top:0;z-index:50;background:rgba(250,243,230,.82);
   backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);
@@ -46,8 +43,6 @@ nav a{
   transition:.25s;
 }
 nav a:active,nav a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-
-/* hero */
 header{position:relative;padding:60px 0 46px;overflow:hidden}
 header::after{
   content:"";position:absolute;left:-15%;top:-30%;width:130%;height:90%;z-index:0;
@@ -63,16 +58,11 @@ h1 .blk{font-style:normal;font-weight:800;display:block}
 .dates{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:14px;
   background:var(--ink);color:var(--paper);padding:9px 16px;border-radius:999px}
 .dates b{color:var(--gold);font-weight:700}
-
 .skyline{display:block;width:100%;height:auto;margin-top:34px;color:var(--ink);opacity:.9}
-
-/* sections */
 section{padding:46px 0;position:relative}
 .kicker{font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sea);margin-bottom:12px}
 .h2{font-size:clamp(30px,8vw,44px);font-weight:600;margin-bottom:10px}
 .sub{color:var(--ink-soft);max-width:46ch;margin-bottom:30px;font-size:16.5px}
-
-/* how it works */
 .steps{display:grid;gap:14px}
 .step{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px;display:flex;gap:16px;align-items:flex-start;box-shadow:var(--shadow)}
 .step .n{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--terra);color:#fff;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600;font-size:19px}
@@ -82,8 +72,6 @@ section{padding:46px 0;position:relative}
 .budget .lbl{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
 .budget .big{font-family:"Fraunces",serif;font-size:clamp(30px,9vw,42px);font-weight:600;margin:6px 0 4px}
 .budget .eu{color:rgba(250,243,230,.7);font-size:15px}
-
-/* destination cards */
 .cards{display:grid;gap:18px}
 .card{
   position:relative;background:var(--card);border:1px solid var(--line);border-radius:22px;
@@ -97,18 +85,17 @@ section{padding:46px 0;position:relative}
 .tag.cheap{background:rgba(43,116,108,.14);color:var(--sea)}
 .tag.high{background:rgba(194,86,47,.15);color:var(--terra-deep)}
 .tag.mid{background:rgba(194,146,47,.16);color:var(--gold)}
+.tag.rec{background:rgba(122,74,82,.14);color:var(--plum)}
 .card h3{font-size:27px;font-weight:600;font-style:italic;letter-spacing:-.02em}
 .card .route{font-size:14px;color:var(--ink-faint);margin-top:6px;font-weight:600}
+.card .circuit{font-size:13px;color:var(--ink-faint);margin-top:10px;padding:10px 12px;background:var(--paper-2);border-radius:10px;line-height:1.5}
 .price-row{display:flex;align-items:baseline;gap:12px;margin-top:18px;flex-wrap:wrap;
   padding-top:16px;border-top:1px solid var(--line-soft)}
 .price-row .mxn{font-family:"Fraunces",serif;font-size:34px;font-weight:600;color:var(--ink)}
 .price-row .per{font-size:13.5px;color:var(--ink-soft)}
 .price-foot{margin-top:10px;font-size:13px;color:var(--ink-faint)}
 .price-foot b{color:var(--ink-soft);font-weight:600}
-
 .note-line{margin-top:24px;font-size:14px;color:var(--ink-soft);background:var(--paper-2);border-radius:14px;padding:14px 16px;border:1px solid var(--line-soft)}
-
-/* city accordions */
 .city{background:var(--card);border:1px solid var(--line);border-radius:var(--r);margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow)}
 .city-head{width:100%;background:none;border:0;cursor:pointer;display:flex;align-items:center;gap:14px;
   padding:18px 20px;text-align:left;font-family:inherit}
@@ -128,8 +115,6 @@ section{padding:46px 0;position:relative}
 .consider .w{flex:0 0 auto;font-size:18px;line-height:1.2}
 .consider p{font-size:14.5px;color:var(--ink-soft)}
 .consider b{color:var(--ink);font-weight:700}
-
-/* details */
 .det{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
 .det summary{cursor:pointer;list-style:none;padding:18px 20px;font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center}
 .det summary::-webkit-details-marker{display:none}
@@ -142,12 +127,9 @@ section{padding:46px 0;position:relative}
 .tbl td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .tbl tr.tot td{font-weight:700;border-top:2px solid var(--line);border-bottom:0;font-size:15px}
 .tbl .blk{font-family:"Fraunces",serif;font-weight:600;color:var(--terra);padding-top:14px;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
-
 footer{padding:40px 0 70px;border-top:1px solid var(--line);margin-top:30px}
 footer p{font-size:13.5px;color:var(--ink-faint);max-width:50ch}
 footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:var(--ink-soft);margin-bottom:10px}
-
-/* reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
@@ -164,7 +146,7 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
 <nav>
   <div class="wrap">
     <a href="#plan">El plan</a>
-    <a href="#destinos">Combinaciones</a>
+    <a href="#destinos">Opciones</a>
     <a href="#ciudades">Ciudades</a>
     <a href="#costos">Costos</a>
   </div>
@@ -174,26 +156,17 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
   <div class="wrap">
     <div class="eyebrow reveal">10 – 25 de julio · 5 viajeros</div>
     <h1 class="reveal">Quince días<span class="blk">en Europa.</span></h1>
-    <p class="lede reveal">Barcelona como casa, una escapada a dos ciudades, y el resto para vivir la ciudad sin prisas. Aquí están las opciones para que elijamos juntos.</p>
+    <p class="lede reveal">Barcelona como casa, una escapada a Roma, Florencia y quizá París. Aquí están las opciones para que elijamos juntos.</p>
     <div class="dates reveal">Llegada y salida por <b>Madrid</b> · tren a Barcelona</div>
-    <!-- skyline -->
     <svg class="skyline reveal" viewBox="0 0 760 90" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
       <path d="M0 88 H760" opacity=".25"/>
-      <!-- sagrada -->
       <path d="M40 88 V44 q4-22 8 0 V88 M30 88 V52 q5-16 10 0 M50 88 V52 q5-16 10 0"/>
-      <!-- eiffel -->
-      <path d="M150 88 L165 30 L180 88 M156 64 H174 M159 50 H171"/>
-      <!-- colosseum -->
-      <path d="M250 88 V58 a30 14 0 0 1 60 0 V88 M250 70 H310 M262 58 V88 M280 56 V88 M298 58 V88"/>
-      <!-- duomo -->
-      <path d="M380 88 V60 q18-30 36 0 V88 M396 30 V60"/>
-      <!-- amsterdam canal houses -->
-      <path d="M470 88 V48 L478 40 L486 48 V88 M486 88 V46 L494 40 L502 46 V88 M502 88 V50 L510 44 L518 50 V88"/>
-      <!-- lisbon tram + arch -->
-      <path d="M600 88 V66 H650 V88 M608 66 V58 H642 V66 M614 88 V78 H624 V88 M628 88 V78 H638 V88"/>
-      <!-- sun -->
-      <circle cx="710" cy="40" r="16"/>
-      <path d="M710 14 V6 M710 74 V66 M736 40 H744 M676 40 H684 M729 21 L735 15 M685 65 L691 59 M729 59 L735 65 M685 15 L691 21" opacity=".7"/>
+      <path d="M150 88 V58 a30 14 0 0 1 60 0 V88 M150 70 H210 M162 58 V88 M180 56 V88 M198 58 V88"/>
+      <path d="M280 88 V60 q18-30 36 0 V88 M296 30 V60"/>
+      <path d="M400 88 L415 30 L430 88 M406 64 H424 M409 50 H421"/>
+      <path d="M500 88 V48 L508 40 L516 48 V88 M516 88 V46 L524 40 L532 46 V88 M532 88 V50 L540 44 L548 50 V88"/>
+      <circle cx="680" cy="40" r="16"/>
+      <path d="M680 14 V6 M680 74 V66 M706 40 H714 M646 40 H654 M699 21 L705 15 M655 65 L661 59 M699 59 L705 65 M655 15 L661 21" opacity=".7"/>
     </svg>
   </div>
 </header>
@@ -202,11 +175,11 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
   <div class="wrap">
     <div class="kicker reveal">Cómo funciona</div>
     <h2 class="h2 serif reveal">El plan, en simple</h2>
-    <p class="sub reveal">Una sola escapada de siete noches a dos ciudades, y todo lo demás disfrutando Barcelona.</p>
+    <p class="sub reveal">Una escapada en circuito por Italia (y quizá París), y el resto disfrutando Barcelona.</p>
     <div class="steps">
-      <div class="step reveal"><div class="n">1</div><div><h3>Base en Barcelona</h3><p>Ocho noches en la ciudad, con tiempo de sobra y excursiones de un día.</p></div></div>
-      <div class="step reveal"><div class="n">2</div><div><h3>Escapada de 7 noches</h3><p>A dos ciudades europeas, cuatro días en cada una. Vuelos directos entre ellas.</p></div></div>
-      <div class="step reveal"><div class="n">3</div><div><h3>Dormir bien, gastar mejor</h3><p>Hostal en Ámsterdam por la experiencia; departamentos con cocina en el resto.</p></div></div>
+      <div class="step reveal"><div class="n">1</div><div><h3>Base en Barcelona</h3><p>Entre 6 y 8 noches en la ciudad, con tiempo para excursiones de un día.</p></div></div>
+      <div class="step reveal"><div class="n">2</div><div><h3>Escapada en circuito</h3><p>Roma → Florencia (en tren) → y quizá París. Sin regresar a Barcelona entre ciudades.</p></div></div>
+      <div class="step reveal"><div class="n">3</div><div><h3>Dormir bien, gastar mejor</h3><p>Departamentos con cocina para cocinar 1–2 comidas al día y ahorrar.</p></div></div>
       <div class="step reveal"><div class="n">4</div><div><h3>Regreso por Madrid</h3><p>Tren de vuelta a Madrid y vuelo a casa el 25 de julio.</p></div></div>
     </div>
     <div class="budget reveal">
@@ -220,57 +193,52 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
 <section id="destinos" style="background:var(--paper-2)">
   <div class="wrap">
     <div class="kicker reveal">Elijan una</div>
-    <h2 class="h2 serif reveal">Cinco combinaciones</h2>
-    <p class="sub reveal">Cada precio es el total de la familia (4 personas) e incluye el tren a Madrid, la escapada y los días en Barcelona. Ordenadas de la más económica a la más cara.</p>
+    <h2 class="h2 serif reveal">Cuatro opciones</h2>
+    <p class="sub reveal">Cada precio es el total de la familia (4 personas) e incluye el tren a Madrid, la escapada completa y todos los días en Barcelona. Todas entran en el presupuesto.</p>
     <div class="cards">
 
       <div class="card feature reveal">
-        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V70 q18-30 36 0 V100 M38 40 V70 M70 100 V72 a18 9 0 0 1 36 0 V100 M70 82 H106"/></svg>
-        <span class="tag cheap">La más económica</span>
-        <h3>Roma + Florencia</h3>
-        <div class="route">Circuito de Italia · unidas por tren</div>
-        <div class="price-row"><span class="mxn">~126.550 MXN</span><span class="per">≈ €6.265 · ~31.600 por persona</span></div>
-        <div class="price-foot"><b>Por qué cuesta menos:</b> dos ciudades italianas sin vuelo extra entre ellas.</div>
+        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V72 a18 9 0 0 1 36 0 V100 M20 82 H56 M70 100 V70 q14-24 28 0 V100 M84 46 V70"/></svg>
+        <span class="tag cheap">La más económica y relajada</span>
+        <h3>Opción A · Roma + Florencia</h3>
+        <div class="route">2 ciudades · 7 noches fuera · 8 noches en Barcelona</div>
+        <div class="circuit">🛫 BCN → Roma (vuelo) → 🚂 Florencia (tren 1h30) → BCN (vuelo)</div>
+        <div class="price-row"><span class="mxn">~138.200 MXN</span><span class="per">≈ €6.840 · ~34.550 por persona</span></div>
+        <div class="price-foot"><b>Lo mejor:</b> el circuito más barato, sin vuelos entre ciudades (solo tren), ritmo relajado, mucho tiempo en Barcelona.</div>
       </div>
 
       <div class="card reveal">
-        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M80 100 V70 H110 V100 M86 70 V64 H104 V70"/></svg>
-        <span class="tag mid">Equilibrada</span>
-        <h3>Ámsterdam + Lisboa</h3>
-        <div class="route">Norte y sur · ambiente muy distinto</div>
-        <div class="price-row"><span class="mxn">~138.400 MXN</span><span class="per">≈ €6.850 · ~34.600 por persona</span></div>
-        <div class="price-foot">Cumple Ámsterdam y suma una ciudad bonita y barata.</div>
+        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 100 V72 a16 8 0 0 1 32 0 V100 M15 82 H47 M52 100 V70 q12-22 24 0 V100 M64 46 V70 M82 100 L94 50 L106 100 M86 78 H102"/></svg>
+        <span class="tag rec">Recomendada</span>
+        <h3>Opción B · Roma + Florencia + París</h3>
+        <div class="route">3 ciudades · 8 noches fuera (3+3+2) · 7 noches en Barcelona</div>
+        <div class="circuit">🛫 BCN → Roma (vuelo) → 🚂 Florencia (tren) → ✈ París (vuelo) → BCN (vuelo)</div>
+        <div class="price-row"><span class="mxn">~144.700 MXN</span><span class="per">≈ €7.160 · ~36.170 por persona</span></div>
+        <div class="price-foot"><b>Lo mejor:</b> 3 noches en Roma y Florencia cada una (buen ritmo), París con 2 noches para lo esencial, y 7 noches en Barcelona.</div>
       </div>
 
       <div class="card reveal">
-        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M75 100 V72 a16 8 0 0 1 32 0 V100 M75 84 H107"/></svg>
-        <span class="tag mid">La favorita del grupo</span>
-        <h3>Ámsterdam + Roma</h3>
-        <div class="route">El deseo de todos en un solo viaje</div>
-        <div class="price-row"><span class="mxn">~138.800 MXN</span><span class="per">≈ €6.870 · ~34.700 por persona</span></div>
-        <div class="price-foot">Junta lo que quieren mamá y las hermanas con lo de papá.</div>
+        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 100 V72 a16 8 0 0 1 32 0 V100 M15 82 H47 M52 100 V70 q12-22 24 0 V100 M82 100 L94 50 L106 100 M86 78 H102"/></svg>
+        <span class="tag mid">Más París, menos Florencia</span>
+        <h3>Opción C · Roma + Florencia + París</h3>
+        <div class="route">3 ciudades · 8 noches fuera (3+2+3) · 7 noches en Barcelona</div>
+        <div class="circuit">🛫 BCN → Roma (vuelo) → 🚂 Florencia (tren) → ✈ París (vuelo) → BCN (vuelo)</div>
+        <div class="price-row"><span class="mxn">~146.700 MXN</span><span class="per">≈ €7.260 · ~36.670 por persona</span></div>
+        <div class="price-foot"><b>Lo mejor:</b> le da 3 noches a París (más tiempo para Louvre, Eiffel, Montmartre). Florencia queda con 2 noches (suficiente, es compacta).</div>
       </div>
 
       <div class="card reveal">
-        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M28 100 L44 40 L60 100 M34 78 H54 M80 100 V72 a16 8 0 0 1 32 0 V100 M80 84 H112"/></svg>
-        <span class="tag mid">Dos clásicos</span>
-        <h3>París + Roma</h3>
-        <div class="route">Dos capitales icónicas</div>
-        <div class="price-row"><span class="mxn">~140.200 MXN</span><span class="per">≈ €6.940 · ~35.050 por persona</span></div>
-        <div class="price-foot">Roma compensa lo caro de París.</div>
-      </div>
-
-      <div class="card reveal">
-        <svg class="glyphs" width="110" height="110" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 100 V58 L30 50 L40 58 V100 M40 100 V60 L50 52 L60 60 V100 M76 100 L92 40 L108 100 M82 78 H102"/></svg>
-        <span class="tag high">La más cara</span>
-        <h3>Ámsterdam + París</h3>
-        <div class="route">Las dos ciudades más glamurosas</div>
-        <div class="price-row"><span class="mxn">~144.250 MXN</span><span class="per">≈ €7.140 · ~36.060 por persona</span></div>
-        <div class="price-foot">La más costosa: dos ciudades caras juntas.</div>
+        <svg class="glyphs" width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 100 V72 a16 8 0 0 1 32 0 V100 M15 82 H47 M52 100 V70 q12-22 24 0 V100 M64 46 V70 M82 100 L94 46 L106 100 M86 76 H102 M88 64 H100"/></svg>
+        <span class="tag high">La más ambiciosa</span>
+        <h3>Opción D · Roma + Florencia + París</h3>
+        <div class="route">3 ciudades · 9 noches fuera (3+3+3) · 6 noches en Barcelona</div>
+        <div class="circuit">🛫 BCN → Roma (vuelo) → 🚂 Florencia (tren) → ✈ París (vuelo) → BCN (vuelo)</div>
+        <div class="price-row"><span class="mxn">~149.500 MXN</span><span class="per">≈ €7.400 · ~37.350 por persona</span></div>
+        <div class="price-foot"><b>Lo mejor:</b> tiempo parejo en las 3 ciudades (3 noches cada una). <b>Ojo:</b> solo 6 noches en Barcelona, menos días de descanso con la familia.</div>
       </div>
 
     </div>
-    <p class="note-line reveal">Todas las opciones caben dentro del presupuesto de 35–40 mil pesos por persona. Los precios son aproximados de julio (temporada alta) y se confirman al reservar.</p>
+    <p class="note-line reveal">Todas las opciones caben dentro del presupuesto de 35–40 mil pesos por persona. La diferencia entre la más barata y la más cara es solo ~2.800 MXN por persona. Los precios son aproximados de julio (temporada alta) y se confirman al reservar.</p>
   </div>
 </section>
 
@@ -278,8 +246,7 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
   <div class="wrap">
     <div class="kicker reveal">Qué hay en cada lugar</div>
     <h2 class="h2 serif reveal">Las ciudades</h2>
-    <p class="sub reveal">Hay más opciones que días a propósito: así cada quien elige, y si alguien quiere hacer una cosa y otro otra, no hay problema. Toquen cada ciudad para ver las actividades.</p>
-
+    <p class="sub reveal">Hay más opciones que días a propósito: así cada quien elige lo que más le llame, y si alguien quiere hacer una cosa y otro otra, no hay problema. Toquen cada ciudad para ver las actividades.</p>
     <div id="cityList"></div>
   </div>
 </section>
@@ -291,29 +258,46 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
     <p class="sub reveal">Por si quieren ver de dónde sale cada peso. Toquen para abrir.</p>
 
     <details class="det reveal" style="margin-bottom:14px">
-      <summary>Ejemplo de desglose · Ámsterdam + Roma <span class="chev">⌄</span></summary>
+      <summary>Desglose · Opción A (Roma + Florencia) <span class="chev">⌄</span></summary>
       <div class="di">
         <table class="tbl">
           <tr><th>Concepto</th><th class="num">€</th><th class="num">~MXN</th></tr>
           <tr><td class="blk" colspan="3">Tren</td></tr>
           <tr><td>Madrid ↔ Barcelona (ida y vuelta)</td><td class="num">400</td><td class="num">8.080</td></tr>
-          <tr><td class="blk" colspan="3">Escapada (7 noches)</td></tr>
-          <tr><td>Vuelos BCN→AMS→Roma→BCN</td><td class="num">1.020</td><td class="num">20.600</td></tr>
-          <tr><td>Alojamiento Ámsterdam (hostal)</td><td class="num">693</td><td class="num">14.000</td></tr>
-          <tr><td>Alojamiento Roma (Airbnb)</td><td class="num">528</td><td class="num">10.650</td></tr>
-          <tr><td>Comida</td><td class="num">864</td><td class="num">17.450</td></tr>
-          <tr><td>Bebidas</td><td class="num">212</td><td class="num">4.280</td></tr>
-          <tr><td>Transporte local</td><td class="num">184</td><td class="num">3.720</td></tr>
-          <tr><td>Entradas y museos</td><td class="num">268</td><td class="num">5.410</td></tr>
-          <tr><td>Recuerdos</td><td class="num">140</td><td class="num">2.830</td></tr>
+          <tr><td class="blk" colspan="3">Escapada (7 noches · Roma 4 + Florencia 3)</td></tr>
+          <tr><td>Vuelos BCN→Roma + Florencia→BCN</td><td class="num">640</td><td class="num">12.930</td></tr>
+          <tr><td>Tren Roma→Florencia</td><td class="num">140</td><td class="num">2.830</td></tr>
+          <tr><td>Alojamiento Roma (Airbnb, 4 noches)</td><td class="num">880</td><td class="num">17.780</td></tr>
+          <tr><td>Alojamiento Florencia (Airbnb, 3 noches)</td><td class="num">600</td><td class="num">12.120</td></tr>
+          <tr><td>Comida</td><td class="num">880</td><td class="num">17.780</td></tr>
+          <tr><td>Bebidas + transporte + entradas + recuerdos</td><td class="num">740</td><td class="num">14.950</td></tr>
           <tr><td class="blk" colspan="3">Barcelona (8 noches)</td></tr>
           <tr><td>Alojamiento 3 mujeres</td><td class="num">960</td><td class="num">19.400</td></tr>
-          <tr><td>Comida</td><td class="num">832</td><td class="num">16.800</td></tr>
-          <tr><td>Bebidas</td><td class="num">192</td><td class="num">3.880</td></tr>
-          <tr><td>Transporte local</td><td class="num">160</td><td class="num">3.230</td></tr>
-          <tr><td>Entradas y excursiones</td><td class="num">288</td><td class="num">5.820</td></tr>
-          <tr><td>Recuerdos</td><td class="num">128</td><td class="num">2.590</td></tr>
-          <tr class="tot"><td>Total familia (4)</td><td class="num">6.870</td><td class="num">138.800</td></tr>
+          <tr><td>Comida + bebidas + transporte + entradas + recuerdos</td><td class="num">1.600</td><td class="num">32.320</td></tr>
+          <tr class="tot"><td>Total familia (4)</td><td class="num">6.840</td><td class="num">138.200</td></tr>
+        </table>
+      </div>
+    </details>
+
+    <details class="det reveal" style="margin-bottom:14px">
+      <summary>Desglose · Opción B (Roma + Florencia + París, 3+3+2) <span class="chev">⌄</span></summary>
+      <div class="di">
+        <table class="tbl">
+          <tr><th>Concepto</th><th class="num">€</th><th class="num">~MXN</th></tr>
+          <tr><td class="blk" colspan="3">Tren</td></tr>
+          <tr><td>Madrid ↔ Barcelona (ida y vuelta)</td><td class="num">400</td><td class="num">8.080</td></tr>
+          <tr><td class="blk" colspan="3">Escapada (8 noches · Roma 3 + Florencia 3 + París 2)</td></tr>
+          <tr><td>Vuelos BCN→Roma, Florencia→París, París→BCN</td><td class="num">600</td><td class="num">12.120</td></tr>
+          <tr><td>Tren Roma→Florencia</td><td class="num">140</td><td class="num">2.830</td></tr>
+          <tr><td>Alojamiento Roma (3 noches)</td><td class="num">660</td><td class="num">13.330</td></tr>
+          <tr><td>Alojamiento Florencia (3 noches)</td><td class="num">600</td><td class="num">12.120</td></tr>
+          <tr><td>Alojamiento París (2 noches)</td><td class="num">600</td><td class="num">12.120</td></tr>
+          <tr><td>Comida</td><td class="num">800</td><td class="num">16.160</td></tr>
+          <tr><td>Bebidas + transporte + entradas + recuerdos</td><td class="num">680</td><td class="num">13.740</td></tr>
+          <tr><td class="blk" colspan="3">Barcelona (7 noches)</td></tr>
+          <tr><td>Alojamiento 3 mujeres</td><td class="num">840</td><td class="num">16.970</td></tr>
+          <tr><td>Comida + bebidas + transporte + entradas + recuerdos</td><td class="num">1.400</td><td class="num">28.280</td></tr>
+          <tr class="tot"><td>Total familia (4)</td><td class="num">7.160</td><td class="num">144.700</td></tr>
         </table>
       </div>
     </details>
@@ -323,14 +307,12 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
       <div class="di">
         <table class="tbl">
           <tr><th>Lugar</th><th class="num">Hostal</th><th class="num">Airbnb</th><th class="num">Hotel</th></tr>
-          <tr><td>Ámsterdam</td><td class="num">€215</td><td class="num">€700</td><td class="num">€400–550</td></tr>
           <tr><td>Roma</td><td class="num">€150–200</td><td class="num">€200–260</td><td class="num">€280–380</td></tr>
-          <tr><td>París</td><td class="num">€200–260</td><td class="num">€280–340</td><td class="num">€400–550</td></tr>
-          <tr><td>Lisboa</td><td class="num">€120–160</td><td class="num">€160–220</td><td class="num">€220–300</td></tr>
           <tr><td>Florencia</td><td class="num">€130–180</td><td class="num">€180–240</td><td class="num">€260–340</td></tr>
+          <tr><td>París</td><td class="num">€200–260</td><td class="num">€280–340</td><td class="num">€400–550</td></tr>
           <tr><td>Barcelona (3 mujeres)</td><td class="num">€80–110</td><td class="num">€100–140</td><td class="num">€160–220</td></tr>
         </table>
-        <p style="font-size:13px;color:var(--ink-faint);margin-top:12px">Multiplica por 20,2 para pesos. Default usado: Ámsterdam en hostal, las demás en Airbnb.</p>
+        <p style="font-size:13px;color:var(--ink-faint);margin-top:12px">Multiplica por 20,2 para pesos. Default: Airbnb con cocina en todos los destinos.</p>
       </div>
     </details>
 
@@ -339,11 +321,9 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
       <div class="di">
         <table class="tbl">
           <tr><th>Ciudad</th><th class="num">€/día</th><th class="num">~MXN/día</th></tr>
-          <tr><td>Ámsterdam</td><td class="num">€63</td><td class="num">~1.270</td></tr>
           <tr><td>París</td><td class="num">€63</td><td class="num">~1.270</td></tr>
           <tr><td>Roma</td><td class="num">€55</td><td class="num">~1.110</td></tr>
           <tr><td>Florencia</td><td class="num">€55</td><td class="num">~1.110</td></tr>
-          <tr><td>Lisboa</td><td class="num">€50</td><td class="num">~1.010</td></tr>
           <tr><td>Barcelona</td><td class="num">€50</td><td class="num">~1.010</td></tr>
         </table>
         <p style="font-size:13px;color:var(--ink-faint);margin-top:12px">Incluye comida, bebidas, transporte local, entradas y recuerdos.</p>
@@ -361,24 +341,18 @@ footer .sig{font-family:"Fraunces",serif;font-style:italic;font-size:20px;color:
 
 <script>
 const cities = [
-  { name:"Ámsterdam", days:"≈ 4 días", icon:'<path d="M4 21 V11 L8 8 L12 11 V21 M12 21 V12 L16 9 L20 12 V21" stroke-width="1.6"/>',
-    acts:[["Casa de Ana Frank","€"],["Rijksmuseum","€"],["Museo Van Gogh","€"],["Crucero por los canales","€"],["Barrio Jordaan a pie","G"],["Vondelpark","G"],["Mercado de flores","G"],["Patio Begijnhof","G"],["Ferry + mirador A'DAM","G/€"],["Mercado Albert Cuyp","G"],["Heineken Experience","€"],["Molinos de Zaanse Schans","€"]],
-    warn:"<b>Casa de Ana Frank:</b> solo se vende en línea y se agota en minutos (sale a la venta unas 6 semanas antes). Rijksmuseum y Van Gogh también conviene reservar. Cuidado con las bicicletas al cruzar la calle." },
-  { name:"Roma", days:"≈ 4 días", icon:'<path d="M4 21 V12 a8 4 0 0 1 16 0 V21 M4 16 H20 M9 12 V21 M12 11 V21 M15 12 V21" stroke-width="1.5"/>',
-    acts:[["Coliseo + Foro + Palatino","€"],["Museos Vaticanos + Capilla Sixtina","€"],["Basílica de San Pedro","G"],["Fontana di Trevi","G"],["Panteón","€"],["Plaza Navona","G"],["Trastevere de noche","G"],["Plaza de España","G"],["Castel Sant'Angelo","€"],["Villa Borghese","G/€"],["Pompeya / Nápoles en tren","€"]],
-    warn:"<b>Coliseo y Vaticano se agotan;</b> reservar con franja horaria. Mucho calor en julio: museos temprano y mucha agua (hay fuentes gratis). En el Vaticano piden hombros y rodillas cubiertos. Ojo con quienes ponen pulseras 'de regalo'." },
-  { name:"París", days:"≈ 4 días", icon:'<path d="M12 3 L8 21 M12 3 L16 21 M9 15 H15 M7 21 H17" stroke-width="1.5"/>',
-    acts:[["Torre Eiffel","€"],["Museo del Louvre","€"],["Museo d'Orsay","€"],["Montmartre + Sacré-Cœur","G"],["Notre-Dame por fuera","G"],["Crucero por el Sena","€"],["Arco del Triunfo","G/€"],["Jardines de Luxemburgo","G"],["Barrio Le Marais","G"],["Sainte-Chapelle","€"],["Versalles","€"]],
-    warn:"<b>Louvre y Eiffel con reserva en línea.</b> Cuidado con estafas cerca de la Torre y Sacré-Cœur, y con carteristas en el metro. Versalles es enorme: ir temprano. Varios museos cierran lunes o martes." },
-  { name:"Florencia", days:"≈ 4 días", icon:'<path d="M4 21 V13 q8-12 16 0 V21 M12 4 V13" stroke-width="1.5"/>',
-    acts:[["Duomo y su cúpula","G/€"],["Galería Uffizi","€"],["El David (Accademia)","€"],["Ponte Vecchio","G"],["Piazzale Michelangelo","G"],["Palazzo Vecchio","G/€"],["Mercado de cuero San Lorenzo","G"],["Jardines de Bóboli","€"],["Pisa o la Toscana","€"]],
+  { name:"Roma", days:"~3–4 días según opción", icon:'<path d="M4 21 V12 a8 4 0 0 1 16 0 V21 M4 16 H20 M9 12 V21 M12 11 V21 M15 12 V21" stroke-width="1.5"/>',
+    acts:[["Coliseo + Foro + Palatino","€"],["Museos Vaticanos + Capilla Sixtina","€"],["Basílica de San Pedro","G"],["Fontana di Trevi","G"],["Panteón","€"],["Plaza Navona","G"],["Trastevere de noche","G"],["Plaza de España","G"],["Castel Sant'Angelo","€"],["Villa Borghese","G/€"],["Boca de la Verdad","G"],["Pompeya / Nápoles en tren","€"]],
+    warn:"<b>Coliseo y Vaticano se agotan;</b> reservar con franja horaria. Mucho calor en julio: museos temprano y mucha agua (hay fuentes gratis llamadas nasoni). En el Vaticano piden hombros y rodillas cubiertos. Ojo con vendedores que ponen pulseras de regalo y luego cobran." },
+  { name:"Florencia", days:"~2–3 días según opción", icon:'<path d="M4 21 V13 q8-12 16 0 V21 M12 4 V13" stroke-width="1.5"/>',
+    acts:[["Duomo y su cúpula","G/€"],["Galería Uffizi","€"],["El David (Accademia)","€"],["Ponte Vecchio","G"],["Piazzale Michelangelo al atardecer","G"],["Palazzo Vecchio","G/€"],["Mercado de cuero San Lorenzo","G"],["Jardines de Bóboli","€"],["Basílica de Santa Croce","€"],["Excursión a Pisa o la Toscana","€"]],
     warn:"<b>Uffizi y Accademia con reserva</b> (sin ella, filas de horas). Subir la cúpula del Duomo son 414 escalones y reserva aparte. Calor de julio; centro peatonal, calzado cómodo." },
-  { name:"Lisboa", days:"≈ 4 días", icon:'<path d="M4 21 V9 H16 V21 M7 9 V6 H13 V9 M7 21 V16 H10 V21 M18 21 V13" stroke-width="1.5"/>',
-    acts:[["Belém + pasteles de Belém","€"],["Tranvía 28","€"],["Barrio de Alfama","G"],["Castillo de San Jorge","€"],["Miradores","G"],["Plaza del Comercio","G"],["Time Out Market","€"],["Elevador de Santa Justa","€"],["LX Factory","G"],["Sintra","€"]],
-    warn:"<b>Sintra es día completo;</b> entradas en línea y salir temprano (se llena muchísimo). El tranvía 28 va repleto y con carteristas. Ciudad de muchas cuestas: calzado cómodo." },
-  { name:"Barcelona", days:"≈ 8 noches · mucho tiempo libre", icon:'<path d="M6 21 V9 q2-9 4 0 V21 M14 21 V9 q2-9 4 0 V21 M10 21 V12 q1-6 2 0 V21" stroke-width="1.5"/>',
-    acts:[["Sagrada Familia","€"],["Park Güell","€"],["Casa Batlló / La Pedrera","€"],["Barrio Gótico","G/€"],["Mercado de la Boquería","G"],["Playa Barceloneta","G"],["Montjuïc","G/€"],["Búnkeres del Carmel","G"],["Parc de la Ciutadella","G"],["Museo Picasso / MNAC","€"],["Hiking Tibidabo / Carretera de les Aigües","G"],["Montserrat · Girona · Sitges","€"]],
-    warn:"<b>Sagrada, Park Güell y Casa Batlló se agotan;</b> reservar con días de anticipación. Cuidado con carteristas en Las Ramblas y el metro. Las excursiones conviene agruparlas por zona." }
+  { name:"París", days:"~2–3 días según opción", icon:'<path d="M12 3 L8 21 M12 3 L16 21 M9 15 H15 M7 21 H17" stroke-width="1.5"/>',
+    acts:[["Torre Eiffel","€"],["Museo del Louvre","€"],["Museo d'Orsay","€"],["Montmartre + Sacré-Cœur","G"],["Notre-Dame por fuera","G"],["Crucero por el Sena","€"],["Arco del Triunfo","G/€"],["Jardines de Luxemburgo","G"],["Barrio Le Marais","G"],["Sainte-Chapelle","€"],["Versalles","€"]],
+    warn:"<b>Louvre y Eiffel con reserva en línea.</b> Cuidado con estafas cerca de la Torre y Sacré-Cœur (el 'anillo', la firma) y con carteristas en el metro. Versalles es enorme: ir temprano. Varios museos cierran lunes o martes." },
+  { name:"Barcelona", days:"6–8 noches según opción", icon:'<path d="M6 21 V9 q2-9 4 0 V21 M14 21 V9 q2-9 4 0 V21 M10 21 V12 q1-6 2 0 V21" stroke-width="1.5"/>',
+    acts:[["Sagrada Familia","€"],["Park Güell","€"],["Casa Batlló / La Pedrera","€"],["Barrio Gótico + Catedral","G/€"],["Mercado de la Boquería","G"],["Playa Barceloneta / Bogatell","G"],["Montjuïc: castillo + fuente mágica","G/€"],["Búnkeres del Carmel","G"],["Parc de la Ciutadella","G"],["Museo Picasso / MNAC","€"],["El Born + Santa María del Mar","G"],["Hiking Tibidabo / Carretera de les Aigües","G"],["Excursión: Montserrat","€"],["Excursión: Girona","€"],["Excursión: Sitges","€"],["Excursión: Costa Brava","€"]],
+    warn:"<b>Sagrada, Park Güell y Casa Batlló se agotan;</b> reservar con días de anticipación. Cuidado con carteristas en Las Ramblas y el metro (L3). Las excursiones conviene agruparlas por zona." }
 ];
 
 const list = document.getElementById('cityList');
@@ -413,7 +387,6 @@ document.querySelectorAll('.city-head').forEach(btn=>{
   });
 });
 
-// reveal on scroll
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
 },{threshold:.12});
