@@ -1,48 +1,225 @@
 [
   {
     "id": "pa-amb-tomaquet",
-    "name": "Pa amb tomàquet",
-    "type": "food_guide",
     "city": "barcelona",
+    "type": "food_guide",
+    "name": "Pa amb tomàquet",
     "category": ["Comida típica"],
-    "tags": ["pan", "tomate", "catalán", "básico"],
-    "description": "El pan con tomate es LA base de la cocina catalana. Es simplemente pan tostado frotado con tomate maduro, un chorro de aceite de oliva y una pizca de sal. Parece sencillo, pero la calidad de los ingredientes lo es todo. Se come como acompañamiento de casi cualquier comida.",
+    "tags": ["pan", "tomate", "aceite-oliva", "catalán", "básico", "desayuno", "universal"],
+    "summary": "El pan con tomate catalán es la base de toda la cocina de Barcelona: pan tostado frotado con tomate crudo, rociado con aceite de oliva virgen y sal. No es un acompañamiento, es un plato. Lo sirven en absolutamente todos los bares y restaurantes de la ciudad y es la mejor introducción a la gastronomía catalana.",
+    "description": "La técnica es simple pero importa: se parte un tomate maduro por la mitad y se frota con fuerza sobre el pan, tostado o no según la casa, hasta que la pulpa y los jugos impregnan la miga. Se añade un buen chorro de aceite de oliva virgen extra y sal. Nada más. El resultado depende completamente de la calidad del tomate y del aceite, que en Cataluña son extraordinarios. El pa amb tomàquet se sirve solo, como entrante, o como base para embutidos, anchoas, queso, jamón o cualquier topping que imagine. En la mayoría de bares llega con el pan ya preparado; en los más tradicionales te traen el tomate y el aceite aparte para que lo hagas tú. Esta segunda opción es la más auténtica.",
+    "season": "Todo el año",
     "where_to_try": [
+      {
+        "name": "Cervecería Catalana",
+        "type": "Bar de tapas",
+        "address": "Carrer de Mallorca 236, Eixample",
+        "price_range": "€€",
+        "highlight": "El pa amb tomàquet de aquí viene con pan de cristal crujiente y tomate de calidad. El pedido perfecto es pa amb tomàquet + croquetas + una cerveza."
+      },
       {
         "name": "Bar del Pla",
-        "location": "El Born",
-        "why": "Lo sirven con pan de coca catalán y tomate de temporada. Perfecto para empezar antes de unas tapas."
+        "type": "Tapas catalanas",
+        "address": "Carrer de la Montcada, El Born",
+        "price_range": "€€",
+        "highlight": "Sirven el tomate y el aceite aparte para que cada uno lo prepare a su gusto, como debe ser. Con anchoas encima es una combinación perfecta."
       },
       {
-        "name": "Can Paixano (La Xampanyeria)",
-        "location": "Barceloneta",
-        "why": "Ambiente local auténtico. El pa amb tomàquet con jamón es espectacular, y el cava de la casa cuesta menos de €2."
+        "name": "Bar Calders",
+        "type": "Bar de vermut y tapas",
+        "address": "Carrer del Parlament 25, Poble-Sec / Sant Antoni",
+        "price_range": "€€",
+        "highlight": "El aperitivo clásico de barrio: pa amb tomàquet con jamón ibérico y un vermut de grifo. Ambiente completamente local."
       }
     ],
-    "fun_fact": "Los catalanes son muy específicos: el tomate debe ser de la variedad 'de penjar' (para colgar), que es más jugoso y se frota mejor. Si ven tomates colgados en racimos en un mercado, son esos.",
-    "speech_text": "El pa amb tomàquet, o pan con tomate, es el plato más básico y más importante de la cocina catalana. Es pan tostado frotado con tomate maduro, aceite de oliva y sal. Parece simple, pero aquí se lo toman muy en serio. Lo van a encontrar en todos los restaurantes como acompañamiento."
+    "fun_fact": "En Cataluña hay un debate permanente sobre si el pan debe estar tostado o no antes de frotar el tomate. Los puristas dicen que no: pan del día, sin tostar, para que la miga absorba bien los jugos del tomate. Los pragmáticos tuestan para que aguante mejor. En Barcelona gana el pan tostado; en el campo, el crudo. No hay respuesta correcta y los catalanes llegan a discutir esto con más pasión que algunos temas políticos.",
+    "speech_text": "Si hay un plato que define la cocina de Barcelona, es el pa amb tomàquet. Pan frotado con tomate crudo partido por la mitad, un chorro de aceite de oliva virgen y sal. Eso es todo. Lo van a encontrar en absolutamente todos los bares de la ciudad y es la primera cosa que hay que pedir. La calidad depende del tomate y del aceite, que aquí son muy buenos. En algunos bares les traen el tomate y el aceite aparte para que lo hagan ustedes: esa es la versión más auténtica. Lo pueden comer solo o con jamón, anchoas, queso o lo que quieran encima. Es el aperitivo más catalán que existe y cuesta prácticamente nada.",
+    "photo": "",
+    "video_url": ""
   },
+
   {
     "id": "crema-catalana",
-    "name": "Crema catalana",
-    "type": "food_guide",
     "city": "barcelona",
+    "type": "food_guide",
+    "name": "Crema catalana",
     "category": ["Postres"],
-    "tags": ["postre", "crema", "dulce", "tradicional"],
-    "description": "La prima catalana del crème brûlée (aunque los catalanes insisten en que su crema vino primero). Es una crema pastelera con base de leche, yema de huevo, azúcar, canela y limón, cubierta con una capa de azúcar caramelizado que se quiebra con la cuchara.",
+    "tags": ["postre", "huevo", "azúcar-quemado", "tradición", "catalán", "clásico", "crème-brûlée"],
+    "summary": "El postre más emblemático de Cataluña: una crema de huevos y leche aromatizada con canela y piel de limón, con una capa de azúcar quemado encima que se rompe con la cuchara. Los catalanes sostienen que se inventó aquí siglos antes que la crème brûlée francesa, y tienen argumentos para defenderlo.",
+    "description": "La crema catalana se elabora con yemas de huevo, leche, azúcar y maicena, aromatizada con canela y piel de limón. Se cuece a fuego lento hasta que espesa y se vierte en cazuelitas individuales de barro donde se deja enfriar. Justo antes de servir, se espolvorea azúcar por encima y se quema con un soplete o con una plancha de hierro caliente al rojo vivo, llamada salamandra, que le da el nombre coloquial: 'crema quemada'. El contraste entre la capa crujiente de caramelo y la crema fría y suave debajo es el momento de la revelación. Debe comerse inmediatamente después de quemar el azúcar, antes de que la capa de caramelo se ablande.",
+    "season": "Todo el año (tradicional el día de Sant Josep, 19 de marzo)",
     "where_to_try": [
       {
-        "name": "Can Culleretes",
-        "location": "Barrio Gótico",
-        "why": "El restaurante más antiguo de Barcelona (desde 1786). Su crema catalana es tradicional y generosa."
+        "name": "7 Portes",
+        "type": "Restaurante clásico catalán",
+        "address": "Passeig d'Isabel II 14, Barceloneta",
+        "price_range": "€€€",
+        "highlight": "El restaurante más antiguo de Barcelona en funcionamiento continuo, fundado en 1836. Su crema catalana se elabora con la receta de siempre y se flamea en mesa. Una experiencia completa."
       },
       {
-        "name": "Els Quatre Gats",
-        "location": "Barrio Gótico",
-        "why": "El café donde se reunían Picasso y los modernistas. La crema catalana viene en cazuela de barro."
+        "name": "Granja M. Viader",
+        "type": "Granja histórica",
+        "address": "Carrer d'en Xuclà 4, El Raval",
+        "price_range": "€",
+        "highlight": "Una de las granjas más antiguas de Barcelona, abierta desde 1870. Ambiente de principios de siglo con azulejos originales. La crema catalana aquí es casera y servida en cazuelita de barro."
       }
     ],
-    "fun_fact": "La crema catalana se come tradicionalmente el 19 de marzo, día de San José (el Día del Padre en España). La diferencia principal con el crème brûlée francés es que la catalana usa leche (no crema) y se aromatiza con canela y cáscara de limón.",
-    "speech_text": "La crema catalana es el postre más tradicional de Cataluña. Es una crema suave de leche con canela y limón, cubierta con una capita de azúcar quemado que se quiebra con la cuchara. Aquí dicen que se inventó antes que el crème brûlée francés, y la verdad es que sabe diferente: más ligera y con toque de canela."
+    "fun_fact": "Los catalanes reclaman que la crema catalana es anterior a la crème brûlée francesa y que los cocineros del siglo XVII que trabajaban para las cortes europeas la llevaron a Francia. La evidencia histórica apunta a que la receta catalana aparece documentada en manuscritos del siglo XIV con el nombre 'crema de Sant Josep', mientras que la versión francesa se documenta más tarde. La disputa sigue abierta, pero en Cataluña la tienen ganada emocionalmente.",
+    "speech_text": "La crema catalana es el postre más clásico de Barcelona: una crema de huevos y leche con canela y limón, con una capa de azúcar quemado encima que se rompe con la cuchara. Los catalanes dicen que se inventó aquí mucho antes que la crème brûlée francesa, y tienen papeles del siglo catorce que lo respaldan. El secreto está en la salamandra, la plancha de hierro que se calentaba al fuego y se ponía sobre el azúcar para quemarlo. La versión moderna usa soplete. Hay que comerla enseguida, antes de que el caramelo se ablande. En el restaurante 7 Portes, que lleva abierto desde 1836, la sirven con la receta de toda la vida y la flambean en la mesa.",
+    "photo": "",
+    "video_url": ""
+  },
+
+  {
+    "id": "xuixos",
+    "city": "barcelona",
+    "type": "food_guide",
+    "name": "Xuixos",
+    "category": ["Postres"],
+    "tags": ["pastelería", "frito", "crema", "girona", "dulce", "desayuno", "merienda"],
+    "summary": "Un pastel frito relleno de crema catalana, cubierto de azúcar glas y con un exterior crujiente y dorado. Es el dulce más representativo de Girona pero se encuentra en las buenas pastelerías de Barcelona. Se pronuncia aproximadamente 'xuitxo' y es el desayuno más indulgente de la cocina catalana.",
+    "description": "El xuixo es una masa de brioche frita en aceite hasta quedar dorada y crujiente, rellena generosamente de crema catalana (la misma del postre, con yema de huevo, canela y limón) e impregnada de azúcar glas por fuera. Se come caliente, recién hecho, cuando el exterior todavía cruje y el relleno está ligeramente tibio. El tamaño varía: los hay del tamaño de un cruasán y también versiones más grandes del tamaño de una mano. La combinación de la masa frita con el relleno cremoso y el azúcar es exactamente tan buena como suena. Son de Girona: allí los hacen con una devoción particular y las mejores pastelerías de la ciudad compiten por la mejor receta. En Barcelona, los encuentran en las buenas pastelerías catalanas.",
+    "season": "Todo el año",
+    "where_to_try": [
+      {
+        "name": "Pastisseria Escribà",
+        "type": "Pastelería de alta gama",
+        "address": "Gran Via de les Corts Catalanes 546, Eixample",
+        "price_range": "€€",
+        "highlight": "Una de las pastelerías más famosas de Barcelona, con más de un siglo de historia. Sus xuixos son grandes, con mucho relleno de crema. Si van a entrar a una sola pastelería en Barcelona, que sea esta."
+      }
+    ],
+    "fun_fact": "El origen del nombre 'xuixo' es misterioso. Una leyenda popular de Girona cuenta que un pastelero del siglo XIX los inventó para agasajar a una mujer de la que estaba enamorado y les puso el nombre del piropo que le decía al verla. Otra teoría dice que el nombre imita el sonido del aceite caliente cuando se mete la masa a freír. Los gironeses tienen el xuixo con el mismo orgullo localista que los barceloneses tienen el pa amb tomàquet.",
+    "speech_text": "Los xuixos son los dulces más ricos de Cataluña y son de Girona, aunque los encuentran en las buenas pastelerías de Barcelona. Son una masa de brioche frita, rellena de crema catalana y cubierta de azúcar glas. Se pronuncia algo así como 'xuitxo'. Lo más importante es comerlos calientes, recién hechos, cuando el exterior todavía cruje y el relleno está tibio. La combinación de masa frita con crema de huevo y azúcar es exactamente tan buena como suena. En la Pastisseria Escribà en la Gran Via los hacen grandes, con mucho relleno, y son de los mejores de la ciudad. Si tienen oportunidad de desayunar uno con un café con leche, es una de las mejores maneras de empezar el día en Barcelona.",
+    "photo": "",
+    "video_url": ""
+  },
+
+  {
+    "id": "churros-chocolate",
+    "city": "barcelona",
+    "type": "food_guide",
+    "name": "Churros con chocolate",
+    "category": ["Postres"],
+    "tags": ["churros", "chocolate", "granja", "desayuno", "merienda", "caliente", "tradición", "petritxol"],
+    "summary": "La merienda más indulgente de Barcelona: churros crujientes de masa frita servidos con un chocolate espeso, casi sólido, pensado para mojar y no para beber. Las 'granjas' del Barrio Gótico —cafeterías de principios del siglo XX con azulejos y mesas de mármol— son el escenario perfecto para esta tradición que no ha cambiado en décadas.",
+    "description": "Los churros catalanes son bastones o lazos de masa de agua y harina extruida en aceite muy caliente hasta que quedan dorados y crujientes por fuera, blandos por dentro. El chocolate para mojar es diferente al cacao de desayuno: es una crema densa de chocolate negro con maicena, sin leche, de una consistencia que permite untar el churro como si fuera una fondue. En Barcelona, el ritual se vive especialmente en el Carrer de Petritxol del Barrio Gótico, conocido informalmente como 'el carrer de les granges': una calle medieval peatonal de apenas 150 metros donde se concentran varias granjas tradicionales una al lado de la otra. El ambiente es absolutamente inmutable desde los años 50.",
+    "season": "Todo el año (especialmente popular en invierno y Navidad)",
+    "where_to_try": [
+      {
+        "name": "La Pallaresa",
+        "type": "Granja tradicional",
+        "address": "Carrer de Petritxol 11, Barrio Gótico",
+        "price_range": "€",
+        "highlight": "La granja más clásica del Carrer de Petritxol, con azulejos blancos y mesas de mármol de toda la vida. Los churros salen recién fritos y el chocolate es espeso de verdad. Fila habitual en fin de semana."
+      },
+      {
+        "name": "Granja M. Viader",
+        "type": "Granja histórica",
+        "address": "Carrer d'en Xuclà 4, El Raval",
+        "price_range": "€",
+        "highlight": "Abierta desde 1870, es la granja más antigua de Barcelona. El ambiente es de otra época: azulejos del siglo XIX, mostrador de madera, sifones. Conocida también por haber inventado el Cacaolat (el batido de cacao catalán)."
+      }
+    ],
+    "fun_fact": "La Granja M. Viader, en el Raval, no solo es famosa por los churros: en 1931 el propietario Carles Viader mezcló cacao, azúcar y leche condensada para crear una bebida energética para los niños del barrio. Le puso el nombre 'Cacaolat'. La bebida fue tan popular que se industrializó y hoy se vende en todo España. El Cacaolat fue inventado en esta granja.",
+    "speech_text": "Los churros con chocolate de Barcelona son diferentes a los que probablemente conocen. El chocolate aquí no es líquido: es una crema espesa de chocolate negro con maicena, casi como una fondue, pensada para mojar y no para beber. Y los churros salen recién fritos, crujientes por fuera y blandos por dentro. El lugar perfecto para comerlos es el Carrer de Petritxol en el Barrio Gótico, una calle medieval de ciento cincuenta metros donde hay varias granjas tradicionales una al lado de la otra. La Pallaresa, en el número once, tiene azulejos blancos y mesas de mármol de los años cincuenta y los churros salen recién hechos. En fin de semana hay fila pero avanza rápido. La Granja Viader, en el Raval, lleva abierta desde 1870 y además de los churros tiene la particularidad de haber inventado el Cacaolat en 1931.",
+    "photo": "",
+    "video_url": ""
+  },
+
+  {
+    "id": "fideuà",
+    "city": "barcelona",
+    "type": "food_guide",
+    "name": "Fideuà",
+    "category": ["Comida típica"],
+    "tags": ["fideos", "marisco", "paella", "barceloneta", "catalán", "valenciano", "socarrat", "arroz"],
+    "summary": "Una paella hecha con fideos en lugar de arroz: misma cazuela, mismo marisco, mismo sofrito, pero con fideos finos que absorben el caldo y se tuestan ligeramente hasta quedar casi crujientes en la base. Técnicamente es de Valencia, pero Barcelona la ha adoptado como propia y en los restaurantes de la Barceloneta la sirven desde hace décadas con una maestría notable.",
+    "description": "La fideuà se cocina en la misma cazuela plana de hierro que la paella, con el mismo sofrito de tomate y pimentón, el mismo caldo de pescado y marisco, pero en lugar de arroz se usan fideos finos (fideos del número 2 o 3, o fideua gruesa dependiendo del cocinero). La clave está en dos cosas: primero, tostar ligeramente los fideos en aceite antes de añadir el caldo para que no se apelmacen; segundo, conseguir el 'socarrat', la capa de fideos ligeramente tostados y pegados en el fondo de la cazuela que concentra todo el sabor. Se sirve con alioli (mayonesa de ajo) aparte, que se añade al gusto. Un buen plato de fideuà es uno de los mejores argumentos gastronómicos de Barcelona.",
+    "season": "Todo el año",
+    "where_to_try": [
+      {
+        "name": "7 Portes",
+        "type": "Restaurante clásico catalán",
+        "address": "Passeig d'Isabel II 14, Barceloneta",
+        "price_range": "€€€",
+        "highlight": "El restaurante más histórico de Barcelona sirve fideuà desde siempre. La versión es clásica, con marisco de calidad y un socarrat perfecto. Reservar con anticipación."
+      },
+      {
+        "name": "La Mar Salada",
+        "type": "Restaurante de cocina de mar",
+        "address": "Passeig de Joan de Borbó 58, Barceloneta",
+        "price_range": "€€€",
+        "highlight": "Frente al mar en el Passeig de Borbó, con materia prima del mercado del día. La fideuà es la especialidad de la casa. Vista al Mediterráneo incluida."
+      }
+    ],
+    "fun_fact": "La leyenda de la fideuà dice que la inventó por accidente Gabriel Rodríguez Pastor, cocinero del barco pesquero 'Santa Isabel' de Gandía (Valencia), alrededor de 1930. Hizo la paella con fideos porque el arroz se había agotado, y a la tripulación le gustó tanto que nunca más volvieron al arroz. La historia tiene variantes, pero el origen valenciano es indiscutible; que Barcelona la haya convertido en uno de sus platos más representativos es la prueba de que la buena cocina no tiene fronteras administrativas.",
+    "speech_text": "La fideuà es como una paella pero con fideos en lugar de arroz, y es una de las mejores cosas que pueden comer en Barcelona. Se cocina en la misma cazuela plana, con el mismo sofrito y el mismo marisco, pero los fideos absorben el caldo de una manera diferente al arroz y quedan ligeramente crujientes en la base, lo que llaman socarrat. Se sirve con alioli aparte para añadir al gusto. La fideuà es técnicamente de Valencia pero Barcelona la adoptó hace décadas y en los restaurantes de la Barceloneta, frente al mar, la hacen extraordinariamente bien. El 7 Portes, que es el restaurante más histórico de la ciudad con más de ciento ochenta años, la sirve con la receta de siempre. Si tienen que elegir un plato catalán de mar en Barcelona, que sea este.",
+    "photo": "",
+    "video_url": ""
+  },
+
+  {
+    "id": "vermut-catalan",
+    "city": "barcelona",
+    "type": "food_guide",
+    "name": "El vermut catalán",
+    "category": ["Vida local"],
+    "tags": ["vermut", "aperitivo", "domingo", "tradición", "barrio", "social", "conservas", "bodega"],
+    "summary": "El vermut no es solo una bebida: es un ritual social que ocurre todos los domingos entre el mediodía y las tres de la tarde. Se toma antes de comer, en la terraza del bar del barrio, con montaditos, anchoas y aceitunas. Es la tradición más barcelonesa que existe y la forma más directa de entender cómo vive la ciudad fuera del circuito turístico.",
+    "description": "El vermut catalán es un vino blanco o tinto macerado con hierbas y especias, ligeramente amargo y aromático, que se sirve frío con hielo, una rodaja de naranja y a veces una aceituna o anchoa en el vaso. Pero la bebida en sí es solo el pretexto: lo que importa es 'hacer el vermut', que significa quedar con familia o amigos al mediodía del domingo, sentarse en una terraza y pasarse dos horas tomando algo, picando y hablando. El acompañamiento clásico son las conservas de calidad (anchoas del Cantábrico, mejillones en escabeche, berberechos, navajitas), montaditos creativos y patatas con ali oli. Cataluña tuvo sus propias bodegas de vermut desde el siglo XIX; la tradición se modernizó en los años 2000 pero su esencia no ha cambiado.",
+    "season": "Todo el año (especialmente domingos de 12 a 15 h)",
+    "where_to_try": [
+      {
+        "name": "Quimet i Quimet",
+        "type": "Bodega de montaditos y conservas",
+        "address": "Carrer del Poeta Cabanyes 25, Poble-Sec",
+        "price_range": "€€",
+        "highlight": "La experiencia de vermut más genuina de Barcelona. El dueño monta montaditos creativos con conservas premium sobre la marcha. Solo abre al mediodía. Confirmar horario en julio: puede cerrar en vacaciones."
+      },
+      {
+        "name": "Bar Calders",
+        "type": "Bar de barrio",
+        "address": "Carrer del Parlament 25, Sant Antoni",
+        "price_range": "€€",
+        "highlight": "El vermut de domingo más tranquilo y auténtico del barrio de Sant Antoni. Terraza, ambiente de vecinos, sin trampa turística. La opción más cómoda si Quimet i Quimet está cerrado."
+      },
+      {
+        "name": "Bar Canigó",
+        "type": "Bar clásico de barrio",
+        "address": "Carrer de Verdi 2, Gràcia",
+        "price_range": "€",
+        "highlight": "El vermut de Gràcia desde los años sesenta. Grifo, anchoas, aceitunas y ambiente de barrio que no ha cambiado. La terraza en la calle los domingos es pura Barcelona de verdad."
+      }
+    ],
+    "fun_fact": "La marca de vermut más icónica de Cataluña es Yzaguirre, elaborada desde 1884 en El Priorat (Tarragona). Otros vermuts históricos catalanes son Miró, Espinaler y Perucchi. El renacimiento del vermut en Barcelona a partir de 2005-2010, impulsado por bares como Quimet i Quimet, convirtió lo que era una tradición de abuelos en una moda de jóvenes que se extendió a toda España. El fenómeno se conoce como 'vermutificación' y es una de las pocas modas gastronómicas que, en vez de desaparecer, se consolidó y hoy forma parte permanente de la cultura de la ciudad.",
+    "speech_text": "El vermut en Barcelona no es simplemente una bebida: es un ritual de los domingos. Entre el mediodía y las tres de la tarde, los barceloneses salen a 'hacer el vermut', que significa sentarse en la terraza del bar del barrio con familia o amigos, pedir un vaso de vermut con hielo y naranja, y pasar dos horas tomando algo, picando conservas y hablando. Las anchoas del Cantábrico, los mejillones en escabeche, los montaditos de calidad son el acompañamiento. Es la tradición más auténtica de la ciudad y la mejor manera de ver cómo vive Barcelona cuando no hay turistas mirando. El lugar más famoso para hacerlo es Quimet i Quimet en Poble-Sec, una bodega minúscula donde el dueño monta montaditos creativos con conservas premium sobre la marcha. Solo abre al mediodía. Si está cerrado, el Bar Calders en Sant Antoni o el Bar Canigó en Gràcia son las mejores alternativas.",
+    "photo": "",
+    "video_url": ""
+  },
+
+  {
+    "id": "calcots",
+    "city": "barcelona",
+    "type": "food_guide",
+    "name": "Calçots",
+    "category": ["Comida típica"],
+    "tags": ["cebolla", "calçotada", "romesco", "temporada", "tradición", "invierno", "valls", "fuego"],
+    "summary": "Una cebolleta larga de Cataluña que se asa directamente sobre las llamas hasta que la capa exterior queda negra, se pela en mesa y se moja en salsa romesco. En julio están fuera de temporada (la temporada real va de enero a abril), pero la tradición de la calçotada es parte esencial de la cultura catalana y algunos restaurantes los sirven todo el año.",
+    "description": "El calçot es una variedad de cebolla tierna cultivada en Cataluña con una técnica especial: se va enterrando gradualmente según crece para que el tallo blanco sea más largo. Se cosecha de enero a abril. La preparación es rústica e irrenunciable: se asan en grandes brasas sobre hogueras de sarmiento de vid hasta que el exterior queda completamente negro y carbonizado. Se envuelven en papel de periódico para que sigan cocinándose y se llevan a la mesa así. La técnica para comerlos tiene su protocolo: se sujeta el calçot con ambas manos, se tira hacia atrás para pelar la capa quemada y revelar el interior blanco y tierno, y se moja en salsa romesco (tomate asado, ajo, almendras, avellanas, pimentón, aceite). La calçotada es mucho más que un plato: es una fiesta al aire libre, un plan de todo el día, habitualmente en masía con amigos, que combina calçots, vino, embutidos y parrillada. En julio, pregunta en los restaurantes de cocina catalana si los tienen: algunos los cultivan en invernadero o los importan todo el año.",
+    "season": "Enero-abril (temporada oficial). Algunos restaurantes los sirven todo el año.",
+    "where_to_try": [
+      {
+        "name": "Restaurantes de cocina catalana tradicional",
+        "type": "Varios (preguntar disponibilidad en julio)",
+        "address": "Barrio de Gràcia y alrededores",
+        "price_range": "€€-€€€",
+        "highlight": "En julio es fuera de temporada oficial. Pregunta específicamente en restaurantes que trabajen con productores locales si los tienen: algunos cultivan en invernadero y los sirven todo el año."
+      }
+    ],
+    "fun_fact": "La Gran Fiesta de la Calçotada de Valls, en la provincia de Tarragona, se celebra el último domingo de enero y es la mayor concentración de calçots del mundo: se consumen más de 200,000 calçots en un solo día, con competiciones de velocidad para comerlos (se llaman 'concursos de picar calçots') y charangas en la calle. El pueblo de Valls reclama ser el origen de la calçotada y el orgullo local por el calçot es comparable al de los vascos por el txakoli o los gallegos por el pulpo.",
+    "speech_text": "Los calçots son una cebolleta larga que se asa directamente sobre el fuego hasta que la capa exterior queda completamente negra. Después se pelan en la mesa y se mojan en salsa romesco, que es una mezcla de tomate asado, ajo, almendras, avellanas y pimentón. La técnica para comerlos es espectacular: se agarra el calçot con ambas manos, se tira hacia atrás para pelar la capa quemada, y se mete entero en la salsa. Se come sin cubiertos y con babero, porque manchan muchísimo. La temporada oficial es de enero a abril, así que en julio están fuera de temporada. Pero la calçotada es una tradición tan importante en Cataluña que vale la pena conocerla aunque no sea el momento de probarlos. Es el plan de invierno definitivo en Barcelona: brasas, vino, salsa romesco y amigos. La gran fiesta de los calçots es en Valls en enero, donde comen más de doscientos mil calçots en un solo día.",
+    "photo": "",
+    "video_url": ""
   }
 ]

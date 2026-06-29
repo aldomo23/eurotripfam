@@ -3,31 +3,563 @@
     "id": "torre-eiffel",
     "name": "Torre Eiffel",
     "city": "paris",
-    "category": ["Arquitectura", "Vistas"],
-    "tags": ["icónico", "panorámica", "hierro", "gustave eiffel"],
-    "summary": "El monumento más famoso de París y símbolo de Francia. Construida en 1889 para la Exposición Universal, tiene 330 metros de altura y ofrece vistas panorámicas de toda la ciudad.",
-    "photo": "img/places/torre-eiffel.webp",
-    "gallery": [],
+    "category": [
+      "Arquitectura",
+      "Vistas"
+    ],
+    "tags": [
+      "torre eiffel",
+      "gustave eiffel",
+      "hierro",
+      "1889",
+      "símbolo de paris",
+      "vistas",
+      "noche",
+      "iluminación",
+      "champ de mars"
+    ],
+    "summary": "El símbolo más reconocible de París, construido en dos años para la Exposición Universal de 1889 y pensado para ser demolido veinte años después. Tiene 330 metros con su antena y fue durante 41 años la estructura más alta del mundo. De noche se ilumina en dorado cada hora durante cinco minutos —visto desde el Champ de Mars o desde el Trocadéro—, y ese espectáculo es uno de los más memorables del viaje.",
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "maps_url": "https://maps.google.com/?q=48.8584,2.2945",
+    "price": "~€11 (escaleras al 2° piso), ~€18 (ascensor al 2° piso), ~€29 (ascensor a la cima). Precios de 2024; verificar en toureiffel.paris antes del viaje.",
+    "tips": "Reservar en toureiffel.paris con semanas de anticipación: en julio es uno de los lugares más concurridos de Europa. El segundo piso ofrece la mejor relación vistas-accesibilidad; la cima añade fila y costo con vistas similares. La visita nocturna tiene menos gente que el día y el espectáculo de luces cada hora en punto es el mejor motivo para quedarse hasta tarde. Llevar algo de abrigo aunque haga calor: el viento en altura enfría más de lo esperado.",
+    "speech_text": "La Torre Eiffel es de esas cosas que uno conoce tanto en fotos que piensa que no va a impresionar en persona. Impresiona. Gustave Eiffel la construyó en dos años para la Exposición Universal de 1889, y los parisinos la odiaron tanto que circularon peticiones para demolerla; lo que la salvó fue la antena de radio que la convirtió en infraestructura militar. Hoy es la estructura más fotografiada del mundo. La mejor experiencia, si pueden quedarse hasta la noche, es verla desde el Champ de Mars o desde el Trocadéro cuando se ilumina: cada hora en punto, durante cinco minutos, parpadea con miles de luces y se ve distinta a todo lo que uno espera. Vale mucho más de noche que de día.",
     "sections": {
-      "history": "Diseñada por Gustave Eiffel para la Exposición Universal de 1889, conmemorando el centenario de la Revolución Francesa. Fue muy criticada por artistas e intelectuales de la época que la consideraban un 'monstruo de hierro'. Iba a ser desmontada después de 20 años, pero se salvó porque era útil como antena de radio.",
-      "context": "Gustave Eiffel (1832–1923) fue un ingeniero especializado en estructuras metálicas. También diseñó la estructura interna de la Estatua de la Libertad en Nueva York. La torre tiene 18,038 piezas de hierro unidas por 2.5 millones de remaches.",
-      "what_to_see": "Hay tres niveles abiertos al público. El segundo piso tiene el mejor equilibrio entre altura y detalle de la ciudad. La cima (276 metros) ofrece vistas de hasta 80 km en días claros. De noche, la torre se ilumina y hace un espectáculo de luces cada hora en punto.",
-      "fun_facts": "La torre 'crece' unos 15 cm en verano porque el calor dilata el hierro. Se repinta cada 7 años con 60 toneladas de pintura. Tiene su propio apartamento en la cima que Gustave Eiffel usaba para recibir invitados."
+      "history": "La Torre Eiffel fue diseñada por los ingenieros Émile Nouguier y Maurice Koechlin para la empresa de Gustave Eiffel, como propuesta para la Exposición Universal de 1889 que conmemoró el centenario de la Revolución Francesa. La construcción comenzó en enero de 1887 y terminó en marzo de 1889: dos años, dos meses y cinco días para una estructura de 7,300 toneladas de hierro pudelado ensamblada con 2.5 millones de remaches. La Exposición recibió dos millones de visitantes que subieron a la torre en sus seis meses de apertura. Era la estructura más alta del mundo (300 metros sin antena) hasta 1930, cuando se terminó el Chrysler Building en Nueva York. Estaba prevista para demolición en 1909; se salvó porque su altura la hacía útil como antena de radio, función que cumplió activamente durante las dos guerras mundiales.",
+      "context": "La oposición intelectual fue intensa y está documentada: en 1887 se publicó en Le Temps una carta firmada por 300 figuras de la cultura —incluyendo a Guy de Maupassant, Alexandre Dumas hijo y Charles Garnier, el arquitecto de la Ópera— llamándola 'esa chimenea de fábrica'. Gustave Eiffel respondió defendiendo la belleza de la ingeniería. La torre está pintada en un tono llamado brun Tour Eiffel y se repinta cada siete años con 60 toneladas de pintura en tres tonos: más oscuro abajo, más claro arriba, para compensar la perspectiva visual.",
+      "what_to_see": "La vista desde el segundo piso (115 metros): el mejor balance entre accesibilidad y panorama, con vistas al Sena, Notre-Dame, el Louvre, Montmartre y los Champs-Élysées. La vista desde la cima (276 metros): en días claros se ven hasta 70 kilómetros. La sala del apartamento de Gustave Eiffel en la cima, reconstruida con maniquíes de Eiffel y Thomas Edison: el ingeniero rechazó múltiples ofertas de arrendamiento para mantenerlo como refugio personal. El espectáculo de luces nocturno que arranca cada hora en punto entre el anochecer y la 1 AM.",
+      "fun_facts": "Guy de Maupassant, uno de los firmantes de la carta contra la torre, comía con frecuencia en el restaurante de la primera planta. Cuando le preguntaban por qué, respondía que era el único lugar en París desde donde no se veía la torre. Gustave Eiffel también diseñó la estructura interna de la Estatua de la Libertad, entregada a Estados Unidos en 1886, tres años antes de que se terminara la torre. La Torre Eiffel crece unos 15 centímetros en verano debido a la dilatación térmica del metal y se contrae en invierno."
+    },
+    "food_nearby": [
+      {
+        "name": "Les Ombres",
+        "type": "Restaurante con terraza en la azotea del Musée du quai Branly",
+        "distance": "5 min caminando (Quai Branly 27, azotea del museo)",
+        "price_range": "€€€",
+        "highlight": "Terraza con vista frontal a la Torre Eiffel a pocos metros. Cocina francesa contemporánea. Caro, pero la vista justifica una copa o un postre si no se quiere la comida completa. Reservar."
+      },
+      {
+        "name": "Café du Marché",
+        "type": "Bistró parisino clásico",
+        "distance": "10 min caminando (Rue Cler 38)",
+        "price_range": "€€",
+        "highlight": "La Rue Cler es una calle de mercado peatonal del 7ème con carnicerías, queseras y floristerías de toda la vida. El Café du Marché es el punto de encuentro del barrio: cocina de bistró a precio razonable para la zona."
+      },
+      {
+        "name": "Monsieur Bleu",
+        "type": "Restaurante de diseño con terraza frente al Sena",
+        "distance": "10 min caminando (Palais de Tokyo, Avenue de New York 20)",
+        "price_range": "€€€",
+        "highlight": "Dentro del Palais de Tokyo, con terraza con vista al Sena y a la Torre Eiffel al fondo. Buena opción para cenar con ambiente. Reservar."
+      }
+    ]
+  },
+  {
+    "id": "musee-dorsay",
+    "name": "Musée d'Orsay",
+    "city": "paris",
+    "category": [
+      "Arte"
+    ],
+    "tags": [
+      "orsay",
+      "impresionismo",
+      "monet",
+      "van gogh",
+      "renoir",
+      "degas",
+      "cézanne",
+      "gauguin",
+      "estación de tren",
+      "siglo xix",
+      "postimpresionismo"
+    ],
+    "summary": "La colección de pintura impresionista y postimpresionista más importante del mundo, instalada en una estación de ferrocarril de 1900 cuya nave central de hierro y cristal es en sí misma una obra de arquitectura. Monet, Van Gogh, Renoir, Degas, Cézanne y Gauguin en sus mejores obras, en un espacio más manejable que el Louvre: dos horas y media permiten ver lo esencial sin agotarse.",
+    "lat": 48.86,
+    "lng": 2.3266,
+    "maps_url": "https://maps.google.com/?q=48.8600,2.3266",
+    "price": "~€16 (adultos, precio 2024; verificar en musee-orsay.fr). Gratis el primer domingo de cada mes.",
+    "tips": "Cerrado los lunes. Comprar entrada en línea en musee-orsay.fr para evitar fila. Las salas del quinto piso (impresionismo) son las más concurridas: ir directo a ellas al llegar si el tiempo es limitado. Los Van Gogh están en el nivel 2; no quedarse solo en el quinto piso.",
+    "speech_text": "El Orsay es el museo de arte que más me gusta en París, y creo que para la familia va a ser el más fácil de disfrutar. No es inmenso como el Louvre: tiene un recorrido lógico, la colección es coherente y en dos horas se puede ver lo mejor. El edificio fue una estación de ferrocarril hasta 1939 y todavía tiene los relojes enormes en las fachadas y la nave central de hierro y cristal donde uno puede pararse a ver París enmarcada. Ahí están el Bal au moulin de la Galette de Renoir, los nenúfares de Monet en formato pequeño, el cuarto de Van Gogh en Arlés. Si solo van a un museo en París, que sea este.",
+    "sections": {
+      "history": "La Gare d'Orsay fue construida entre 1898 y 1900 por el arquitecto Victor Laloux para la Exposición Universal de 1900, en el emplazamiento donde había estado el antiguo Palais d'Orsay quemado durante la Comuna de París en 1871. Funcionó como estación de tren hasta 1939, cuando sus andenes resultaron demasiado cortos para los trenes modernos. Después fue usada como sala de subastas, set de filmaciones —Orson Welles rodó El proceso de Kafka aquí en 1962— y cuartel de prisioneros durante la Segunda Guerra Mundial. El Musée d'Orsay abrió el 1 de diciembre de 1986, con el proyecto interior de la arquitecta italiana Gae Aulenti.",
+      "context": "La colección cubre el arte occidental entre 1848 y 1914, el período que va del realismo al fauvismo. El Orsay tiene la mayor concentración de pintura impresionista del mundo: más de 300 obras de Monet, Renoir, Pissarro, Sisley y Morisot, más las obras postimpresionistas de Van Gogh, Cézanne, Gauguin y Seurat. La Olympia de Manet fue comprada por el Estado francés en 1890 para evitar que saliera del país; Monet organizó una suscripción entre artistas para financiar la compra y donarla al Estado.",
+      "what_to_see": "Quinto piso: el Bal au moulin de la Galette de Renoir, las series de catedrales de Monet en distintas luces del día, y L'Absinthe de Degas. Nivel 2: los Van Gogh, incluyendo La noche estrellada sobre el Ródano y el Autorretrato de 1889, uno de los últimos que pintó. La Olympia de Manet (1863), que escandalizó París al representar a una mujer desnuda mirando directamente al espectador sin postura sumisa. Los grandes relojes del interior de la nave central, desde donde se ve el Sena y el Sacré-Cœur enmarcados por las agujas del reloj.",
+      "fun_facts": "El Déjeuner sur l'herbe de Manet fue rechazado por el Salon oficial de París en 1863 y exhibido en el Salon des Refusés, que Napoleón III organizó para las obras rechazadas. Fue tal el escándalo que el Salon des Refusés atrajo más visitantes que el oficial. La Bailarina de catorce años de Degas, originalmente modelada en cera, fue la única escultura que Degas exhibió en vida: la presentó en la exposición impresionista de 1881 con un tutú de tela real, lo que fue considerado tan escandaloso como las pinturas de Manet."
+    },
+    "food_nearby": [
+      {
+        "name": "Restaurant du Musée d'Orsay",
+        "type": "Restaurante dentro del museo, salón belle époque",
+        "distance": "Dentro del museo (nivel 2)",
+        "price_range": "€€€",
+        "highlight": "El comedor está instalado en el antiguo salón de recepciones del hotel de la estación: frescos, estucos dorados y lámparas de época. Caro, pero la sala es extraordinaria. Para un almuerzo especial sin salir del museo."
+      },
+      {
+        "name": "Café de Flore",
+        "type": "Café histórico de Saint-Germain-des-Prés",
+        "distance": "10 min caminando (Boulevard Saint-Germain 172)",
+        "price_range": "€€€",
+        "highlight": "Uno de los cafés históricos de París: Sartre y Beauvoir tenían mesa fija aquí. El café au lait y los huevos revueltos del desayuno justifican el precio. No es económico pero la experiencia es parte del viaje."
+      },
+      {
+        "name": "Le Comptoir du Relais",
+        "type": "Bistró parisino, Saint-Germain",
+        "distance": "10 min caminando (Carrefour de l'Odéon 9)",
+        "price_range": "€€",
+        "highlight": "Del chef Yves Camdeborde, referente de la bistronomie parisina. Sin reservas al mediodía; llegar antes de la apertura para conseguir mesa. Cocina de bistró de alta calidad a precio razonable para el barrio."
+      }
+    ]
+  },
+  {
+    "id": "louvre",
+    "name": "Museo del Louvre",
+    "city": "paris",
+    "category": [
+      "Arte",
+      "Historia"
+    ],
+    "tags": [
+      "louvre",
+      "mona lisa",
+      "venus de milo",
+      "victoria de samotracia",
+      "leonardo",
+      "napoleón",
+      "egipto antiguo",
+      "pirámide",
+      "i.m. pei",
+      "arte medieval"
+    ],
+    "summary": "El museo más visitado del mundo, con 35,000 obras en 73,000 metros cuadrados de galerías dentro de un palacio real cuya historia comienza en el siglo XII. La Mona Lisa, la Venus de Milo y la Victoria de Samotracia son las obras más buscadas, pero el Louvre tiene también colecciones de antigüedades egipcias, griegas y romanas que tomarían días en ver bien. Con medio día planeado se ve lo esencial.",
+    "lat": 48.8606,
+    "lng": 2.3376,
+    "maps_url": "https://maps.google.com/?q=48.8606,2.3376",
+    "price": "~€22 (adultos, precio 2024; verificar en louvre.fr antes del viaje). Gratis el primer viernes de cada mes después de las 6 PM y el primer domingo de octubre a marzo.",
+    "tips": "El Louvre cierra los martes. Reservar en louvre.fr para evitar fila de entrada (puede ser de 1–2 horas en julio sin reserva). La Mona Lisa está en la Sala de los Estados (ala Denon, sala 711): es más pequeña de lo esperado y siempre está rodeada de multitud. Priorizar la Victoria de Samotracia —que tiene mucho menos aglomeración y es posiblemente más impresionante— y la colección egipcia si hay tiempo.",
+    "speech_text": "El Louvre es el museo más grande del mundo, y ese es exactamente el problema si van sin estrategia: 73,000 metros cuadrados de galerías y van a terminar haciendo fila veinte minutos para ver la Mona Lisa, que mide 77 por 53 centímetros y está detrás de un cristal blindado rodeada de cientos de personas con el teléfono arriba. La estrategia es esta: entren por la Pirámide, suban por la escalera Daru donde está la Victoria de Samotracia —una escultura griega del siglo II antes de Cristo con las alas extendidas que es posiblemente la mejor escultura que existe— y desde ahí sigan al ala Denon para la Mona Lisa y las grandes pinturas italianas. Lo que nadie les va a decir es que directamente frente a la Mona Lisa hay un cuadro de Veronese de casi diez metros de ancho que el 90% de la gente ignora porque está de espaldas mirando al cuadro chico.",
+    "sections": {
+      "history": "El Louvre comenzó como fortaleza militar construida en 1190 por Felipe II de Francia para defender el flanco occidental de París. Se convirtió en residencia real en el siglo XIV y fue ampliado sucesivamente por Francisco I —que trajo a Leonardo da Vinci a París—, Enrique II, Luis XIII y Luis XIV, quien lo abandonó en 1682 para trasladar la corte a Versalles. La Revolución Francesa transformó el palacio en museo público: el Musée Central des Arts abrió el 10 de agosto de 1793 con 537 pinturas confiscadas a la nobleza y la Iglesia. Napoleón expandió dramáticamente la colección con obras tomadas de los territorios conquistados. La pirámide de vidrio de I.M. Pei se inauguró en 1989.",
+      "context": "La pirámide de vidrio y aluminio de la entrada fue diseñada por el arquitecto chino-americano I.M. Pei y fue controvertida desde el anuncio, igual que la Torre Eiffel un siglo antes. Hoy es parte integral del conjunto. El Louvre tiene 35,000 obras en exposición de un total de 480,000 en su colección. La Mona Lisa fue robada en 1911 por Vincenzo Peruggia, un empleado del museo que la escondió en su apartamento durante dos años; el escándalo de su robo y posterior recuperación la convirtió en la obra de arte más famosa del mundo.",
+      "what_to_see": "La Victoria de Samotracia (siglo II a.C.): escultura griega de mármol que representa a la diosa Niké posada en la proa de un barco, con las alas extendidas y la ropa pegada por el viento. Está al final de la escalera Daru y tiene mucho menos aglomeración que la Mona Lisa. La Mona Lisa (da Vinci, 1503–1519): sala 711, ala Denon; prepararse para distancia y multitud. Las Bodas de Caná de Veronese (1563): el cuadro más grande del Louvre (6.77 × 9.94 metros), directamente frente a la Mona Lisa, ignorado por el 90% de los visitantes. La Venus de Milo (siglo II a.C.): ala Sully, sala 346. La colección de antigüedades egipcias del ala Sully.",
+      "fun_facts": "Las Bodas de Caná de Veronese fue robada por Napoleón en Venecia en 1797. El Tratado de París de 1815 ordenó devolver las obras robadas, pero el Louvre mandó una copia a tamaño real a Venecia y se quedó con el original; la copia está en Venecia hasta hoy. Cuando fue robada la Mona Lisa en 1911, Pablo Picasso fue interrogado como sospechoso: tenía en su posesión objetos que un conocido suyo había robado del mismo museo años antes. Fue liberado sin cargos. La Mona Lisa estuvo colgada en el dormitorio de Napoleón en las Tullerías antes de ser devuelta al Louvre."
+    },
+    "food_nearby": [
+      {
+        "name": "Café Marly",
+        "type": "Café-restaurante dentro del Louvre, terraza sobre el patio Napoléon",
+        "distance": "Dentro del Louvre (patio Napoléon, bajo la Pirámide)",
+        "price_range": "€€€",
+        "highlight": "Vista directa a la Pirámide de I.M. Pei desde la terraza. Cocina francesa de brasserie. Caro pero la terraza es uno de los mejores sitios para sentarse en París. Reservar."
+      },
+      {
+        "name": "Angelina",
+        "type": "Salón de té y pastelería histórico",
+        "distance": "5 min caminando (Rue de Rivoli 226)",
+        "price_range": "€€",
+        "highlight": "Fundado en 1903, famoso por su chocolat à l'ancienne (chocolate caliente espeso con crema chantilly). El Mont-Blanc es su postre estrella. Siempre hay fila pero avanza."
+      },
+      {
+        "name": "Restaurant du Palais Royal",
+        "type": "Restaurante en los jardines del Palais Royal",
+        "distance": "5 min caminando (Jardin du Palais Royal 110)",
+        "price_range": "€€€",
+        "highlight": "Terraza dentro de los jardines del Palais Royal. Cocina francesa contemporánea en un entorno más tranquilo que los restaurantes de la Rue de Rivoli. Reservar."
+      }
+    ]
+  },
+  {
+    "id": "notre-dame-paris",
+    "name": "Notre-Dame de París",
+    "city": "paris",
+    "category": [
+      "Arquitectura",
+      "Historia"
+    ],
+    "tags": [
+      "notre dame",
+      "gótico",
+      "catedral",
+      "isla de la cité",
+      "incendio 2019",
+      "restauración",
+      "victor hugo",
+      "paris medieval",
+      "rosetón"
+    ],
+    "summary": "La catedral gótica más famosa del mundo, fundada en 1163 y construida durante casi dos siglos, que sobrevivió la Revolución Francesa, dos guerras mundiales y el incendio de abril de 2019. Reabrió el 7 de diciembre de 2024 tras cinco años de restauración que recuperó elementos perdidos durante décadas. En julio de 2026 estará en mejor estado que en generaciones.",
+    "lat": 48.853,
+    "lng": 2.3499,
+    "maps_url": "https://maps.google.com/?q=48.8530,2.3499",
+    "price": "Gratis (entrada gratuita con reserva de horario en notredamedeparis.fr; verificar disponibilidad y si el sistema cambia antes del viaje).",
+    "tips": "Reservar horario de visita en notredamedeparis.fr: la demanda tras la reapertura es muy alta. La subida a las torres estaba siendo evaluada para su reabertura al público; verificar estado antes del viaje. La plaza frente a la catedral (Parvis Notre-Dame) es el kilómetro cero de Francia: todas las distancias viales del país se miden desde la placa en el suelo de esa plaza. A 5 minutos a pie: Sainte-Chapelle, que conviene visitar el mismo día.",
+    "speech_text": "Notre-Dame de París es la que todos conocen de Victor Hugo, de las películas de Disney y del incendio de 2019 que se vio en vivo por televisión en todo el mundo. El 15 de abril de 2019 el mundo estuvo mirando cómo ardía la aguja central y el techo de madera del siglo XIII. Lo que mucha gente no sabe es que la restauración recuperó elementos que se habían perdido hace décadas: la nueva aguja tiene detalles documentados en planos originales de Viollet-le-Duc que la versión anterior no tenía. La van a encontrar más brillante de lo que esperan, con piedras más blancas y vitrales más claros. Lo más impactante es entrar y ver el espacio interior: 130 metros de largo, los tres rosetones de 13 metros de diámetro, la luz filtrada que cambia a lo largo del día.",
+    "sections": {
+      "history": "La catedral fue fundada en 1163 por el obispo Maurice de Sully sobre el sitio de una basílica paleocristiana del siglo IV. La construcción duró casi 200 años: la mayor parte estuvo lista hacia 1250, con adiciones que continuaron hasta el siglo XIV. Durante la Revolución Francesa fue convertida en Templo de la Razón y usada como depósito; muchas estatuas fueron decapitadas al confundirlas con representaciones de reyes. La novela de Victor Hugo Notre-Dame de Paris (1831) creó conciencia pública sobre su deterioro y presionó por la restauración que Eugène Viollet-le-Duc dirigió entre 1844 y 1864. El incendio del 15 de abril de 2019 destruyó el techo de madera medieval y la aguja. La reapertura tras la restauración fue el 7 de diciembre de 2024.",
+      "context": "Notre-Dame es la sede del arzobispado de París y el centro simbólico de la nación: Napoleón fue coronado aquí en 1804 —coronándose él mismo— y el general de Gaulle celebró aquí el Te Deum de la liberación de París en agosto de 1944. La restauración fue financiada con más de €840 millones en donaciones de todo el mundo. La plaza frente a la catedral marca el kilómetro cero de Francia: el punto desde el cual se miden todas las distancias viales del país.",
+      "what_to_see": "El interior: las tres naves, los pilares de 35 metros, los vitrales restaurados y el efecto de luz filtrada. Los tres rosetones: norte, sur y oeste, cada uno de aproximadamente 13 metros de diámetro. La fachada occidental con sus tres portadas esculpidas: el Juicio Final al centro, la Virgen a la izquierda, Santa Ana a la derecha. La Île de la Cité alrededor: el barrio donde nació París como asentamiento romano (Lutetia) en el siglo I a.C. La placa del kilómetro cero en el suelo del Parvis Notre-Dame.",
+      "fun_facts": "Victor Hugo escribió Notre-Dame de Paris en 1831 específicamente para presionar por la restauración de la catedral. La estrategia funcionó: el gobierno encargó la restauración a Viollet-le-Duc poco después. Hay una ironía: Viollet-le-Duc añadió elementos que no existían en el edificio medieval, incluyendo las quimeras que asoman desde las torres —no son gárgolas originales sino invenciones del siglo XIX. Las gárgolas originales son las que tienen función de desagüe. Durante el incendio de 2019, los bomberos priorizaron salvar las obras de arte: la corona de espinas adquirida por Luis IX en el siglo XIII fue evacuada y sobrevivió."
+    },
+    "food_nearby": [
+      {
+        "name": "Berthillon",
+        "type": "Heladería artesanal de la Île Saint-Louis",
+        "distance": "8 min caminando (Île Saint-Louis, Rue Saint-Louis en l'Île 31)",
+        "price_range": "€",
+        "highlight": "La heladería más famosa de París desde 1954. Los sabores de temporada en verano —fresas de bosque, frambuesa, limón— son los más recomendados. Hay fila pero vale la espera."
+      },
+      {
+        "name": "Café Saint Régis",
+        "type": "Café-brasserie en la Île Saint-Louis",
+        "distance": "8 min caminando (Île Saint-Louis, Rue Jean du Bellay 6)",
+        "price_range": "€€",
+        "highlight": "Brasserie con terraza en la Île Saint-Louis. Crêpes, huevos revueltos y platos del día. Buen lugar para descansar después de Notre-Dame y Sainte-Chapelle en la misma mañana."
+      },
+      {
+        "name": "Au Vieux Paris d'Arcole",
+        "type": "Restaurante tradicional junto a Notre-Dame",
+        "distance": "2 min caminando (Rue Chanoinesse 24)",
+        "price_range": "€€",
+        "highlight": "En una calle medieval detrás de Notre-Dame. Cocina francesa tradicional en un entorno histórico tranquilo, lejos del bullicio de la plaza principal."
+      }
+    ]
+  },
+  {
+    "id": "sainte-chapelle",
+    "name": "Sainte-Chapelle",
+    "city": "paris",
+    "category": [
+      "Arte",
+      "Historia"
+    ],
+    "tags": [
+      "sainte chapelle",
+      "vidrieras",
+      "gótico",
+      "luis ix",
+      "san luis",
+      "corona de espinas",
+      "île de la cité",
+      "siglo xiii",
+      "luz"
+    ],
+    "summary": "Una capilla gótica del siglo XIII construida por Luis IX de Francia para guardar la corona de espinas de Cristo, con 1,113 metros cuadrados de vidrieras que cubren prácticamente todos los muros de la capilla superior. Cuando el sol entra por las 15 ventanas de 15 metros de altura, el efecto es el de estar dentro de un caleidoscopio de luz de colores. Está a 5 minutos a pie de Notre-Dame y es la joya menos conocida de la Île de la Cité.",
+    "lat": 48.8554,
+    "lng": 2.345,
+    "maps_url": "https://maps.google.com/?q=48.8554,2.3450",
+    "price": "~€13 (precio 2024; verificar en sainte-chapelle.fr antes del viaje). Existe ticket combinado con la Conciergerie adyacente.",
+    "tips": "Ir en una mañana con sol: las vidrieras son el motivo principal de la visita y necesitan luz natural para revelar sus colores. Días nublados reducen significativamente el impacto visual. Reservar en línea: está dentro del recinto del Palais de Justice y los controles de seguridad pueden ser lentos. Subir a la capilla superior obligatoriamente: la capilla inferior, aunque bella, es solo el antesala. Visitar el mismo día que Notre-Dame: quedan a 5 minutos caminando.",
+    "speech_text": "La Sainte-Chapelle es probablemente la sorpresa del viaje a París. Está a cinco minutos de Notre-Dame y casi nadie la visita comparada con la catedral, y es un error enorme porque lo que hay adentro es difícil de describir. En el siglo XIII el rey Luis IX construyó esta capilla para guardar la corona de espinas de Cristo, que compró por más del doble de lo que costó construir la capilla. Para que la reliquia estuviera a la altura, mandó reemplazar prácticamente todos los muros con 15 ventanales de 15 metros de alto. Cuando entran a la capilla superior y el sol está dando, parece que están dentro de un vitral: el rojo, el azul, el dorado. Es de las experiencias visuales más intensas del viaje. No se la salten.",
+    "sections": {
+      "history": "La Sainte-Chapelle fue construida entre 1242 y 1248 por orden del rey Luis IX de Francia (canonizado en 1297 como San Luis). Su propósito era guardar las reliquias de la Pasión de Cristo que Luis IX adquirió del Imperio Latino de Constantinopla: la Corona de Espinas, un fragmento de la Vera Cruz y otros objetos. Por las reliquias pagó 135,000 libras tornesas; la capilla costó aproximadamente 40,000 libras. Fue consagrada el 26 de abril de 1248. Sobrevivió la Revolución Francesa siendo usada como archivo, lo que paradójicamente la protegió. Fue restaurada en el siglo XIX por Jean-Baptiste-Antoine Lassus y Viollet-le-Duc.",
+      "context": "La capilla tiene dos niveles: la capilla inferior era para el personal del palacio; la capilla superior para el rey y la corte. Los 1,113 metros cuadrados de vidrio representan 1,113 escenas del Antiguo y Nuevo Testamento en 15 ventanas. La corona de espinas adquirida por Luis IX fue trasladada a Notre-Dame después de la Revolución y sobrevivió el incendio de 2019.",
+      "what_to_see": "La capilla superior: los 15 ventanales de 15 metros de alto que reemplazan prácticamente todos los muros. Buscar la posición más céntrica y mirar hacia el ábside cuando el sol esté en el lado sur. Las escenas narrativas en los vidrios: con binoculares se pueden distinguir escenas individuales; sin ellos el efecto es más de luz y color. El rosetón occidental (siglo XV): el único vitral añadido después de la construcción original, con escenas del Apocalipsis. La arquitectura de la capilla inferior: bóvedas pintadas en rojo, azul y dorado con estrellas.",
+      "fun_facts": "Luis IX pagó 135,000 libras tornesas por la Corona de Espinas y solo 40,000 por construir la capilla para guardarla: construyó la caja de seguridad por un tercio del precio del objeto. La Sainte-Chapelle tiene aproximadamente el 75% de sus muros cubiertos por vidrieras, el porcentaje más alto de cualquier edificio gótico del mundo. Los vitrales originales son de 1248; solo tres ventanas contienen vidrios del siglo XX, dañados en la Segunda Guerra Mundial. El resto fue desmontado y guardado durante la ocupación alemana de París para protegerlo, y reinstalado después de la liberación."
+    },
+    "food_nearby": [
+      {
+        "name": "Berthillon",
+        "type": "Heladería artesanal de la Île Saint-Louis",
+        "distance": "8 min caminando (Île Saint-Louis, Rue Saint-Louis en l'Île 31)",
+        "price_range": "€",
+        "highlight": "La mejor opción para una pausa dulce después de Sainte-Chapelle y Notre-Dame en la misma mañana. Los sabores de fruta de temporada en verano son los más recomendados."
+      },
+      {
+        "name": "Café Saint Régis",
+        "type": "Café-brasserie en la Île Saint-Louis",
+        "distance": "8 min caminando (Île Saint-Louis, Rue Jean du Bellay 6)",
+        "price_range": "€€",
+        "highlight": "Brasserie tranquila para un almuerzo o descanso después de la mañana en la Île de la Cité."
+      },
+      {
+        "name": "Le Caveau du Palais",
+        "type": "Restaurante clásico en la Place Dauphine",
+        "distance": "3 min caminando (Place Dauphine 17)",
+        "price_range": "€€€",
+        "highlight": "En la Place Dauphine, una plaza triangular del siglo XVII al extremo oeste de la Île de la Cité que la mayoría de los turistas no conocen. Cocina francesa clásica en un entorno histórico tranquilo."
+      }
+    ]
+  },
+  {
+    "id": "montmartre-sacre-coeur",
+    "name": "Montmartre y Sacré-Cœur",
+    "city": "paris",
+    "category": [
+      "Arte",
+      "Vistas",
+      "Vida local"
+    ],
+    "tags": [
+      "montmartre",
+      "sacré coeur",
+      "picasso",
+      "toulouse lautrec",
+      "moulin rouge",
+      "artistas",
+      "colina",
+      "vistas",
+      "bohemia",
+      "bateau lavoir"
+    ],
+    "summary": "La colina más alta de París y el barrio donde vivieron y compitieron Picasso, Toulouse-Lautrec, Modigliani y Renoir a principios del siglo XX. La Basílica del Sacré-Cœur domina el horizonte con su travertino blanco perpetuamente brillante, y desde la explanada hay una de las mejores panorámicas de París. Los callejones del barrio conservan su escala de pueblo dentro de la ciudad.",
+    "lat": 48.8867,
+    "lng": 2.3431,
+    "maps_url": "https://maps.google.com/?q=48.8867,2.3431",
+    "price": "Basílica: gratis. Cúpula interior: ~€8. Funicular: precio de un ticket de metro (~€2.15). El barrio se explora a pie.",
+    "tips": "El funicular sube desde la Rue Tardieu hasta la cima y acepta el ticket de metro: buena opción para los papás si la escalinata larga es demasiado. La Place du Tertre es la plaza de los pintores: esperada pero turística; el atractivo real está en las calles secundarias como la Rue Lepic, la Rue des Abbesses o la Rue Norvins. Ir por la mañana para la panorámica sin calor; la noche tiene mucho ambiente pero también más gente.",
+    "speech_text": "Montmartre es el barrio que tiene la vista más bonita de París y la historia más interesante del arte moderno: aquí estaba el Bateau-Lavoir, el taller donde Picasso pintó Las señoritas de Aviñón en 1907, rodeado de Braque, Apollinaire y Juan Gris. En esa época todo el que llegara a París con ganas de hacer arte terminaba en Montmartre porque el alquiler era barato y la vista era gratis. El barrio sigue siendo visualmente perfecto: escaleras, callejones, casas bajas, un viñedo real en una ladera en plena ciudad y la basílica del Sacré-Cœur con ese blanco tan intenso. Desde la explanada se ve toda París extendida. Es de los momentos del viaje que más van a querer fotografiar.",
+    "sections": {
+      "history": "Montmartre fue un pueblo independiente de París hasta 1860, cuando fue anexado. Su nombre probablemente viene de Mons Martyrum, 'Monte de los Mártires', en referencia al obispo San Dionisio de París y sus compañeros, decapitados aquí hacia el año 250 d.C. Los artistas se instalaron a finales del siglo XIX atraídos por los alquileres baratos: en el número 13 de la Rue Ravignan (el Bateau-Lavoir) vivieron Picasso, Juan Gris, Max Jacob y Guillaume Apollinaire entre 1904 y 1909. La Basílica del Sacré-Cœur fue construida entre 1875 y 1914 como voto expiatorio por la derrota de Francia en la guerra franco-prusiana de 1870 y los muertos de la Comuna de París de 1871. Fue consagrada en 1919.",
+      "context": "El Sacré-Cœur está construido en travertino de la cantera de Châtillon: este material secreta calcite cuando llueve, lo que limpia la piedra y la mantiene perpetuamente blanca incluso con contaminación urbana. La elección del sitio —la colina más visible de París, mirando hacia el centro— fue deliberadamente política: simbolizaba la penitencia de Francia y la supremacía de la fe sobre el orden laico surgido de la Revolución. La iglesia de Saint-Pierre de Montmartre, adyacente al Sacré-Cœur, es una de las iglesias más antiguas de París (siglo XII): pequeña, sin filas y con más historia real que la basílica vecina.",
+      "what_to_see": "La panorámica desde la explanada del Sacré-Cœur: vista de 180 grados sobre París con la Torre Eiffel, el Louvre y Notre-Dame en perspectiva. La Place du Tertre con sus pintores y retratistas. La Rue Lepic: la calle del mercado del barrio donde Toulouse-Lautrec vivía en el número 54. El Bateau-Lavoir (Rue Ravignan 13): el edificio donde Picasso pintó Las señoritas de Aviñón; exterior visitable, interior no. La Vigna di Montmartre en la Rue des Saules: el único viñedo urbano de París en producción. El Mur des Je t'aime en la plaza Jehan Rictus: la frase 'te quiero' escrita en 250 idiomas en azulejos.",
+      "fun_facts": "El Bateau-Lavoir se llama así porque el edificio de madera crujía tanto con el viento que un poeta del grupo lo comparó con los barcos lavanderos del Sena. En ese taller sin calefacción, con una sola llave de agua para todo el edificio, Picasso tardó nueve meses en pintar Las señoritas de Aviñón (1907). La viña de Montmartre produce unas 1,500 botellas al año: se venden en subasta cada octubre durante la Fête des Vendanges, con el dinero destinado a obras sociales. El vino es famoso por ser muy caro y muy mediocre, pero se compra como reliquia. Toulouse-Lautrec medía 1.52 metros a causa de una enfermedad ósea; en los cabarets de Montmartre lo dejaban entrar gratis porque divertía a los clientes con su presencia."
+    },
+    "food_nearby": [
+      {
+        "name": "Café des Deux Moulins",
+        "type": "Café de barrio clásico",
+        "distance": "10 min caminando (Rue Lepic 15)",
+        "price_range": "€€",
+        "highlight": "El café donde trabaja Amélie Poulain en la película de Jean-Pierre Jeunet (2001). Sigue siendo un café de barrio real: buenos crêpes y ambiente tranquilo. Sin pretensiones de museo."
+      },
+      {
+        "name": "Le Moulin de la Galette",
+        "type": "Restaurante histórico instalado en el molino original",
+        "distance": "8 min caminando (Rue Lepic 83)",
+        "price_range": "€€€",
+        "highlight": "El restaurante está en el molino que Renoir pintó en su cuadro Bal du moulin de la Galette (1876), hoy en el Orsay. Cocina francesa clásica en un edificio histórico. Reservar."
+      },
+      {
+        "name": "La Maison Rose",
+        "type": "Restaurante en la fachada rosada más fotografiada de Montmartre",
+        "distance": "8 min caminando (Rue de l'Abreuvoir 2)",
+        "price_range": "€€",
+        "highlight": "La fachada rosada es uno de los íconos visuales del barrio. Cocina francesa sencilla. Vale más por el entorno que por la comida en sí, pero es un lugar bonito para almorzar en la parte más tranquila de Montmartre."
+      }
+    ]
+  },
+  {
+    "id": "marais-place-des-vosges",
+    "name": "El Marais y la Place des Vosges",
+    "city": "paris",
+    "category": [
+      "Historia",
+      "Vida local"
+    ],
+    "tags": [
+      "marais",
+      "place des vosges",
+      "victor hugo",
+      "barrio judío",
+      "rue des rosiers",
+      "medieval",
+      "galerías",
+      "musée carnavalet",
+      "paris histórico"
+    ],
+    "summary": "El barrio más antiguo y mejor conservado de París, con la plaza más bella de la ciudad en su centro: la Place des Vosges (1612), construida por Enrique IV con sus arcadas de ladrillo rojo perfectamente simétricas. El Marais combina arquitectura medieval con la comunidad judía histórica de la Rue des Rosiers, galerías de arte contemporáneo y el Musée Carnavalet (historia de París, entrada gratuita). El barrio más agradable de París para caminar sin destino fijo.",
+    "lat": 48.8554,
+    "lng": 2.3625,
+    "maps_url": "https://maps.google.com/?q=48.8554,2.3625",
+    "price": "Gratis (barrio para caminar; Musée Carnavalet: gratis; Casa de Victor Hugo: gratis).",
+    "tips": "El Marais tiene docenas de galerías de arte contemporáneo de entrada gratuita entre la Place des Vosges y la Rue de Bretagne. La Rue des Rosiers tiene el mejor falafel de París. El Marché des Enfants Rouges (Rue de Bretagne 39) es el mercado cubierto más antiguo de París, de 1628, con puestos de cocinas marroquí, japonesa e italiana. Los domingos muchas tiendas del barrio permanecen abiertas, lo que lo convierte en el mejor barrio para explorar ese día.",
+    "speech_text": "El Marais es el barrio donde más me gusta caminar en París sin un plan definido. La Place des Vosges, donde vamos a empezar, tiene 400 años y se conserva intacta: 36 casas de ladrillo rojo con arcadas en la planta baja, perfectamente simétricas. Victor Hugo vivió en el número 6 durante 16 años mientras escribía partes de Los Miserables, y ese apartamento es hoy un museo gratuito. Desde la plaza el barrio se extiende hacia el norte con galerías de arte, restaurantes y calles medievales. Si bajan hacia el sur cinco minutos llegan a la Rue des Rosiers, que es la calle histórica de la comunidad judía: falafel, pastelerías askenazíes, y un par de tiendas que parecen no haber cambiado en 50 años.",
+    "sections": {
+      "history": "El Marais fue un área agrícola hasta el siglo XIII, cuando la muralla de Felipe II dejó el terreno dentro de la ciudad. La aristocracia se instaló aquí en los siglos XVI y XVII con los mejores hôtels particuliers de París. El rey Enrique IV mandó construir la Place Royale —renombrada Place des Vosges en 1800— entre 1605 y 1612: fue la primera plaza planificada de París, con fachadas uniformes y arcadas cubiertas. Con la Revolución, las mansiones aristocráticas fueron divididas; el barrio se habitó en el siglo XIX con la comunidad judía askenazí llegada de Europa del Este. La renovación comenzó en los años 60 con la Ley Malraux de protección patrimonial.",
+      "context": "La comunidad judía del Marais tiene raíces en el siglo XIII. La Rue des Rosiers fue el centro de la comunidad askenazí que llegó de Polonia y Rusia a finales del siglo XIX. Durante la ocupación alemana (1940–1944), la policía francesa deportó a miles de judíos del barrio en la redada del Vel d'Hiv (julio de 1942). El Marais es también desde los años 80 el barrio LGBTQ de París, con concentración de locales en las calles alrededor de la Rue Sainte-Croix-de-la-Bretonnerie.",
+      "what_to_see": "La Place des Vosges: 36 casas de ladrillo rojo en perfecta simetría con sus pórticos cubiertos del siglo XVII, jardines centrales y fuentes. La Maison de Victor Hugo (Place des Vosges 6): el apartamento donde Hugo vivió de 1832 a 1848, hoy museo municipal gratuito. La Rue des Rosiers: la arteria de la comunidad judía con L'As du Fallafel, pastelerías y carnicerías kosher. El Musée Carnavalet (Rue de Sévigné 23): el museo de la historia de París desde la Prehistoria hasta el siglo XX, en un hôtel particulier del siglo XVI, entrada gratuita permanente. El Marché des Enfants Rouges (Rue de Bretagne 39): el mercado cubierto más antiguo de París, de 1628, con puestos de múltiples cocinas.",
+      "fun_facts": "El nombre de Place des Vosges viene del departamento de los Vosgos, que fue el primero en pagar sus impuestos a la República Francesa en 1800: Napoleón lo rebautizó en su honor. Madame de Sévigné, cuyas cartas son uno de los documentos literarios más importantes del siglo XVII en Francia, nació en el número 1bis de la plaza en 1626. El Musée Carnavalet tiene en su colección la celda reconstruida de la Conciergerie donde fue recluida María Antonieta antes de su ejecución, con los objetos documentados por inventarios de la época."
+    },
+    "food_nearby": [
+      {
+        "name": "L'As du Fallafel",
+        "type": "Street food, falafel y cocina judía de Oriente Medio",
+        "distance": "5 min de la Place des Vosges (Rue des Rosiers 34)",
+        "price_range": "€",
+        "highlight": "El falafel más famoso de París: pita con falafel, hummus, col morada, pepino y salsa picante. Hay fila casi siempre pero avanza rápido. El mejor de la ciudad según prácticamente todos los que lo prueban."
+      },
+      {
+        "name": "Café Charlot",
+        "type": "Brasserie moderna, barrio de las galerías",
+        "distance": "10 min caminando (Rue de Bretagne 38)",
+        "price_range": "€€",
+        "highlight": "Terraza en la esquina más concurrida del Marais norte. Buen lugar para un café largo o una comida informal cerca del Marché des Enfants Rouges. Popular entre los parisinos del barrio."
+      },
+      {
+        "name": "Marché des Enfants Rouges",
+        "type": "Mercado cubierto de 1628, puestos de cocina variada",
+        "distance": "12 min caminando (Rue de Bretagne 39)",
+        "price_range": "€",
+        "highlight": "El mercado cubierto más antiguo de París. Puestos de cocina marroquí, japonesa, italiana y antillana. Comer en las mesas comunes dentro del mercado. Cierra los lunes."
+      }
+    ]
+  },
+  {
+    "id": "crucero-sena",
+    "name": "Crucero por el Sena",
+    "city": "paris",
+    "category": [
+      "Vistas"
+    ],
+    "tags": [
+      "sena",
+      "crucero",
+      "bateaux mouches",
+      "bateaux parisiens",
+      "río",
+      "paris desde el agua",
+      "puentes",
+      "noche",
+      "iluminaciones"
+    ],
+    "summary": "La manera más eficiente y cómoda de ver París para una familia con papás de 60 años: desde el Sena, sentados, se ven en una hora las fachadas del Louvre, Notre-Dame, la Torre Eiffel, el Orsay, el Grand Palais y una veintena de puentes históricos. El crucero nocturno —cuando los monumentos están iluminados— es uno de los planes con mejor relación impacto-esfuerzo de todo el viaje.",
+    "lat": 48.8642,
+    "lng": 2.3055,
+    "maps_url": "https://maps.google.com/?q=48.8642,2.3055",
+    "price": "~€15–17 por persona (adultos, precio 2024). Principales operadores: Bateaux-Mouches (Pont de l'Alma, margen derecha) y Bateaux Parisiens (Pont d'Iéna, frente a la Torre Eiffel). Verificar precios en sus respectivos sitios web.",
+    "tips": "El crucero nocturno (salidas desde las 21:00 en verano) tiene los monumentos iluminados y menos calor que el diurno: mejor opción en julio. Los Bateaux-Mouches tienen barcos más grandes con salidas cada 20–30 minutos; los Bateaux Parisiens parten frente a la Torre Eiffel, más cómodo si ya están en esa zona. El comentario en español está disponible en los auriculares de ambas compañías. Llegar 15 minutos antes de la salida para conseguir asientos en cubierta.",
+    "speech_text": "El crucero por el Sena lo recomiendo especialmente pensando en los papás: una hora sentados, sin caminar, viendo pasar los monumentos de París desde el agua. Se ven la fachada del Louvre, Notre-Dame, la Torre Eiffel, el Orsay y los puentes históricos uno tras otro sin moverse de la silla. De noche, cuando todo está iluminado, el efecto es espectacular. No es la actividad más cultural del viaje pero sí una de las que más van a disfrutar todos juntos. Y desde el agua los edificios tienen una proporción que desde la calle nunca se puede apreciar: los bulevares de Haussmann, los parapetos del Sena, las fachadas del siglo XIX. París fue pensada para verse así.",
+    "sections": {
+      "history": "El Sena ha sido la razón de ser de París desde sus orígenes: el asentamiento galo de Lutetia se estableció en la Île de la Cité precisamente por ser un punto estratégico en el río, cruce de rutas comerciales. Los primeros barcos turísticos en el Sena datan de finales del siglo XIX. La empresa Bateaux-Mouches fue fundada en 1949. En 1991, el tramo del Sena entre el Pont de Sully y el Pont d'Iéna fue declarado Patrimonio de la Humanidad por la UNESCO, incluyendo las orillas con sus quais, puentes y edificios históricos.",
+      "context": "El Sena divide París en dos: la Rive Droite (orilla derecha, al norte) donde están el Louvre, los Champs-Élysées y el barrio financiero, y la Rive Gauche (orilla izquierda, al sur) donde están el Orsay, Saint-Germain y el Barrio Latino. El crucero cubre el tramo entre el Pont de l'Alma y la Île Saint-Louis, pasando bajo 13 puentes históricos. El Pont Neuf, el más antiguo de París todavía en uso (1607), está en el recorrido. El Pont Alexandre III, con sus candelabros dorados y figuras alegóricas, es considerado el puente más ornamentado de la ciudad.",
+      "what_to_see": "El Pont Alexandre III: el más ornamentado de París, con sus cuatro columnas coronadas por pegasos dorados y lampadarios Art Nouveau, construido para la Exposición de 1900. La fachada norte del Louvre desde el río: la escala completa del palacio nunca se puede ver desde la calle. Notre-Dame desde el agua: los arbotantes de la fachada sur, visibles solo desde el Sena. La Torre Eiffel desde el río: el paso bajo el Pont d'Iéna con la Torre directamente sobre el barco es el momento más fotogénico del recorrido. El espectáculo de luces de la Torre Eiffel si el crucero nocturno coincide con la hora en punto.",
+      "fun_facts": "Los bouquinistes —los libreros de segunda mano con sus cajas verdes instaladas sobre los muros del Sena desde el siglo XVI— son hoy 240 vendedores con más de 900 cajas a lo largo de 3 kilómetros: el mercado de libros al aire libre más grande del mundo, también Patrimonio de la UNESCO. El Sena tuvo una calidad de agua tan deteriorada que la natación estaba prohibida desde 1923. París organizó las pruebas de natación de aguas abiertas de los Juegos Olímpicos de 2024 en el río, lo que requirió una inversión de más de €1,400 millones en su depuración."
     },
     "food_nearby": [
       {
         "name": "Café de l'Homme",
-        "type": "Cocina francesa con vista a la torre",
-        "distance": "5 min caminando (Trocadéro)",
+        "type": "Restaurante con terraza frente a la Torre Eiffel",
+        "distance": "5 min del embarque Bateaux-Mouches (Place du Trocadéro)",
         "price_range": "€€€",
-        "highlight": "La vista de la torre desde la terraza"
+        "highlight": "Terraza del Palais de Chaillot con vista frontal a la Torre Eiffel. Cocina francesa clásica. Caro pero la localización es excepcional. Buena opción para cenar antes o después del crucero nocturno. Reservar."
+      },
+      {
+        "name": "Monsieur Bleu",
+        "type": "Restaurante de diseño con terraza frente al Sena",
+        "distance": "10 min caminando del embarque (Palais de Tokyo, Avenue de New York 20)",
+        "price_range": "€€€",
+        "highlight": "Dentro del Palais de Tokyo, terraza con vista al Sena y a la Torre Eiffel. Ambiente más joven que el Café de l'Homme. Reservar."
+      },
+      {
+        "name": "Café du Trocadéro",
+        "type": "Café-brasserie casual frente al Sena",
+        "distance": "3 min del embarque Bateaux-Mouches (Place du Trocadéro)",
+        "price_range": "€€",
+        "highlight": "Opción más accesible en precio para la zona del Trocadéro: un café o una comida rápida antes del crucero sin largas esperas."
       }
+    ]
+  },
+  {
+    "id": "versalles",
+    "name": "Palacio de Versalles",
+    "city": "paris",
+    "category": [
+      "Historia",
+      "Arquitectura"
     ],
-    "lat": 48.8584,
-    "lng": 2.2945,
-    "maps_url": "https://maps.google.com/?q=48.8584,2.2945",
-    "price": "€29.40 (cima con elevador)",
-    "tips": "Reservar online con antelación, especialmente en julio. La mejor vista de la torre es desde el Trocadéro, al otro lado del río. Para subir, la opción de escaleras (segundo piso) es más barata y sin tanta fila.",
-    "speech_text": "La Torre Eiffel es el monumento más famoso de París. Fue construida en 1889 y mide 330 metros de altura. Desde arriba se ve toda la ciudad. Un dato curioso: iba a ser desmontada después de 20 años, pero se salvó porque servía como antena de radio. De noche se ilumina con un espectáculo de luces cada hora."
+    "tags": [
+      "versalles",
+      "luis xiv",
+      "rey sol",
+      "galería de los espejos",
+      "jardines",
+      "maría antonieta",
+      "absolutismo",
+      "barroco",
+      "tratado de versalles"
+    ],
+    "summary": "El palacio que Luis XIV construyó para concentrar a toda la nobleza francesa en un solo lugar y gobernar con poder absoluto desde él. A 40 minutos de París en tren RER C, tiene 700 habitaciones y jardines de 800 hectáreas diseñados con una perspectiva que se extiende hasta el horizonte. La Galería de los Espejos —73 metros de longitud, 357 espejos— es uno de los interiores más magníficos de la historia del arte.",
+    "lat": 48.8049,
+    "lng": 2.1204,
+    "maps_url": "https://maps.google.com/?q=48.8049,2.1204",
+    "price": "~€21 (palacio solo), ~€27–32 (Passeport: palacio + Trianón + jardines con espectáculo de fuentes). Los jardines pueden tener cargo en julio. Verificar en en.chateauversailles.fr. Tren RER C: ~€7–8 ida y vuelta desde París.",
+    "tips": "Llegar antes de las 9 AM para estar entre los primeros en entrar al palacio: las filas de seguridad en julio son largas aunque se tenga reserva. Los jardines tienen poca sombra y el calor de julio es considerable: llevar sombrero, protector solar y agua. El Trianón requiere caminata de 20–30 minutos desde el palacio: evaluar según la energía de los papás. Verificar en el sitio web qué días hay espectáculo de las Grandes Eaux Musicales (las fuentes con música barroca): es un plus que vale el ticket Passeport.",
+    "speech_text": "Versalles es la mejor manera de entender el absolutismo europeo del siglo XVII sin leer un libro de historia. Luis XIV decidió que toda la nobleza francesa iba a vivir en su palacio, donde él pudiera tenerlos vigilados y lejos de sus propias tierras: así era imposible que conspiraran. Construyó 700 habitaciones para alojar a 20,000 personas y diseñó un protocolo tan detallado que asistir a que el rey se despertara era un privilegio real que se concedía por nombramiento. La Galería de los Espejos tiene 73 metros de largo: los ventanales de un lado miran a los jardines, y los espejos del otro los reflejan multiplicando la luz. Aquí se firmó el Tratado de Versalles en 1919, en el mismo salón donde en 1871 Alemania había proclamado su unificación después de derrotar a Francia. La elección del salón fue deliberadamente simbólica.",
+    "sections": {
+      "history": "El château original fue una casa de caza de Luis XIII construida en 1623. Luis XIV transformó el sitio en el palacio más grande de Europa entre 1661 y 1710, con el arquitecto Louis Le Vau, Jules Hardouin-Mansart y el paisajista André Le Nôtre. La corte francesa se trasladó de París a Versalles en mayo de 1682 y permaneció hasta octubre de 1789, cuando la Revolución obligó a Luis XVI y María Antonieta a volver a París. El palacio fue saqueado durante la Revolución y sus muebles vendidos en subasta. Luis Felipe I lo convirtió en museo nacional en 1837. El Tratado de Paz que terminó la Primera Guerra Mundial fue firmado en la Galería de los Espejos el 28 de junio de 1919.",
+      "context": "Versalles fue el centro político de Europa durante un siglo: todas las cortes del continente imitaron su arquitectura y su etiqueta. El prusiano construyó Sanssouci, el ruso construyó Peterhof. La etiqueta de Versalles llegó al extremo de codificar quién tenía derecho a sentarse en presencia del rey y el orden exacto en que los aristócratas ayudaban al rey a ponerse la camisa por las mañanas. María Antonieta, que llegó a Versalles a los 14 años para casarse con el futuro Luis XVI, mandó construir el Petit Trianon y la Hameau de la Reine —una aldea campesina artificial— para escapar del protocolo del palacio.",
+      "what_to_see": "La Galería de los Espejos (Galerie des Glaces): 73 metros de longitud, 17 arcos de ventanas con vistas a los jardines y 357 espejos en el lado opuesto; pinturas en el techo de Charles Le Brun que celebran las victorias militares de Luis XIV. Los Grands Appartements: las habitaciones de ceremonia del rey y la reina. Los jardines de Le Nôtre: el Gran Canal (1.5 km de longitud), los parterres geométricos y las fuentes. El Petit Trianon y la Hameau de la Reine de María Antonieta (30 minutos caminando desde el palacio). El espectáculo de las Grandes Eaux Musicales en verano: las fuentes del parque con música barroca los fines de semana.",
+      "fun_facts": "El palacio no tenía baños operativos. Los miles de cortesanos usaban orinales y los jardines servían de retrete improvisado; los documentos de la época describen el olor del palacio en verano como insoportable. El Tratado de Versalles de 1919 fue firmado en la Galería de los Espejos, el mismo salón donde en 1871 el Imperio Alemán proclamó su unificación tras derrotar a Francia en la guerra franco-prusiana: la elección fue una respuesta simbólica 48 años después. Luis XIV, el Rey Sol, tenía fobia a bañarse: se bañó solo tres veces en su vida, según los registros de la corte."
+    },
+    "food_nearby": [
+      {
+        "name": "Angelina Versailles",
+        "type": "Salón de té y pastelería dentro de los jardines",
+        "distance": "Dentro del parque (Pavillon d'Orléans)",
+        "price_range": "€€",
+        "highlight": "Sucursal del famoso Angelina de la Rue de Rivoli, en un pabellón del siglo XVIII dentro del parque. Chocolate caliente, Mont-Blanc y pastelería francesa. Buena parada a mitad de la visita a los jardines."
+      },
+      {
+        "name": "La Flottille",
+        "type": "Restaurante a orillas del Gran Canal",
+        "distance": "20 min caminando desde el palacio (a orillas del Gran Canal)",
+        "price_range": "€€",
+        "highlight": "La terraza más bien situada del parque: sobre el Gran Canal donde Luis XIV organizaba regatas. Cocina francesa sencilla. Buen punto para almorzar a mitad de la visita a los jardines."
+      },
+      {
+        "name": "Le Potager du Roy",
+        "type": "Restaurante en el barrio de Versalles",
+        "distance": "10 min caminando del palacio (Rue du Maréchal-Joffre 1)",
+        "price_range": "€€",
+        "highlight": "Fuera del recinto del palacio, en el barrio residencial. Cocina francesa de temporada. Buena opción para cenar antes de volver a París sin los precios del interior del parque."
+      }
+    ]
+  },
+  {
+    "id": "palais-royal",
+    "name": "Jardines del Palais Royal",
+    "city": "paris",
+    "category": [
+      "Historia",
+      "Vida local"
+    ],
+    "tags": [
+      "palais royal",
+      "jardines",
+      "columnas de buren",
+      "daniel buren",
+      "comédie française",
+      "arcadas",
+      "ministerio de cultura",
+      "paris tranquilo",
+      "joya oculta"
+    ],
+    "summary": "Un jardín del siglo XVII rodeado de arcadas con galerías de arte y tiendas especializadas, a 3 minutos del Louvre y completamente ignorado por la mayoría de los visitantes que pasan de largo hacia el museo. Las Columnas de Buren —260 columnas rayadas de blanco y negro de diferentes alturas instaladas en 1986— son el único elemento de arte contemporáneo en el corazón histórico de París. Perfecto para una pausa tranquila entre museos.",
+    "lat": 48.8638,
+    "lng": 2.337,
+    "maps_url": "https://maps.google.com/?q=48.8638,2.3370",
+    "price": "Gratis (jardines públicos). Las tiendas y restaurantes en las arcadas tienen sus propios precios.",
+    "tips": "Los jardines están abiertos de 8 AM a 10:30 PM aproximadamente en julio. A 2 minutos al norte está la Galerie Vivienne (entrada por Rue de la Banque 6): uno de los passages couverts más bonitos del siglo XIX con suelo de mosaico y techo de cristal, gratis para entrar. Las arcadas del Palais Royal tienen algunas de las tiendas más especializadas de París: soldaditos de plomo, numismática, militaria y antigüedades.",
+    "speech_text": "El Palais Royal es el lugar donde voy a mandar a los papás a sentarse cuando necesiten un descanso entre el Louvre y lo que sigue. Es un jardín largo y tranquilo rodeado de arcadas del siglo XVIII donde los parisinos van a leer, almorzar en las bancas y tomar el sol. El Cardenal Richelieu lo mandó construir en los años 1630 como su palacio privado. Lo que nadie espera son las columnas en el patio de entrada: en 1986 el artista Daniel Buren instaló 260 columnas de mármol con rayas blancas y negras de diferentes alturas. Cuando las pusieron, los parisinos protestaron fuerte —como siempre que se instala algo contemporáneo en el centro histórico— y hoy son uno de los sitios más fotografiados de la ciudad. Los niños se suben. Los abuelos se sientan junto a ellas. Funciona perfectamente.",
+    "sections": {
+      "history": "El Palais Royal fue construido entre 1633 y 1639 por el Cardenal Richelieu, primer ministro de Luis XIII, como residencia privada. A su muerte en 1642 lo legó a la Corona; Luis XIV pasó aquí parte de su infancia con su madre Ana de Austria durante la Fronda (1648–1653). En el siglo XVIII el Duque de Orléans construyó las arcadas alrededor de los jardines y las alquiló a comerciantes, convirtiendo el Palais Royal en el centro de la vida pública parisina: tiendas, cafés y teatros. El 12 de julio de 1789, Camille Desmoulins pronunció en los jardines el discurso que inflamó a la multitud: dos días después cayó la Bastille. Las Columnas de Buren fueron instaladas en 1986 por encargo del Ministerio de Cultura.",
+      "context": "El Palais Royal alberga hoy el Consejo Constitucional, el Ministerio de Cultura y la Comédie-Française. Las Columnas de Buren generaron una de las polémicas artísticas más largas del París contemporáneo: demandas judiciales, manifestaciones y debates en prensa durante años. Hoy están protegidas como patrimonio histórico, lo que significa que no pueden ser retiradas. El Palais Royal fue durante el siglo XVIII el único espacio de París donde la policía real no tenía jurisdicción, al ser propiedad del Duque de Orléans: el único lugar donde se podía hablar mal del rey en público sin riesgo inmediato de arresto, lo que lo hizo el centro de la vida política disidente.",
+      "what_to_see": "Las Columnas de Buren en el Cour d'Honneur: 260 columnas de mármol de Carrara con rayas verticales blancas y negras, de alturas que varían entre 25 centímetros y 3 metros, distribuidas en cuadrícula. Los jardines con sus canteros de flores y las fuentes al fondo: bancos bajo los tilos a la sombra. Las arcadas con sus tiendas especializadas. La Comédie-Française en el flanco oeste: el teatro nacional de Francia fundado en 1680, en funcionamiento. La Galerie Vivienne a 2 minutos: uno de los mejores passages couverts del siglo XIX, con suelo de mosaico original y techo de cristal, entrada gratuita.",
+      "fun_facts": "El Palais Royal fue durante el siglo XVIII el único espacio de París donde la policía real no tenía jurisdicción. Esto lo convirtió en el único lugar donde se podía hablar mal del rey en público sin riesgo inmediato de arresto, lo que lo hizo el centro de la vida política disidente de París antes de la Revolución. Las Columnas de Buren recibieron los apodos 'las baquetas de Mitterrand' y otros más groseros que hacían referencia a su forma cilíndrica. La instalación generó un proceso judicial que llegó hasta el Consejo de Estado francés."
+    },
+    "food_nearby": [
+      {
+        "name": "Café Kitsune",
+        "type": "Café de especialidad japonés-francés",
+        "distance": "Dentro de los jardines del Palais Royal (Jardins du Palais-Royal 51–52)",
+        "price_range": "€€",
+        "highlight": "Pequeña cafetería con terraza dentro de los jardines. Café de especialidad, pastelería y matcha. Uno de los mejores cafés de la zona para sentarse con vista al jardín."
+      },
+      {
+        "name": "Bistrot Vivienne",
+        "type": "Bistró francés en la Galerie Vivienne",
+        "distance": "3 min caminando (Galerie Vivienne, Rue Vivienne 4)",
+        "price_range": "€€",
+        "highlight": "Bistró instalado dentro de la galería cubierta del siglo XIX. Cocina francesa clásica entre mosaicos y cristal de época. Buena opción para un almuerzo tranquilo después de explorar el Palais Royal."
+      },
+      {
+        "name": "Le Grand Véfour",
+        "type": "Restaurante histórico de alta cocina, arcadas del Palais Royal",
+        "distance": "En las arcadas del Palais Royal (Rue de Beaujolais 17)",
+        "price_range": "€€€€",
+        "highlight": "Fundado en 1784, uno de los restaurantes más históricos de Francia. Aquí cenaron Napoleón, Hugo y Colette. La sala con su decoración Empire original es excepcionalmente bella. Para un almuerzo muy especial o simplemente asomarse a ver el interior. Reservar con mucha anticipación."
+      }
+    ]
   }
 ]

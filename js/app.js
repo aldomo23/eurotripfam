@@ -1,11 +1,13 @@
 /**
  * app.js — Lógica principal de la Guía Europa 2026
- * 
+ *
  * Responsabilidades:
  * - Cargar datos (config, places, food, challenges)
  * - Router hash-based (SPA)
  * - Renderizar vistas (home, place, food, categorías)
  * - Gestionar selector de ciudad
+ *
+ * Clases CSS: alineadas con styles.css v2.0 (Chat 3)
  */
 
 import { initSearch } from './search.js';
@@ -17,17 +19,14 @@ import { initPreferences, getPreferences, hasCompletedOnboarding } from './prefe
 // --- Estado global de la app ---
 const state = {
   config: null,
-  places: [],        // Todos los lugares (todas las ciudades)
-  food: [],           // Guías de comida (solo Barcelona por ahora)
+  places: [],      // Todas las fichas (todas las ciudades)
+  food: [],        // Guías de comida (Barcelona por ahora)
   challenges: null,
   currentCity: localStorage.getItem('guia-current-city') || 'barcelona',
   isReady: false
 };
 
-// Exponemos el estado para que otros módulos lo lean
-export function getState() {
-  return state;
-}
+export function getState() { return state; }
 
 // --- Inicialización ---
 document.addEventListener('DOMContentLoaded', async () => {
@@ -38,7 +37,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     setupEventListeners();
     hideLoadingScreen();
 
-    // Si es primer uso, mostrar onboarding; si no, ir al home
     if (!hasCompletedOnboarding()) {
       navigateTo('onboarding');
     } else {
@@ -59,34 +57,31 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // --- Carga de datos ---
 async function loadAllData() {
-  // Cargar config primero
   state.config = await fetchJSON('./data/config.json');
 
-  // Cargar places de todas las ciudades en paralelo
+  // Validar que la ciudad guardada exista en config
+  const validCities = state.config.cities.map(c => c.id);
+  if (!validCities.includes(state.currentCity)) {
+    state.currentCity = state.config.cities[0].id;
+  }
+
   const placesPromises = state.config.cities.map(city =>
     fetchJSON(`./data/${city.data_file}`).catch(err => {
       console.warn(`No se pudo cargar ${city.data_file}:`, err);
-      return []; // Si falla un archivo, continúa con los demás
+      return [];
     })
   );
-
   const placesArrays = await Promise.all(placesPromises);
   state.places = placesArrays.flat();
 
-  // Cargar guías de comida (solo las ciudades que tienen)
   const foodPromises = state.config.cities
     .filter(city => city.has_food_guide)
     .map(city =>
-      fetchJSON(`./data/food-${city.id}.json`).catch(err => {
-        console.warn(`No se pudo cargar food-${city.id}.json:`, err);
-        return [];
-      })
+      fetchJSON(`./data/food-${city.id}.json`).catch(() => [])
     );
-
   const foodArrays = await Promise.all(foodPromises);
   state.food = foodArrays.flat();
 
-  // Cargar retos
   state.challenges = await fetchJSON('./data/challenges.json');
 }
 
@@ -96,7 +91,7 @@ async function fetchJSON(url) {
   return response.json();
 }
 
-// --- Inicializar módulos ---
+// --- Módulos ---
 function initModules() {
   initPreferences(state.config);
   initSearch(state);
@@ -105,7 +100,7 @@ function initModules() {
   initChallenges(state.challenges);
 }
 
-// --- Router hash-based ---
+// --- Router ---
 function setupRouter() {
   window.addEventListener('hashchange', handleRoute);
 }
@@ -115,36 +110,23 @@ function handleRoute() {
   const [path, param] = parseHash(hash);
 
   switch (path) {
-    case '/onboarding':
-      showView('onboarding');
-      break;
+    case '/onboarding': showView('onboarding'); break;
     case '/home':
       showView('home');
       renderHome();
       break;
     case '/place':
-      if (param) {
-        showView('place');
-        renderPlace(param);
-      }
+      if (param) { showView('place'); renderPlace(param); }
       break;
     case '/food':
-      if (param) {
-        showView('food');
-        renderFoodGuide(param);
-      }
+      if (param) { showView('food'); renderFoodGuide(param); }
       break;
-    case '/search':
-      showView('search');
-      break;
+    case '/search': showView('search'); break;
     case '/challenges':
       showView('challenges');
-      // Renderizar retos al entrar a la vista
       if (window.__renderChallenges) window.__renderChallenges();
       break;
-    case '/chat':
-      showView('chat');
-      break;
+    case '/chat': showView('chat'); break;
     default:
       showView('home');
       renderHome();
@@ -152,13 +134,9 @@ function handleRoute() {
 }
 
 function parseHash(hash) {
-  // Quitar el # inicial
   const clean = hash.replace('#', '');
-  // Buscar estructura tipo /place/sagrada-familia
   const parts = clean.split('/').filter(Boolean);
-  const path = '/' + (parts[0] || 'home');
-  const param = parts[1] || null;
-  return [path, param];
+  return ['/' + (parts[0] || 'home'), parts[1] || null];
 }
 
 export function navigateTo(view, param) {
@@ -170,24 +148,15 @@ export function navigateTo(view, param) {
 }
 
 function showView(viewName) {
-  // Ocultar todas las vistas
   document.querySelectorAll('.view').forEach(v => v.hidden = true);
-
-  // Mostrar la vista solicitada
   const view = document.querySelector(`[data-view="${viewName}"]`);
-  if (view) {
-    view.hidden = false;
-    // Scroll al inicio
-    window.scrollTo(0, 0);
-  }
+  if (view) { view.hidden = false; window.scrollTo(0, 0); }
 
-  // Mostrar/ocultar navegación inferior
   const nav = document.getElementById('bottom-nav');
   const showNav = ['home', 'search', 'challenges', 'chat'].includes(viewName);
   nav.hidden = !showNav;
   document.body.classList.toggle('has-nav', showNav);
 
-  // Actualizar tab activo
   document.querySelectorAll('.nav-tab').forEach(tab => {
     const isActive = tab.dataset.tab === viewName;
     tab.classList.toggle('active', isActive);
@@ -195,46 +164,31 @@ function showView(viewName) {
   });
 }
 
-// --- Event Listeners globales ---
+// --- Listeners globales ---
 function setupEventListeners() {
-  // Navegación inferior
   document.querySelectorAll('.nav-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      navigateTo(tab.dataset.tab);
-    });
+    tab.addEventListener('click', () => navigateTo(tab.dataset.tab));
   });
 
-  // Botón de búsqueda en home → ir a vista de búsqueda
   document.getElementById('btn-search-home')?.addEventListener('click', () => {
     navigateTo('search');
-    // Auto-focus en el campo de búsqueda
-    setTimeout(() => {
-      document.getElementById('search-input')?.focus();
-    }, 100);
+    setTimeout(() => document.getElementById('search-input')?.focus(), 100);
   });
 
-  // Botón de IA en home
-  document.getElementById('btn-ai-home')?.addEventListener('click', () => {
-    navigateTo('chat');
-  });
-
-  // Botones de volver atrás
-  document.getElementById('btn-back-place')?.addEventListener('click', () => {
-    window.history.back();
-  });
-  document.getElementById('btn-back-food')?.addEventListener('click', () => {
-    window.history.back();
-  });
+  document.getElementById('btn-ai-home')?.addEventListener('click', () => navigateTo('chat'));
+  document.getElementById('btn-back-place')?.addEventListener('click', () => window.history.back());
+  document.getElementById('btn-back-food')?.addEventListener('click', () => window.history.back());
 }
 
-// --- Pantalla de carga ---
 function hideLoadingScreen() {
   const loading = document.getElementById('loading-screen');
-  loading.classList.add('hidden');
-  setTimeout(() => loading.remove(), 300);
+  // El CSS oculta con [hidden] attribute (no con clase .hidden)
+  setTimeout(() => loading.setAttribute('hidden', ''), 200);
 }
 
-// --- Renderizar HOME ---
+// ============================================================
+// HOME
+// ============================================================
 export function renderHome() {
   renderCityPills();
   renderDailyChallengePreview();
@@ -249,37 +203,33 @@ function renderCityPills() {
 
   state.config.cities.forEach(city => {
     const pill = document.createElement('button');
-    pill.className = `city-pill ${city.id === state.currentCity ? 'active' : ''}`;
+    pill.className = `city-pill${city.id === state.currentCity ? ' active' : ''}`;
     pill.textContent = `${city.emoji} ${city.name}`;
-    pill.setAttribute('aria-label', `Ver ${city.name}`);
     pill.setAttribute('aria-pressed', city.id === state.currentCity ? 'true' : 'false');
 
     pill.addEventListener('click', () => {
       state.currentCity = city.id;
-      // Guardar preferencia
       localStorage.setItem('guia-current-city', city.id);
       renderHome();
     });
-
     container.appendChild(pill);
   });
 }
 
 function renderDailyChallengePreview() {
   const container = document.getElementById('home-daily-challenge');
-  const dailyChallenge = getCurrentDailyChallenge();
-
-  if (!dailyChallenge) {
-    container.hidden = true;
-    return;
-  }
+  const challenge = getCurrentDailyChallenge();
+  if (!challenge) { container.hidden = true; return; }
 
   container.hidden = false;
+  // card-challenge ya tiene los estilos en CSS (fondo ink, texto blanco)
   container.innerHTML = `
-    <div class="challenge-emoji" aria-hidden="true">${dailyChallenge.emoji}</div>
-    <div class="challenge-title">Reto del día: ${dailyChallenge.title}</div>
-    <p class="challenge-text">${dailyChallenge.challenge}</p>
-    <button class="btn btn-secondary" onclick="window.location.hash='#/challenges'">
+    <div style="font-size:24px;margin-bottom:6px;" aria-hidden="true">${challenge.emoji}</div>
+    <div style="font-family:var(--serif);font-size:17px;font-weight:600;color:white;margin-bottom:4px;">
+      Reto del día: ${challenge.title}
+    </div>
+    <p style="font-size:15px;color:rgba(255,255,255,0.8);margin-bottom:14px;">${challenge.challenge}</p>
+    <button class="btn btn-secondary" onclick="window.location.hash='#/challenges'" style="background:rgba(255,255,255,0.15);color:white;border:1.5px solid rgba(255,255,255,0.25);">
       📷 Ver retos
     </button>
   `;
@@ -287,21 +237,11 @@ function renderDailyChallengePreview() {
 
 function getCurrentDailyChallenge() {
   if (!state.challenges?.daily?.length) return null;
+  const demoMode = state.config?.demo_mode;
+  if (demoMode) return state.challenges.daily[0];
 
-  const config = state.config;
-  const today = new Date();
-  const tripStart = new Date(config.trip_start_date + 'T00:00:00');
-  const demoMode = config.demo_mode;
-
-  if (demoMode) {
-    // En modo demo, mostrar el reto del día 1
-    return state.challenges.daily[0];
-  }
-
-  // Calcular día del viaje (1-indexed)
-  const diffMs = today - tripStart;
-  const dayNumber = Math.floor(diffMs / (1000 * 60 * 60 * 24)) + 1;
-
+  const tripStart = new Date(state.config.trip_start_date + 'T00:00:00');
+  const dayNumber = Math.floor((new Date() - tripStart) / 86400000) + 1;
   if (dayNumber < 1 || dayNumber > state.challenges.daily.length) return null;
   return state.challenges.daily[dayNumber - 1];
 }
@@ -310,32 +250,28 @@ function renderRecommended() {
   const container = document.getElementById('recommended-cards');
   const preferences = getPreferences();
 
-  // Filtrar lugares de la ciudad actual
-  let cityPlaces = state.places.filter(p => p.city === state.currentCity);
+  // Excluir day_trips de la sección recomendados
+  let cityPlaces = state.places.filter(p =>
+    p.city === state.currentCity && p.type !== 'day_trip' && p.type !== 'special_itinerary'
+  );
 
-  // Si hay preferencias, priorizar las categorías elegidas
   if (preferences.length > 0) {
-    cityPlaces = cityPlaces.sort((a, b) => {
+    cityPlaces = [...cityPlaces].sort((a, b) => {
       const aMatch = a.category.some(c => preferences.includes(c)) ? 1 : 0;
       const bMatch = b.category.some(c => preferences.includes(c)) ? 1 : 0;
       return bMatch - aMatch;
     });
   }
 
-  // Mostrar máximo 6 tarjetas
-  const toShow = cityPlaces.slice(0, 6);
-
   container.innerHTML = '';
-  toShow.forEach(place => {
-    container.appendChild(createMiniCard(place));
+  cityPlaces.slice(0, 6).forEach(place => {
+    container.appendChild(createPlaceCard(place));
   });
 }
 
 function renderFoodGuides() {
   const section = document.getElementById('home-food-guides');
   const container = document.getElementById('food-guide-cards');
-
-  // Solo mostrar si la ciudad actual tiene guías de comida
   const cityConfig = state.config.cities.find(c => c.id === state.currentCity);
   const cityFood = state.food.filter(f => f.city === state.currentCity);
 
@@ -348,350 +284,375 @@ function renderFoodGuides() {
   container.innerHTML = '';
 
   cityFood.forEach(food => {
+    const emoji = food.category?.includes('Postres') ? '🍮' : food.category?.includes('Vida local') ? '🍷' : '🍴';
     const card = document.createElement('div');
-    card.className = 'place-card';
+    card.className = 'food-card';
     card.setAttribute('role', 'button');
     card.setAttribute('tabindex', '0');
-    card.setAttribute('aria-label', `Guía: ${food.name}`);
-
-    const emoji = food.category.includes('Postres') ? '🍮' : '🍴';
     card.innerHTML = `
-      <div class="place-card-img img-placeholder">${emoji}</div>
-      <div class="place-card-info">
-        <div class="place-card-name">${food.name}</div>
-        <div class="place-card-meta">${food.category.join(' · ')}</div>
+      <div class="food-card-emoji">${emoji}</div>
+      <div>
+        <div class="food-card-name">${food.name}</div>
+        <div class="food-card-desc">${food.summary || ''}</div>
       </div>
     `;
-
     card.addEventListener('click', () => navigateTo('food', food.id));
-    card.addEventListener('keydown', e => {
-      if (e.key === 'Enter') navigateTo('food', food.id);
-    });
-
+    card.addEventListener('keydown', e => { if (e.key === 'Enter') navigateTo('food', food.id); });
     container.appendChild(card);
   });
 }
 
 function renderCategories() {
   const container = document.getElementById('category-list');
+
+  // Incluir todos los places de la ciudad (normales + day_trips)
   const cityPlaces = state.places.filter(p => p.city === state.currentCity);
 
-  // Contar lugares por categoría
-  const categoryCounts = {};
+  const counts = {};
   cityPlaces.forEach(place => {
     place.category.forEach(cat => {
-      categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+      counts[cat] = (counts[cat] || 0) + 1;
     });
   });
 
-  // Renderizar solo categorías con al menos 1 lugar
   container.innerHTML = '';
   state.config.categories.forEach(cat => {
-    const count = categoryCounts[cat.id] || 0;
+    const count = counts[cat.id] || 0;
     if (count === 0) return;
 
     const row = document.createElement('div');
-    row.className = 'category-row';
+    // CSS usa .category-item / .category-item-left / .category-icon / .category-name / .category-count
+    row.className = 'category-item';
     row.setAttribute('role', 'button');
     row.setAttribute('tabindex', '0');
     row.setAttribute('aria-label', `${cat.label}: ${count} lugares`);
-
     row.innerHTML = `
-      <span class="category-emoji" aria-hidden="true">${cat.emoji}</span>
-      <span class="category-name">${cat.label}</span>
+      <div class="category-item-left">
+        <div class="category-icon" aria-hidden="true">${cat.emoji}</div>
+        <span class="category-name">${cat.label}</span>
+      </div>
       <span class="category-count">${count}</span>
     `;
-
     row.addEventListener('click', () => {
-      // Navegar a búsqueda con la categoría como filtro
       navigateTo('search');
       setTimeout(() => {
         const input = document.getElementById('search-input');
-        if (input) {
-          input.value = cat.label;
-          input.dispatchEvent(new Event('input'));
-        }
+        if (input) { input.value = cat.label; input.dispatchEvent(new Event('input')); }
       }, 100);
     });
-
-    row.addEventListener('keydown', e => {
-      if (e.key === 'Enter') row.click();
-    });
-
+    row.addEventListener('keydown', e => { if (e.key === 'Enter') row.click(); });
     container.appendChild(row);
   });
 }
 
-// --- Crear tarjeta mini (para scroll horizontal) ---
-function createMiniCard(place) {
+// Tarjeta de lugar (scroll horizontal en home) — usa .place-card del CSS
+function createPlaceCard(place) {
   const card = document.createElement('div');
-  card.className = 'place-card-mini';
+  card.className = 'place-card';
   card.setAttribute('role', 'button');
   card.setAttribute('tabindex', '0');
   card.setAttribute('aria-label', place.name);
 
-  const priceText = place.price === 'Gratis'
-    ? '<span class="place-price-free">Gratis</span>'
-    : `<span class="place-price">${place.price}</span>`;
+  const isFree = place.price?.toLowerCase() === 'gratis';
+  const priceHtml = place.price
+    ? `<span class="${isFree ? 'place-card-free' : 'place-card-price'}">${isFree ? 'Gratis' : place.price}</span>`
+    : '';
 
   card.innerHTML = `
-    <img
-      class="place-card-mini-img"
-      src="${place.photo}"
-      alt="${place.name}"
-      loading="lazy"
-      onerror="this.outerHTML='<div class=\\'place-card-mini-img img-placeholder\\'>🏛️</div>'"
-    >
-    <div class="place-card-mini-body">
-      <div class="place-card-mini-name">${place.name}</div>
-      <div class="place-card-mini-meta">${priceText}</div>
+    <div class="place-card-img" role="img" aria-label="${place.name}">
+      ${place.photo
+        ? `<img src="${place.photo}" alt="${place.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.textContent='🏛️'">`
+        : '🏛️'}
+    </div>
+    <div class="place-card-body">
+      <div class="place-card-name">${place.name}</div>
+      <div class="place-card-meta">${priceHtml}</div>
     </div>
   `;
 
   card.addEventListener('click', () => navigateTo('place', place.id));
-  card.addEventListener('keydown', e => {
-    if (e.key === 'Enter') navigateTo('place', place.id);
-  });
-
+  card.addEventListener('keydown', e => { if (e.key === 'Enter') navigateTo('place', place.id); });
   return card;
 }
 
-// --- Renderizar FICHA DE LUGAR ---
+// ============================================================
+// FICHA DE LUGAR
+// ============================================================
 function renderPlace(placeId) {
   const container = document.getElementById('place-content');
   const place = state.places.find(p => p.id === placeId);
+  if (!place) { container.innerHTML = '<p style="padding:22px">Lugar no encontrado.</p>'; return; }
 
-  if (!place) {
-    container.innerHTML = '<p>Lugar no encontrado.</p>';
-    return;
-  }
-
-  // Detectar si es la ficha especial de Florencia
   const isSpecialItinerary = place.type === 'special_itinerary';
-  // Detectar si es un day trip
   const isDayTrip = place.type === 'day_trip';
 
   let html = '';
 
-  // Foto principal
-  html += `
-    <img
-      class="place-photo"
-      src="${place.photo}"
-      alt="${place.name}"
-      onerror="this.outerHTML='<div class=\\'place-photo img-placeholder\\'>📷</div>'"
-    >
-  `;
-
-  // Título y meta
-  html += `<h1 class="place-title">${place.name}</h1>`;
-  html += '<div class="place-meta">';
-  if (place.price) {
-    const isFree = place.price.toLowerCase() === 'gratis';
-    html += isFree
-      ? '<span class="place-price-free">Gratis</span>'
-      : `<span class="place-price">${place.price}</span>`;
+  // --- Hero image (.place-hero del CSS) ---
+  if (place.photo) {
+    html += `<img class="place-hero" src="${place.photo}" alt="${place.name}" onerror="this.style.display='none'">`;
+  } else {
+    html += `<div class="place-hero" role="img" aria-label="${place.name}" style="display:flex;align-items:center;justify-content:center;font-size:48px;">🏛️</div>`;
   }
-  place.category.forEach(cat => {
-    html += `<span class="place-category-tag">${cat}</span>`;
-  });
-  html += '</div>';
 
-  // Resumen
+  // --- Pills de categoría (.place-categories / .pill / .pill-terra) ---
+  if (place.category?.length) {
+    html += '<div class="place-categories">';
+    place.category.forEach(cat => {
+      html += `<span class="pill pill-terra">${cat}</span>`;
+    });
+    html += '</div>';
+  }
+
+  // --- Nombre (.place-name del CSS) ---
+  html += `<h1 class="place-name">${place.name}</h1>`;
+
+  // --- Meta: precio (.place-meta / .place-price / .place-price.free) ---
+  const isFree = place.price?.toLowerCase() === 'gratis';
+  html += `<div class="place-meta">`;
+  if (place.price) {
+    html += `<span class="place-price${isFree ? ' free' : ''}">${place.price}</span>`;
+  }
+  // Para day_trips: mostrar estimated_time y effort_level
+  if (isDayTrip) {
+    if (place.estimated_time) html += `<span class="place-rating">⏱ ${place.estimated_time}</span>`;
+    if (place.effort_level) html += `<span class="place-rating">🥾 ${place.effort_level}</span>`;
+  }
+  html += `</div>`;
+
+  // --- Resumen (.place-summary) ---
   html += `<p class="place-summary">${place.summary}</p>`;
 
-  // Botón de escuchar
+  // --- Botón Escuchar (.btn-listen / .btn-listen-icon) ---
   if (place.speech_text) {
     html += `
-      <button class="btn btn-sea btn-listen" id="btn-listen" data-speech-text="${escapeAttr(place.speech_text)}">
-        ▶ Escuchar
+      <button class="btn-listen" id="btn-listen" data-speech-text="${escapeAttr(place.speech_text)}">
+        <div class="btn-listen-icon">▶</div>
+        Escuchar descripción
       </button>
     `;
   }
 
-  // Logística (para day trips)
-  if (isDayTrip && place.sections?.how_to_get) {
-    html += `<div class="place-logistics"><strong>🚂 Cómo llegar:</strong><br>${place.sections.how_to_get}</div>`;
+  // --- Cómo llegar para day_trips (info destacada, como tip-box en teal) ---
+  if (isDayTrip && place.how_to_get) {
+    html += `
+      <div class="tip-box" style="border-left-color:var(--sea);background:rgba(43,116,108,0.07);">
+        <div class="tip-label" style="color:var(--sea);">🚂 Cómo llegar</div>
+        <div class="tip-text">${place.how_to_get}</div>
+      </div>
+    `;
   }
 
-  // Secciones expandibles (acordeones)
+  // --- Tips / avisos (.tip-box) ---
+  if (place.tips) {
+    html += `
+      <div class="tip-box">
+        <div class="tip-label">⚠️ Antes de ir</div>
+        <div class="tip-text">${place.tips}</div>
+      </div>
+    `;
+  }
+
+  // --- Secciones acordeón ---
   html += '<div class="accordion">';
 
   if (isSpecialItinerary) {
     // Florencia: secciones especiales
-    const specialSections = [
-      { key: 'logistics', title: '🚂 Cómo llegar' },
-      { key: 'day_1', title: '📅 Día 1' },
-      { key: 'day_2', title: '📅 Día 2' },
-      { key: 'advance_booking', title: '🎫 Reservar con anticipación' },
-      { key: 'fun_facts', title: '💡 Datos curiosos' }
+    const florSections = [
+      { key: 'logistics',       title: '🚂 Cómo llegar', icon: '🚂' },
+      { key: 'day_1',           title: '📅 Día 1',        icon: '📅' },
+      { key: 'day_2',           title: '📅 Día 2',        icon: '📅' },
+      { key: 'advance_booking', title: '🎫 Reservas',     icon: '🎫' },
+      { key: 'fun_facts',       title: '💡 Datos curiosos', icon: '💡' }
     ];
-    specialSections.forEach(sec => {
-      if (place.sections?.[sec.key]) {
-        html += createAccordionItem(sec.title, place.sections[sec.key]);
-      }
+    florSections.forEach(sec => {
+      if (place.sections?.[sec.key]) html += createAccordion(sec.icon, sec.title, place.sections[sec.key]);
     });
   } else {
-    // Fichas normales
+    // Fichas normales (incluyendo day_trips — mismas secciones)
     const normalSections = [
-      { key: 'history', title: '📜 Historia' },
-      { key: 'context', title: '🎨 Contexto' },
-      { key: 'what_to_see', title: '👀 Qué ver aquí' },
-      { key: 'fun_facts', title: '💡 Datos curiosos' }
+      { key: 'history',    title: 'Historia',       icon: '📜' },
+      { key: 'context',    title: 'Contexto',       icon: '🎨' },
+      { key: 'what_to_see', title: 'Qué ver aquí', icon: '👀' },
+      { key: 'fun_facts',  title: 'Datos curiosos', icon: '💡' }
     ];
     normalSections.forEach(sec => {
-      if (place.sections?.[sec.key]) {
-        html += createAccordionItem(sec.title, place.sections[sec.key]);
-      }
+      if (place.sections?.[sec.key]) html += createAccordion(sec.icon, sec.title, place.sections[sec.key]);
     });
   }
-  html += '</div>';
+  html += '</div>'; // .accordion
 
-  // Galería
+  // --- Galería (.place-gallery) ---
   if (place.gallery?.length > 0) {
     html += `
-      <div class="place-gallery">
-        <h2 class="section-title">📷 Galería</h2>
-        <div class="gallery-scroll">
-          ${place.gallery.map(img => `
-            <img
-              class="gallery-img"
-              src="${img}"
-              alt="Foto de ${place.name}"
-              loading="lazy"
-              onerror="this.style.display='none'"
-            >
-          `).join('')}
+      <div style="margin:18px 0 4px;">
+        <div style="font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:8px;">📷 Galería</div>
+        <div class="place-gallery">
+          ${place.gallery.map(img => `<img src="${img}" alt="Foto de ${place.name}" loading="lazy" onerror="this.remove()">`).join('')}
         </div>
       </div>
     `;
   }
 
-  // Comida cerca
+  // --- Comida cerca (.food-nearby-title / .food-nearby-item / ...) ---
   if (place.food_nearby?.length > 0) {
-    html += `
-      <div class="place-food-section">
-        <h2 class="section-title">🍴 Dónde comer cerca</h2>
-        ${place.food_nearby.map(food => `
-          <div class="food-item">
-            <div class="food-item-name">${food.name}</div>
-            <div class="food-item-meta">${food.type} · ${food.distance} · ${food.price_range}</div>
-            ${food.highlight ? `<div class="food-item-highlight">"${food.highlight}"</div>` : ''}
+    html += `<div class="food-nearby-title">🍴 Dónde comer cerca</div>`;
+    place.food_nearby.forEach(food => {
+      html += `
+        <div class="food-nearby-item">
+          <div class="food-nearby-icon">🍽️</div>
+          <div>
+            <div class="food-nearby-name">${food.name}</div>
+            <div class="food-nearby-detail">${food.type || ''} · ${food.distance || ''} · ${food.price_range || ''}</div>
+            ${food.highlight ? `<div class="food-nearby-detail" style="margin-top:2px;font-style:italic;">"${food.highlight}"</div>` : ''}
           </div>
-        `).join('')}
-      </div>
-    `;
+        </div>
+      `;
+    });
   }
 
-  // Botones de acción
-  html += '<div class="place-actions">';
+  // --- Botón de Maps (.btn-maps) ---
   if (place.maps_url) {
     html += `
-      <a href="${place.maps_url}" target="_blank" rel="noopener" class="btn btn-primary btn-large">
-        📍 Cómo llegar
+      <a href="${place.maps_url}" target="_blank" rel="noopener" class="btn-maps">
+        📍 Cómo llegar — Google Maps
       </a>
     `;
   }
+
+  // --- Video ---
   if (place.video_url) {
     html += `
-      <a href="${place.video_url}" target="_blank" rel="noopener" class="btn btn-secondary btn-large">
+      <a href="${place.video_url}" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%;margin-top:8px;text-decoration:none;">
         🎬 Ver video
       </a>
     `;
   }
-  html += '</div>';
-
-  // Tips / advertencias
-  if (place.tips) {
-    html += `<div class="place-tips">${place.tips}</div>`;
-  }
 
   container.innerHTML = html;
 
-  // Conectar eventos de acordeones
+  // Conectar acordeones
   container.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
-      const item = header.closest('.accordion-item');
-      item.classList.toggle('open');
+      const chevron = header.querySelector('.accordion-chevron');
+      const body = header.nextElementSibling;
+      const isOpen = body.classList.contains('open');
+      body.classList.toggle('open', !isOpen);
+      if (chevron) chevron.classList.toggle('open', !isOpen);
+      header.setAttribute('aria-expanded', String(!isOpen));
     });
   });
 }
 
-function createAccordionItem(title, content) {
+// Acordeón — usa clases del CSS: .accordion-header / .accordion-title / .accordion-icon
+// .accordion-chevron / .accordion-body / .accordion-body.open / .accordion-text
+function createAccordion(icon, title, content) {
   return `
-    <div class="accordion-item">
+    <div>
       <button class="accordion-header" aria-expanded="false">
-        ${title}
-        <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <polyline points="6 9 12 15 18 9"/>
-        </svg>
+        <div class="accordion-title">
+          <span class="accordion-icon" aria-hidden="true">${icon}</span>
+          ${title}
+        </div>
+        <span class="accordion-chevron" aria-hidden="true">›</span>
       </button>
-      <div class="accordion-body">${content}</div>
+      <div class="accordion-body">
+        <p class="accordion-text">${content}</p>
+      </div>
     </div>
   `;
 }
 
-// --- Renderizar GUÍA DE COMIDA ---
+// ============================================================
+// GUÍA DE COMIDA (detalle)
+// ============================================================
 function renderFoodGuide(foodId) {
   const container = document.getElementById('food-content');
   const food = state.food.find(f => f.id === foodId);
+  if (!food) { container.innerHTML = '<p style="padding:22px">Guía no encontrada.</p>'; return; }
 
-  if (!food) {
-    container.innerHTML = '<p>Guía no encontrada.</p>';
-    return;
-  }
+  const emoji = food.category?.includes('Postres') ? '🍮' : food.category?.includes('Vida local') ? '🍷' : '🍴';
 
   let html = `
-    <h1 class="place-title">${food.name}</h1>
-    <div class="place-meta">
-      ${food.category.map(c => `<span class="place-category-tag">${c}</span>`).join('')}
+    <div style="font-size:56px;text-align:center;margin:16px 0 4px;">${emoji}</div>
+    <div class="place-categories">
+      ${(food.category || []).map(c => `<span class="pill pill-terra">${c}</span>`).join('')}
     </div>
-    <p class="food-description">${food.description}</p>
+    <h1 class="place-name">${food.name}</h1>
+    <p class="place-summary">${food.description || ''}</p>
   `;
 
-  // Botón de escuchar
+  // Escuchar
   if (food.speech_text) {
     html += `
-      <button class="btn btn-sea btn-listen" id="btn-listen" data-speech-text="${escapeAttr(food.speech_text)}">
-        ▶ Escuchar
+      <button class="btn-listen" id="btn-listen" data-speech-text="${escapeAttr(food.speech_text)}">
+        <div class="btn-listen-icon">▶</div>
+        Escuchar descripción
       </button>
     `;
   }
 
-  // Dónde probarlo
-  if (food.where_to_try?.length > 0) {
+  // Temporada (campo extra que tienen los food JSONs)
+  if (food.season) {
     html += `
-      <div class="food-where-section">
-        <h2 class="section-title">📍 Dónde probarlo</h2>
-        ${food.where_to_try.map(place => `
-          <div class="food-where-item">
-            <div class="food-where-name">${place.name}</div>
-            <div class="food-where-location">${place.location}</div>
-            <div class="food-where-why">${place.why}</div>
-          </div>
-        `).join('')}
+      <div class="tip-box" style="border-left-color:var(--sea);background:rgba(43,116,108,0.07);">
+        <div class="tip-label" style="color:var(--sea);">📅 Temporada</div>
+        <div class="tip-text">${food.season}</div>
       </div>
     `;
   }
 
-  // Dato curioso
+  // Dónde probarlo (.food-nearby-*)
+  if (food.where_to_try?.length > 0) {
+    html += `<div class="food-nearby-title">📍 Dónde probarlo</div>`;
+    food.where_to_try.forEach(place => {
+      html += `
+        <div class="food-nearby-item">
+          <div class="food-nearby-icon">🍽️</div>
+          <div>
+            <div class="food-nearby-name">${place.name}</div>
+            <div class="food-nearby-detail">${place.type || ''} · ${place.address || place.location || ''} · ${place.price_range || ''}</div>
+            ${place.highlight ? `<div class="food-nearby-detail" style="margin-top:2px;font-style:italic;">"${place.highlight}"</div>` : ''}
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  // Dato curioso (.tip-box con gold)
   if (food.fun_fact) {
-    html += `<div class="food-fun-fact">${food.fun_fact}</div>`;
+    html += `
+      <div class="tip-box">
+        <div class="tip-label">💡 Dato curioso</div>
+        <div class="tip-text">${food.fun_fact}</div>
+      </div>
+    `;
+  }
+
+  // Video
+  if (food.video_url) {
+    html += `
+      <a href="${food.video_url}" target="_blank" rel="noopener" class="btn btn-secondary" style="width:100%;margin-top:16px;text-decoration:none;">
+        🎬 Ver video
+      </a>
+    `;
   }
 
   container.innerHTML = html;
 }
 
-// --- Utilidades ---
+// ============================================================
+// Utilidades
+// ============================================================
 function escapeAttr(str) {
-  return str.replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return (str || '').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-// --- Registrar Service Worker ---
+// --- Service Worker ---
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js')
-      .then(reg => console.log('Service Worker registrado:', reg.scope))
-      .catch(err => console.warn('Service Worker no se pudo registrar:', err));
+      .then(reg => console.log('SW registrado:', reg.scope))
+      .catch(err => console.warn('SW error:', err));
   });
 }

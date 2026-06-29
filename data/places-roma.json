@@ -1,33 +1,600 @@
 [
   {
-    "id": "coliseo-romano",
-    "name": "Coliseo Romano",
+    "id": "coliseo",
+    "name": "Coliseo",
     "city": "roma",
-    "category": ["Historia", "Arquitectura"],
-    "tags": ["roma antigua", "anfiteatro", "gladiadores", "icónico"],
-    "summary": "El anfiteatro más grande del mundo antiguo, donde combatían gladiadores ante 50,000 espectadores. Tiene casi 2,000 años y sigue siendo el símbolo de Roma.",
-    "photo": "img/places/coliseo-romano.webp",
-    "gallery": [],
-    "sections": {
-      "history": "Construido entre el año 72 y 80 d.C. por los emperadores Vespasiano y Tito. Se usó durante casi 500 años para espectáculos de gladiadores, caza de animales y simulacros de batallas navales.",
-      "context": "El Coliseo es una obra maestra de ingeniería romana. Tenía un sistema de toldos (velarium) para proteger del sol y pasadizos subterráneos (hipogeo) donde esperaban gladiadores y animales.",
-      "what_to_see": "El piso de la arena (donde combatían), los túneles subterráneos del hipogeo, y las gradas superiores con vista panorámica del Foro Romano. Desde afuera, el Arco de Constantino está justo al lado.",
-      "fun_facts": "Se estima que en el Coliseo murieron entre 400,000 y 1 millón de personas a lo largo de su historia. Los espectáculos eran gratuitos para los ciudadanos romanos: los emperadores los usaban para mantener contento al pueblo."
-    },
-    "food_nearby": [
-      {
-        "name": "Roscioli",
-        "type": "Pasta y gastronomía romana",
-        "distance": "15 min caminando",
-        "price_range": "€€€",
-        "highlight": "Carbonara y cacio e pepe auténticos"
-      }
+    "category": [
+      "Historia",
+      "Arquitectura"
     ],
+    "tags": [
+      "coliseo",
+      "anfiteatro",
+      "gladiadores",
+      "roma antigua",
+      "flavio",
+      "ruinas"
+    ],
+    "summary": "El anfiteatro más grande del mundo antiguo, construido hace casi dos mil años en el centro de Roma. Aquí se realizaron espectáculos frente a 50,000 espectadores: combates de gladiadores, cacerías de animales exóticos traídos de África y obras teatrales. Es el símbolo más reconocible de la civilización romana y sigue siendo el edificio más visitado de Italia.",
     "lat": 41.8902,
     "lng": 12.4922,
     "maps_url": "https://maps.google.com/?q=41.8902,12.4922",
-    "price": "€16 (combinado con Foro Romano y Palatino)",
-    "tips": "Comprar entrada combinada online. Llegar temprano (8:30 AM) para evitar filas. El boleto incluye Foro Romano y Palatino, que están justo al lado.",
-    "speech_text": "El Coliseo es el anfiteatro más grande que construyeron los romanos, con casi 2,000 años de antigüedad. Aquí combatían gladiadores frente a 50,000 espectadores. Abajo del piso de la arena hay túneles donde esperaban los gladiadores y los animales antes de salir a pelear."
+    "price": "€18 (entrada combinada con Foro Romano y monte Palatino)",
+    "tips": "Reservar en línea con semanas de anticipación; las entradas en taquilla suelen agotarse. El ticket combinado incluye el Foro Romano y el Palatino: úsenlos el mismo día. Ir antes de las 9 AM o después de las 4 PM para evitar el calor y las aglomeraciones. Calzado cómodo obligatorio.",
+    "speech_text": "Aquí estamos frente al Coliseo, el estadio más impresionante que construyeron los romanos hace casi dos mil años. Imagínense 50,000 personas sentadas en estas gradas, viendo combates de gladiadores, cacerías de leones y elefantes, y hasta batallas navales cuando inundaban la arena. Lo empezaron a construir en el año 70 después de Cristo y lo terminaron en apenas diez años. Lo que ven hoy es solo una parte de lo que fue: el exterior tenía tres pisos de arcos decorados con mármol blanco y estatuas de bronce. Aunque el tiempo y los terremotos lo dañaron, lo que queda sigue siendo absolutamente imponente. Tómense un momento para imaginar el ruido, el ambiente, la magnitud de este lugar.",
+    "sections": {
+      "history": "El Coliseo, oficialmente llamado Anfiteatro Flavio, fue construido entre el año 70 y el 80 d.C. bajo los emperadores Vespasiano y Tito de la dinastía Flavia. Se levantó sobre el lago artificial del palacio de Nerón, la Domus Aurea, como gesto político para devolver ese terreno al pueblo romano. Se inauguró en el año 80 d.C. con cien días de juegos. Los espectáculos continuaron durante más de 400 años hasta el siglo VI. Después fue usado como cantera, fortaleza y vivienda. En el siglo XVIII la Iglesia Católica lo declaró lugar sagrado en memoria de los mártires cristianos —aunque la evidencia histórica de ejecuciones masivas de cristianos en el Coliseo es debatida entre los historiadores.",
+      "context": "Fue construido por orden de Vespasiano como regalo al pueblo romano, financiado con el botín del saqueo del Templo de Jerusalén en el año 70 d.C. El nombre 'Coliseo' no viene de su tamaño sino de la Colossus Neronis, una estatua gigante de Nerón que se encontraba cerca. El edificio podía alojar entre 50,000 y 80,000 espectadores distribuidos por clase social: los senadores en las gradas más cercanas a la arena, las mujeres y el pueblo común en las más altas. Contaba con un toldo retráctil llamado velarium, manejado por marineros de la marina imperial para dar sombra durante los espectáculos.",
+      "what_to_see": "El hipogeo: el laberinto subterráneo bajo la arena donde se guardaban los animales y la maquinaria escénica, visible desde el nivel de la arena. Los tres órdenes arquitectónicos en la fachada exterior: dórico en el primer piso, jónico en el segundo, corintio en el tercero. Las gradas superiores con vista panorámica al Foro Romano. Los paneles interactivos con reconstrucciones digitales de cómo lucía el edificio completo en su época.",
+      "fun_facts": "El hipogeo tenía elevadores accionados con poleas que subían animales enjaulados directamente al nivel de la arena para sorprender al público. El Coliseo usó más de 100,000 metros cúbicos de travertino en su construcción, unidos sin cemento sino con grapas de hierro; los hoyos que se ven hoy en los muros son de donde extrajeron ese metal durante la Edad Media. La palabra 'arena' que usamos para los estadios deportivos viene del latín harena, que era la arena de playa que cubría el piso del Coliseo para absorber la sangre de los combates."
+    },
+    "food_nearby": [
+      {
+        "name": "Il Bocconcino",
+        "type": "Pizza romana al horno de leña",
+        "distance": "3 min caminando (Via Ostilia 23, barrio Celio)",
+        "price_range": "€€",
+        "highlight": "Una de las mejores pizzerías de la zona del Coliseo: masa fina, ingredientes frescos y sin trampa turística. Ideal para comer rápido después de la visita."
+      },
+      {
+        "name": "Ristorante Aroma",
+        "type": "Alta cocina italiana con terraza con vista al Coliseo",
+        "distance": "5 min caminando (Via Celio Vibenna 9, Palazzo Manfredi)",
+        "price_range": "€€€€",
+        "highlight": "La terraza del Palazzo Manfredi ofrece una de las vistas más espectaculares del Coliseo iluminado. Para una cena especial. Reservar con mucha anticipación."
+      },
+      {
+        "name": "Terre e Domus",
+        "type": "Cocina regional del Lazio, producto local",
+        "distance": "4 min caminando (Via dei Fori Imperiali 82)",
+        "price_range": "€€",
+        "highlight": "Frente a los Foros Imperiales. Especialidad en vinos y productos del Lazio: cacio e pepe, carciofi, abbacchio. Buena opción para almorzar antes o después del Foro Romano."
+      }
+    ]
+  },
+  {
+    "id": "foro-romano",
+    "name": "Foro Romano",
+    "city": "roma",
+    "category": [
+      "Historia",
+      "Arquitectura"
+    ],
+    "tags": [
+      "foro romano",
+      "roma antigua",
+      "ruinas",
+      "senado",
+      "templos",
+      "arqueología",
+      "vía sacra"
+    ],
+    "summary": "El centro político, religioso y comercial de la antigua Roma durante más de mil años. Entre estas ruinas funcionaron el Senado romano, los principales templos de la ciudad y la Vía Sacra, por donde desfilaban los ejércitos victoriosos. Caminar aquí es literalmente pisar el suelo donde se decidió el destino de Occidente.",
+    "lat": 41.8925,
+    "lng": 12.4853,
+    "maps_url": "https://maps.google.com/?q=41.8925,12.4853",
+    "price": "Incluido en la entrada combinada del Coliseo (€18)",
+    "tips": "El ticket del Coliseo incluye el Foro Romano y el monte Palatino: el mismo boleto sirve para los tres sitios y conviene visitarlos el mismo día. Calzado cómodo con buen agarre: el terreno es irregular y hay desniveles constantes. Llevar agua, hay poca sombra. Una app de realidad aumentada como 'Roma AR' o 'Eternal Rome' ayuda mucho a visualizar cómo lucían los edificios originales.",
+    "speech_text": "Estamos en el Foro Romano, que era el centro de todo en la antigua Roma: el gobierno, los negocios, los templos, los tribunales. Durante más de mil años, todo lo importante de Roma pasó en este espacio. Lo que ven hoy son ruinas —columnas sueltas, arcos incompletos, bases de templos— pero imagínense una plaza llena de vida, con miles de personas moviéndose entre edificios de mármol blanco. La Vía Sacra, ese camino que cruza el foro, era por donde pasaban los desfiles militares cuando Roma ganaba una guerra. Julio César fue cremado aquí; Marco Antonio pronunció su discurso sobre su cadáver aquí. No corran, tómense su tiempo.",
+    "sections": {
+      "history": "El Foro Romano fue el centro de la vida pública romana desde el siglo VII a.C. hasta la caída del Imperio en el siglo V d.C. En sus inicios era un área pantanosa entre las colinas del Palatino y el Capitolio que fue drenada y pavimentada. Durante la República (509–27 a.C.) se construyeron la Curia Julia (sede del Senado), el Templo de Saturno y la Basílica Emilia. Durante el Imperio se añadieron los arcos de Tito y Septimio Severo. Después de la caída de Roma quedó sepultado bajo metros de tierra y escombros; las excavaciones sistemáticas comenzaron en el siglo XIX y continúan hasta hoy.",
+      "context": "Era el corazón político, religioso y comercial de Roma: aquí se debatían las leyes en el Senado, se hacían sacrificios a los dioses, se celebraban los funerales de Estado y desfilaban los ejércitos victoriosos. Julio César fue cremado cerca del Templo de Vesta en el año 44 a.C., tres días después de su asesinato; en ese punto exacto los ciudadanos siguen dejando flores. Marco Antonio pronunció su famoso discurso frente a la multitud en la Rostra, el podio de oradores.",
+      "what_to_see": "El Arco de Tito (81 d.C.), el mejor conservado de Roma, con relieves que muestran el saqueo del Templo de Jerusalén: pueden verse la Menorá y otros objetos sagrados judíos llevados como botín. El Templo de Saturno (498 a.C., reconstruido en el siglo IV d.C.), con ocho columnas de granito aún en pie. La Curia Julia, sede del Senado romano, sorprendentemente bien conservada con su interior intacto. La Basílica de Majencio, con bóvedas de proporciones impresionantes que sirvieron de modelo a Miguel Ángel para San Pedro. El Templo de Vesta y la Casa de las Vestales.",
+      "fun_facts": "El Arco de Tito conmemora la destrucción de Jerusalén en el año 70 d.C. Durante siglos, los judíos de Roma se negaban a pasar bajo él como señal de duelo; esta práctica se mantuvo hasta la fundación del Estado de Israel en 1948, cuando pasaron bajo el arco en sentido contrario para simbolizar el regreso. Bajo el pavimento del Foro se han encontrado más de veinte capas de ocupación humana, algunas del siglo X a.C., anteriores incluso a la fundación de Roma. El Templo de Saturno no era solo un templo: en su sótano se guardaba el erarium, el tesoro del Estado romano."
+    },
+    "food_nearby": [
+      {
+        "name": "Terre e Domus",
+        "type": "Cocina regional del Lazio, producto local",
+        "distance": "2 min caminando (Via dei Fori Imperiali 82)",
+        "price_range": "€€",
+        "highlight": "Literalmente frente al Foro. Vinos del Lazio y platos tradicionales romanos. El punto de almuerzo más práctico si se visita el Foro Romano y el Palatino el mismo día."
+      },
+      {
+        "name": "La Taverna dei Fori Imperiali",
+        "type": "Trattoria romana de barrio",
+        "distance": "8 min caminando (Via della Madonna dei Monti 9, barrio Monti)",
+        "price_range": "€€",
+        "highlight": "En el barrio Monti, el más animado cerca del Foro. Pasta fresca y cocina romana tradicional en un ambiente tranquilo lejos de las zonas más turísticas."
+      },
+      {
+        "name": "Il Bocconcino",
+        "type": "Pizza romana al horno de leña",
+        "distance": "10 min caminando (Via Ostilia 23, barrio Celio)",
+        "price_range": "€€",
+        "highlight": "Pizza romana de masa fina y crujiente, sin trampa turística a pesar de la cercanía con el Coliseo. También sirven pasta y platos del día."
+      }
+    ]
+  },
+  {
+    "id": "basilica-san-pedro",
+    "name": "Basílica de San Pedro",
+    "city": "roma",
+    "category": [
+      "Arquitectura",
+      "Arte"
+    ],
+    "tags": [
+      "vaticano",
+      "san pedro",
+      "cúpula",
+      "miguel ángel",
+      "bernini",
+      "catolicismo",
+      "rafael",
+      "piedad"
+    ],
+    "summary": "La iglesia más grande del mundo y el centro espiritual del catolicismo, con una cúpula diseñada por Miguel Ángel a sus 71 años que domina el horizonte de Roma. La Plaza de San Pedro, con sus columnatas en forma de abrazo de Bernini, es uno de los espacios arquitectónicos más emotivos de la historia. Entrar a la basílica es completamente gratuito.",
+    "lat": 41.9022,
+    "lng": 12.4539,
+    "maps_url": "https://maps.google.com/?q=41.9022,12.4539",
+    "price": "Gratis (basílica). Cúpula: €8 subiendo a pie, €10 con elevador. Museos Vaticanos y Capilla Sixtina: ~€20–27 (reserva separada y anticipada).",
+    "tips": "Código de vestimenta estricto e inapelable: hombros y rodillas cubiertos. Lleven una pañoleta ligera en la mochila. Ir antes de las 8 AM o después de las 5 PM para evitar filas de seguridad de 1–2 horas. La cúpula cierra antes que la basílica: verificar horarios actualizados antes del viaje. Los Museos Vaticanos y la Capilla Sixtina requieren reserva separada con semanas de anticipación —son un destino aparte, no se combinan bien con la basílica el mismo día.",
+    "speech_text": "Esta es la Basílica de San Pedro, la iglesia más grande del mundo. Esa cúpula que ven la diseñó Miguel Ángel cuando ya tenía 71 años, y es tan grande que la cúpula del Panteón —que también vamos a visitar— cabría dentro de ella. La plaza frente a nosotros, con esas columnatas que parecen abrazar al visitante, las diseñó Bernini para que uno sintiera que la Iglesia lo estaba recibiendo. Adentro cuesta trabajo calcular las dimensiones reales hasta que ven que las estatuas que parecen normales miden más de cinco metros. Si pueden subir a la cúpula, háganlo: la vista de Roma desde arriba es de las mejores que van a tener en el viaje.",
+    "sections": {
+      "history": "La basílica actual es la segunda construida en este sitio. La primera fue edificada por el emperador Constantino alrededor del año 320 d.C. sobre la tumba del apóstol Pedro, quien fue martirizado en el circo de Nerón aproximadamente en el año 64 d.C. La construcción de la basílica actual comenzó en 1506 bajo el papa Julio II, con Donato Bramante como arquitecto original. Pasaron por el proyecto Giuliano da Sangallo, Rafael, Antonio da Sangallo el Joven y finalmente Miguel Ángel (desde 1547), quien simplificó el diseño y proyectó la cúpula. Fue consagrada en 1626, 120 años después del inicio de las obras.",
+      "context": "Para el catolicismo, este es el lugar más sagrado después de Jerusalén: San Pedro fue el primer papa y su tumba está directamente bajo el altar mayor. La basílica fue diseñada para afirmar el poder de la Iglesia durante la Reforma Protestante. El financiamiento a través de la venta de indulgencias fue precisamente lo que motivó a Martín Lutero a publicar sus 95 tesis en 1517, desencadenando la Reforma. La construcción de San Pedro cambió el rumbo de la historia religiosa de Occidente antes de estar terminada.",
+      "what_to_see": "La Piedad de Miguel Ángel (1499): escultura de mármol de proporciones perfectas que representa a la Virgen sosteniendo el cuerpo de Cristo. Es la única obra que Miguel Ángel firmó; la firmó porque escuchó que la gente la atribuía a otro escultor. El baldaquino de Bernini: un dosel de bronce de 29 metros de altura sobre el altar mayor, construido con bronce del Panteón. El piso de la nave central con marcas que señalan el tamaño de otras iglesias del mundo. Las grutas vaticanas bajo la basílica, con tumbas de decenas de papas. La vista de Roma desde la terraza exterior de la cúpula.",
+      "fun_facts": "El piso de la nave central tiene marcas que muestran exactamente cuánto más grande es San Pedro que otras iglesias famosas: la Catedral de Notre Dame de París, St. Paul's de Londres, la Mezquita-Catedral de Córdoba. Es más impactante de lo que parece sobre papel. Miguel Ángel murió en 1564 sin ver terminada la cúpula; fue completada por Giacomo della Porta en 1590 siguiendo sus planos. Bajo el altar mayor, arqueólogos vaticanos confirmaron en 1968 la existencia de huesos de un hombre de entre 60 y 70 años del siglo I d.C.: la evidencia más sólida disponible de que los restos del apóstol Pedro están efectivamente sepultados ahí."
+    },
+    "food_nearby": [
+      {
+        "name": "Ristorante Dal Toscano",
+        "type": "Trattoria toscana, carnes y pasta",
+        "distance": "10 min caminando (barrio Prati, Via Germanico 58)",
+        "price_range": "€€€",
+        "highlight": "Referencia del barrio Prati desde hace décadas: bistecca alla fiorentina, pappardelle al cinghiale y vinos toscanos. Para una cena más formal después de San Pedro."
+      },
+      {
+        "name": "Sciascia Caffè",
+        "type": "Café histórico, especialidad en chocolate caliente",
+        "distance": "8 min caminando (barrio Prati, Via Fabio Massimo 80a)",
+        "price_range": "€",
+        "highlight": "Café de barrio desde 1919, famoso por su cioccolata calda espessa (chocolate caliente espeso) y su ambiente sin pretensiones. El lugar donde desayunan los vecinos de Prati."
+      },
+      {
+        "name": "Pizzarium",
+        "type": "Pizza al taglio (por trozo, al peso)",
+        "distance": "12 min caminando (barrio Prati, Via della Meloria 43)",
+        "price_range": "€",
+        "highlight": "Del pizzaiolo Gabriele Bonci, considerado la mejor pizza al taglio de Roma. Pedir lo que salga del horno en ese momento. Comer de pie en la calle."
+      }
+    ]
+  },
+  {
+    "id": "fontana-di-trevi",
+    "name": "Fontana di Trevi",
+    "city": "roma",
+    "category": [
+      "Arte",
+      "Historia"
+    ],
+    "tags": [
+      "trevi",
+      "fuente",
+      "barroco",
+      "monedas",
+      "nicola salvi",
+      "neptuno",
+      "roma"
+    ],
+    "summary": "La fuente barroca más famosa del mundo, construida en el siglo XVIII directamente sobre la fachada de un palacio del barrio. Tiene 26 metros de altura y marca el punto de llegada de uno de los acueductos originales de Roma del año 19 a.C. La tradición de lanzar una moneda para garantizar el regreso a Roma nació aquí.",
+    "lat": 41.9009,
+    "lng": 12.4833,
+    "maps_url": "https://maps.google.com/?q=41.9009,12.4833",
+    "price": "€2–5 (acceso a la zona de visualización; sistema implementado en 2024, verificar vigencia y precio exacto antes del viaje)",
+    "tips": "Ir de noche: la fuente está iluminada y hay significativamente menos gente que al mediodía. La zona es un punto caliente para carteristas: mochila al frente, cuidado con distracciones. El ritual correcto de la moneda: con la mano derecha, de espaldas a la fuente. Una moneda significa que volverán a Roma. Con dos, se encontrarán con alguien especial. Con tres, habrá boda o divorcio, según la versión que prefieran.",
+    "speech_text": "Aquí está la Fontana di Trevi, que probablemente ya conocen de fotos o películas. En persona impresiona más de lo que esperan: tiene 26 metros de alto y está literalmente pegada al muro de un palacio, como si el edificio fuera el telón de fondo de la fuente. La figura central es Neptuno sobre su carro tirado por caballos marinos. Nicola Salvi la diseñó en 1732 y tardó casi treinta años en terminarla. Todos los años recogen más de un millón de euros en monedas y el dinero va a programas de ayuda a personas en situación de calle. Échenle su moneda de espaldas, con la mano derecha, y queda pendiente la vuelta a Roma.",
+    "sections": {
+      "history": "La Fontana di Trevi fue diseñada por Nicola Salvi y construida entre 1732 y 1762 bajo el patrocinio del papa Clemente XII. Marca el punto de llegada del Aqua Virgo, uno de los acueductos originales de Roma construido en el año 19 a.C. por Agrippa para abastecer sus termas. El nombre 'Trevi' viene de 'tre vie', las tres calles que convergían en este punto del barrio. Estuvo en riesgo durante la Segunda Guerra Mundial: los vecinos la protegieron cubriéndola con tablones de madera. Fue restaurada entre 2014 y 2015, financiada por la casa de moda Fendi con 2.18 millones de euros.",
+      "context": "La fuente representa el triunfo del océano: Neptuno al centro, flanqueado por Tritones con caballos marinos que simbolizan el mar en calma y el mar agitado. El diseño de Salvi ganó un concurso convocado por el papa. La tradición moderna de las monedas fue popularizada mundialmente por la película Three Coins in the Fountain (1954) y consolidada por la escena de Anita Ekberg en La dolce vita (1960) de Fellini. En 2024 Roma implementó acceso controlado con cobro de entrada, medida polémica para gestionar el turismo masivo.",
+      "what_to_see": "La figura central de Neptuno sobre su carro tirado por dos caballos marinos, uno tranquilo y otro agitado, guiados por Tritones. Los relieves laterales que narran la historia del Aqua Virgo: a la derecha, el general Agrippa aprobando los planos del acueducto; a la izquierda, la joven virgen que señaló el manantial a los soldados romanos sedientos. Los detalles escultóricos en las rocas de travertino artificial: conchas, plantas marinas y animales tallados con precisión. La fachada del Palazzo Poli integrada como telón de fondo.",
+      "fun_facts": "Roma recolecta aproximadamente €1.4 millones en monedas al año en la Fontana di Trevi; el dinero va a Caritas Roma para programas de apoyo a personas sin hogar. La fuente aparece en una de las escenas más icónicas del cine: Anita Ekberg metiéndose al agua en La dolce vita (1960); hoy está prohibido entrar a la fuente y la prohibición se aplica con multas de hasta €500. El Aqua Virgo fue construido en el año 19 a.C. y sigue funcionando: el agua que cae en la Fontana di Trevi recorre hoy la misma ruta que hace dos mil años."
+    },
+    "food_nearby": [
+      {
+        "name": "Al Moro",
+        "type": "Trattoria romana clásica",
+        "distance": "2 min caminando (Vicolo delle Bollette 13)",
+        "price_range": "€€€",
+        "highlight": "Abierto desde 1929, a dos minutos de la fuente pero fuera del circuito turístico inmediato. Cocina romana clásica: cacio e pepe, rigatoni all'amatriciana, saltimbocca. Frecuentado por romanos. Reservar."
+      },
+      {
+        "name": "Gelateria della Palma",
+        "type": "Heladería artesanal con más de 100 sabores",
+        "distance": "5 min caminando (Via della Maddalena 20)",
+        "price_range": "€",
+        "highlight": "Una de las heladerías más grandes de Roma, en la zona del Panteón. Más de 100 sabores en rotación. Buen punto para una pausa entre la Fontana di Trevi y el Panteón, que están a 10 minutos a pie."
+      },
+      {
+        "name": "Osteria dell'Ingegno",
+        "type": "Osteria moderna con tabla de quesos y vinos",
+        "distance": "8 min caminando (Piazza di Pietra 45)",
+        "price_range": "€€",
+        "highlight": "Junto al Templo de Adriano en Piazza di Pietra. Buena selección de vinos del Lazio y platos ligeros: tablas de embutidos, pasta y ensaladas. Para un almuerzo informal en la zona del centro histórico."
+      }
+    ]
+  },
+  {
+    "id": "panteon",
+    "name": "Panteón",
+    "city": "roma",
+    "category": [
+      "Arquitectura",
+      "Historia"
+    ],
+    "tags": [
+      "panteón",
+      "roma antigua",
+      "adriano",
+      "cúpula",
+      "oculus",
+      "agrippa",
+      "rafael"
+    ],
+    "summary": "El edificio mejor conservado de la antigüedad, construido hace 1,900 años con una cúpula de hormigón romano que sigue siendo la más grande del mundo sin refuerzo de acero. El agujero de 9 metros en la cima —el oculus— es la única fuente de luz del interior. Rafael está enterrado aquí.",
+    "lat": 41.8986,
+    "lng": 12.4769,
+    "maps_url": "https://maps.google.com/?q=41.8986,12.4769",
+    "price": "€5 (era gratuito hasta 2023; posible aumento para 2026, verificar antes del viaje)",
+    "tips": "Llegar temprano —abre a las 9 AM— para estar adentro antes de la afluencia del mediodía. Si llueve, el agua entra por el oculus: el piso tiene un sistema de drenaje romano original. Los domingos hay misa y el acceso turístico está restringido en esos horarios. Está a 10–12 minutos a pie de la Fontana di Trevi: se pueden visitar el mismo día.",
+    "speech_text": "El Panteón es probablemente el edificio más asombroso de Roma, y lo más increíble es que tiene casi dos mil años. Lo construyó el emperador Adriano alrededor del año 125 después de Cristo, y ese agujero de nueve metros que ven en la cúpula —el oculus— es la única fuente de luz del lugar. Cuando están adentro, ese rayo de luz se mueve lentamente por el interior como un reloj de sol gigante. La cúpula es matemáticamente perfecta: si toman su radio y lo duplican, da exactamente la altura del edificio desde el piso. Una esfera perfecta cabe dentro. Lo usaron como iglesia durante 1,400 años, que es precisamente por qué se conservó. Rafael, el pintor del Renacimiento, está enterrado justo aquí.",
+    "sections": {
+      "history": "El Panteón que vemos hoy fue construido por el emperador Adriano entre los años 118 y 128 d.C. La inscripción en la fachada dice M·AGRIPPA·L·F·COS·TERTIVM·FECIT porque Adriano, en un gesto de humildad inusual, atribuyó la obra a Marco Agrippa, yerno de Augusto, quien había construido un templo anterior en ese sitio en el año 27 a.C. que se incendió. En el año 609 d.C. el papa Bonifacio IV lo convirtió en iglesia cristiana —Santa Maria ad Martyres—, lo que aseguró su preservación mientras otros edificios romanos eran desmantelados para obtener materiales de construcción.",
+      "context": "El nombre 'Panteón' viene del griego pan (todos) y theos (dioses): era un templo dedicado a las divinidades del panteón romano. La conversión en iglesia en el siglo VII fue lo que salvó al edificio: mientras el Coliseo y el Foro Romano se convertían en canteras de mármol y travertino, el Panteón fue protegido como lugar sagrado. Hoy sirve como iglesia activa y mausoleo: aquí están enterrados el pintor Rafael Sanzio (muerto en 1520), el rey Víctor Manuel II (primer rey de Italia unificada) y el rey Humberto I.",
+      "what_to_see": "El oculus: el agujero circular de 8.9 metros de diámetro en la cima de la cúpula, la única fuente de luz del edificio. El rayo de luz se desplaza lentamente por el interior a lo largo del día; en el mediodía del equinoccio de primavera ilumina directamente la entrada principal. La cúpula casetada: los casetones (recuadros) se reducen de tamaño hacia arriba para acentuar la sensación de altura. El piso de mármol de colores en diseño geométrico: es el original romano. La tumba de Rafael en la segunda capilla a la izquierda, con su busto y epitafio. Las 16 columnas monolíticas de granito gris de 14 metros traídas de Egipto en el pórtico de entrada.",
+      "fun_facts": "La cúpula del Panteón tiene 43.3 metros de diámetro y sigue siendo la cúpula de hormigón sin refuerzo de acero más grande del mundo, construida hace 1,900 años. Los ingenieros romanos lograron esto usando hormigón de densidad variable: travertino pesado en la base, piedra volcánica en la zona media y piedra pómez (la más ligera) alrededor del oculus. Rafael pidió expresamente ser enterrado en el Panteón como el máximo honor artístico posible. Su epitafio dice: 'Aquí yace Rafael, por quien la Naturaleza temió ser vencida mientras vivió, y morir cuando él murió.' Murió el 6 de abril de 1520, Viernes Santo, a los 37 años."
+    },
+    "food_nearby": [
+      {
+        "name": "Armando al Pantheon",
+        "type": "Trattoria romana histórica",
+        "distance": "1 min caminando (Salita dei Crescenzi 31)",
+        "price_range": "€€€",
+        "highlight": "Literalmente al lado del Panteón, abierto desde 1961 y reservado por familias romanas desde generaciones. Cocina romana clásica: coda alla vaccinara, carciofi alla giudia, pajata. Una de las mesas más solicitadas de Roma: reservar con semanas de anticipación."
+      },
+      {
+        "name": "Caffè Sant'Eustachio",
+        "type": "Café histórico, el mejor espresso de Roma según muchos romanos",
+        "distance": "3 min caminando (Piazza di Sant'Eustachio 82)",
+        "price_range": "€",
+        "highlight": "Fundado en 1938, su espresso granulado con crema es legendario en Roma. El secreto de su preparación no se ha divulgado nunca. Tomar el caffè al bancone (en la barra) como hacen los locales. Sin terrazas: puro café romano de pie."
+      },
+      {
+        "name": "Ristorante La Campana",
+        "type": "Osteria romana, la más antigua de Roma en funcionamiento",
+        "distance": "5 min caminando (Vicolo della Campana 18)",
+        "price_range": "€€",
+        "highlight": "Documentada desde 1518, es la osteria en funcionamiento más antigua de Roma. Cocina romana sin concesiones al turismo: rigatoni con pajata, trippa, cacio e pepe. Sin carta fija; el menú cambia con la temporada."
+      }
+    ]
+  },
+  {
+    "id": "museos-vaticanos",
+    "name": "Museos Vaticanos y Capilla Sixtina",
+    "city": "roma",
+    "category": [
+      "Arte",
+      "Historia"
+    ],
+    "tags": [
+      "vaticano",
+      "capilla sixtina",
+      "miguel ángel",
+      "rafael",
+      "museos",
+      "arte renacentista",
+      "laocoonte"
+    ],
+    "summary": "El complejo museístico más importante del mundo, con 54 galerías y más de 7 kilómetros de recorrido acumulado. La colección abarca tres mil años de arte: esculturas griegas, tapices flamencos, mapas renacentistas y frescos de Rafael, todo culminando en la Capilla Sixtina donde Miguel Ángel pintó el techo entre 1508 y 1512. Reserva anticipada obligatoria; no se puede comprar en taquilla el día que se quiere entrar.",
+    "lat": 41.9065,
+    "lng": 12.4536,
+    "maps_url": "https://maps.google.com/?q=41.9065,12.4536",
+    "price": "~€20–27 en línea (precio sube periódicamente; verificar en museivaticani.va antes del viaje). Tours guiados con acceso anticipado a la Sixtina: €40–60.",
+    "tips": "Reservar en línea en museivaticani.va con semanas de anticipación: las entradas del día se agotan rápido y las filas en taquilla pueden ser de 2–3 horas. El recorrido completo son 4–5 horas mínimo y termina en la Capilla Sixtina: no conviene combinarlo con San Pedro el mismo día. En la Sixtina está prohibido fotografiar y hablar fuerte. Código de vestimenta igual que en San Pedro: hombros y rodillas cubiertos.",
+    "speech_text": "Esto es lo más grande que van a ver en su vida en términos de arte concentrado en un solo lugar. Tienen 54 salas para caminar antes de llegar a la Capilla Sixtina, y cada una tiene algo notable. Pero lo que nadie les va a contar de antemano es la Galería de los Mapas: un corredor de 120 metros con mapas topográficos de toda Italia pintados en 1580, tan precisos que los cartógrafos modernos los usan para comparar cómo cambió la costa italiana en 400 años. Cuando lleguen a la Sixtina, van a tener el impulso de mirar el techo de inmediato. No lo hagan todavía: primero recorran las paredes, entiendan el espacio, y luego miren hacia arriba. Miguel Ángel tardó cuatro años en pintar ese techo parado en andamios con la cabeza hacia atrás. La Creación de Adán —el dedo de Dios tocando al hombre— es más pequeña de lo que parece en las fotos y está en el centro del conjunto, no sola.",
+    "sections": {
+      "history": "Los Museos Vaticanos nacieron en 1503 cuando el papa Julio II colocó el grupo escultórico del Laocoonte —encontrado en 1506 bajo un viñedo romano— en el Patio del Belvedere junto al Apolo Belvedere. La colección creció durante siglos con adquisiciones de sucesivos papas. La Capilla Sixtina fue construida entre 1477 y 1481 por orden del papa Sixto IV —de ahí el nombre— como capilla privada del Vaticano. Miguel Ángel pintó el techo entre 1508 y 1512 por encargo de Julio II, y El Juicio Final en la pared del altar entre 1536 y 1541 por encargo de Pablo III, cuando ya tenía más de 60 años. Los museos abrieron al público en 1837.",
+      "context": "La Capilla Sixtina no es solo arte: es el escenario del cónclave, la elección del papa. Cuando un papa muere, los cardenales se encierran en la Sixtina hasta elegir al siguiente; la chimenea en el techo emite humo negro si no hay acuerdo, blanco cuando hay nuevo papa. La colección fue acumulada durante 500 años de patronazgo papal: Julio II era tan apasionado del arte que gastó una fortuna en obras mientras la Iglesia vendía indulgencias para financiar San Pedro, lo que desencadenó la Reforma Protestante.",
+      "what_to_see": "El grupo del Laocoonte (siglo I a.C.) en el Patio Octagonal: escultura de mármol que representa a un sacerdote troyano y sus hijos siendo devorados por serpientes marinas; fue el hallazgo arqueológico más importante del Renacimiento. Las Estancias de Rafael: cuatro salas pintadas por Rafael entre 1508 y 1524, incluyendo La Escuela de Atenas, donde Platón y Aristóteles debaten rodeados de filósofos; Rafael incluyó el rostro de Leonardo (como Platón) y su propio autorretrato. La Galería de los Mapas: 40 mapas topográficos en un corredor de 120 metros. La Capilla Sixtina: el techo con nueve escenas del Génesis y El Juicio Final con más de 300 figuras.",
+      "fun_facts": "Miguel Ángel no pintó el techo de la Sixtina acostado: esto es un mito popular. Pintó de pie sobre andamios que él mismo diseñó, con la cabeza inclinada hacia atrás durante cuatro años. Consecuencia: desarrolló una contractura cervical tan severa que durante un tiempo solo podía leer cartas sosteniéndolas por encima de su cabeza. El Laocoonte que vemos hoy tiene un brazo derecho restaurado en 1957 tras confirmar que Miguel Ángel tenía razón sobre su posición original. La chimenea del cónclave usa cartuchos químicos para hacer el humo negro o blanco."
+    },
+    "food_nearby": [
+      {
+        "name": "Pizzarium",
+        "type": "Pizza al taglio (por trozo, al peso)",
+        "distance": "12 min caminando (barrio Prati, Via della Meloria 43)",
+        "price_range": "€",
+        "highlight": "Del pizzaiolo Gabriele Bonci, considerado la mejor pizza al taglio de Roma. Pedir lo que salga del horno en ese momento."
+      },
+      {
+        "name": "Il Sorpasso",
+        "type": "Bar-bistró romano, aperitivo y platos del día",
+        "distance": "10 min caminando (Prati, Via Properzio 31)",
+        "price_range": "€€",
+        "highlight": "Buena opción para comer algo rápido o tomar aperitivo antes de volver al hotel."
+      },
+      {
+        "name": "Osteria dell'Angelo",
+        "type": "Trattoria romana tradicional",
+        "distance": "12 min caminando (Prati, Via G. Bettolo 24)",
+        "price_range": "€€",
+        "highlight": "Menú fijo con platos clásicos romanos: cacio e pepe, rigatoni alla gricia, abbacchio. Sin carta: comen lo que hay ese día."
+      }
+    ]
+  },
+  {
+    "id": "piazza-navona",
+    "name": "Piazza Navona",
+    "city": "roma",
+    "category": [
+      "Historia",
+      "Arte"
+    ],
+    "tags": [
+      "piazza navona",
+      "bernini",
+      "barroco",
+      "fuentes",
+      "borromini",
+      "estadio domiciano",
+      "cuatro ríos"
+    ],
+    "summary": "La plaza barroca más famosa de Roma, construida sobre las ruinas del Estadio de Domiciano del siglo I. Su forma alargada y estrecha hereda exactamente el contorno del estadio romano que hay enterrado debajo. La Fontana dei Quattro Fiumi de Bernini —con sus cuatro dioses fluviales en mármol blanco— domina el centro de un espacio que funciona de día como escenario artístico y de noche como el corazón social de la Roma antigua.",
+    "lat": 41.899,
+    "lng": 12.4731,
+    "maps_url": "https://maps.google.com/?q=41.8990,12.4731",
+    "price": "Gratis",
+    "tips": "Evitar el mediodía de julio: el calor en la plaza sin sombra es considerable. La mejor hora es la tarde-noche a partir de las 7 PM, cuando baja la temperatura y hay músicos en vivo. Los restaurantes con terraza directamente sobre la plaza son caros y mediocres: comer una calle adentro y volver a la plaza a tomar café.",
+    "speech_text": "La forma de esta plaza les puede parecer rara al principio: es larga y estrecha, no cuadrada como esperarían. Eso es porque está construida exactamente sobre el estadio de Domiciano, un estadio romano de atletismo del siglo I en que cabían 30,000 personas. Los muros del estadio están enterrados bajo los edificios que rodean la plaza, pero la silueta es perfectamente la misma. La fuente del centro la diseñó Bernini en 1651, y cada figura representa un río enorme de un continente distinto: el Nilo, el Ganges, el Danubio y el Río de la Plata. El Nilo tiene la cara cubierta porque en esa época no se sabía dónde nacía.",
+    "sections": {
+      "history": "El suelo de Piazza Navona fue el Estadio de Domiciano, construido entre los años 85 y 86 d.C. para competencias de atletismo al estilo griego. Con capacidad para 30,000 espectadores, era el único estadio de Roma dedicado a ese tipo de eventos. La transformación barroca ocurrió en el siglo XVII bajo el papa Inocencio X Pamphilj, cuyo palacio familiar daba directamente a la plaza. Encargó la Fontana dei Quattro Fiumi a Bernini en 1647, inaugurada en 1651.",
+      "context": "La Fontana dei Quattro Fiumi representa los cuatro grandes ríos conocidos en el siglo XVII: el Nilo (África), el Ganges (Asia), el Danubio (Europa) y el Río de la Plata (América). El obelisco central es romano del siglo I d.C. La iglesia de Sant'Agnese in Agone, en el lado oeste de la plaza, fue diseñada por Borromini. La rivalidad entre Bernini y Borromini era uno de los grandes dramas artísticos de la Roma del siglo XVII.",
+      "what_to_see": "La Fontana dei Quattro Fiumi: buscar la figura del Nilo con la cara cubierta y los detalles de fauna y flora de cada continente esculpidos en la base. La fachada cóncava de Sant'Agnese in Agone de Borromini. El Palazzo Pamphilj, hoy Embajada de Brasil, en el flanco oeste. Las excavaciones del Estadio de Domiciano bajo la plaza: hay un acceso arqueológico, verificar disponibilidad.",
+      "fun_facts": "Las excavaciones arqueológicas bajo Piazza Navona son visitables por una entrada discreta en el costado norte de la plaza. El Palazzo Pamphilj alberga frescos de Pietro da Cortona que raramente se pueden ver; la embajada brasileña organiza visitas ocasionales. El papa Inocencio X tenía una relación tan cercana con su cuñada Olimpia Maidalchini que los romanos la llamaban 'papesa': cuando Inocencio murió, Olimpia se negó a pagar los gastos del funeral y el cadáver estuvo sin enterrar por tres días hasta que un cardenal pagó de su bolsillo."
+    },
+    "food_nearby": [
+      {
+        "name": "Cul de Sac",
+        "type": "Enoteca con platos romanos y tabla de embutidos",
+        "distance": "1 min caminando (Piazza Pasquino 73)",
+        "price_range": "€€",
+        "highlight": "Una de las enotecas más antiguas de Roma. Más de 1,500 etiquetas de vino y platos contundentes: pasta e ceci, pâtés, embutidos."
+      },
+      {
+        "name": "Bar della Pace",
+        "type": "Café histórico con terracita exterior",
+        "distance": "2 min caminando (Via della Pace 3)",
+        "price_range": "€€",
+        "highlight": "Bar frecuentado por intelectuales y artistas romanos desde los años 20. Perfecto para un café o aperitivo en su pequeña terraza cubierta de hiedra."
+      },
+      {
+        "name": "Osteria del Pegno",
+        "type": "Trattoria romana, pasta fresca y carnes",
+        "distance": "3 min caminando (Vicolo di Montevecchio 8)",
+        "price_range": "€€",
+        "highlight": "Menú reducido con platos del día según temporada. Verificar disponibilidad antes del viaje, locales pequeños pueden cerrar por vacaciones en julio."
+      }
+    ]
+  },
+  {
+    "id": "campo-de-fiori",
+    "name": "Campo de' Fiori",
+    "city": "roma",
+    "category": [
+      "Historia",
+      "Vida local"
+    ],
+    "tags": [
+      "campo de fiori",
+      "mercado",
+      "giordano bruno",
+      "inquisición",
+      "vida nocturna",
+      "plaza",
+      "roma"
+    ],
+    "summary": "Una plaza con doble vida: mercado de frutas, verduras y flores bullicioso de 7 AM a 2 PM, y epicentro de la vida nocturna romana cuando cae la tarde. En el centro, la estatua de Giordano Bruno —filósofo quemado vivo aquí en 1600 por defender que el universo era infinito y había otros mundos— vigila el lugar con la cara cubierta por una capucha, mirando hacia el Vaticano.",
+    "lat": 41.8956,
+    "lng": 12.4723,
+    "maps_url": "https://maps.google.com/?q=41.8956,12.4723",
+    "price": "Gratis",
+    "tips": "El mercado funciona de lunes a sábado de 7 AM a 2 PM aproximadamente; llegar antes de las 10 AM para verlo en su mejor momento. En julio es época de jitomate, albahaca, pimientos y fruta de hueso: perfecto para entender la cocina italiana desde la fuente. La plaza cambia radicalmente de carácter por las noches. A 5 minutos caminando está Piazza Navona.",
+    "speech_text": "Este es el Campo de' Fiori, que en italiano significa 'campo de flores'. De mañana es un mercado de verdad, donde van los cocineros y los vecinos del barrio a comprar tomates, alcachofas, hierbas frescas y flores. De noche se convierte en otra cosa: bares, gente joven, ruido. La estatua que está en el centro, con la capucha sobre la cara y el libro en la mano, es Giordano Bruno. Era un fraile dominico que en 1600 fue quemado vivo justo aquí por la Inquisición porque decía que el universo era infinito y había otros mundos con otras formas de vida. Ideas que hoy son ciencia. Fíjense hacia dónde mira Bruno: hacia el Vaticano.",
+    "sections": {
+      "history": "El nombre 'Campo de' Fiori' viene del prado que ocupó el sitio en la Edad Media. Desde el siglo XV hasta el XVII funcionó como el principal sitio de ejecución pública de Roma para herejes, apóstatas y criminales. La ejecución más famosa fue la de Giordano Bruno el 17 de febrero de 1600: fue quemado vivo después de ocho años de proceso inquisitorial. La estatua de bronce de Bruno fue esculpida por Ettore Ferrari e inaugurada el 9 de junio de 1889; el papa León XIII amenazó con abandonar Roma si se instalaba.",
+      "context": "Giordano Bruno era un fraile dominico y cosmólogo que propuso que el Sol era una estrella más entre infinitas, que el universo no tenía centro ni límite, y que existían otros mundos posiblemente habitados. Fue quemado en el año que Galileo tenía 36 años; el caso de Bruno fue una advertencia para toda la comunidad científica del momento. El Vaticano rehabilitó formalmente a Galileo en 1992 pero nunca ha rehabilitado a Bruno. La estatua mira hacia el Vaticano: el gesto es deliberadamente confrontacional.",
+      "what_to_see": "La estatua de Giordano Bruno por Ettore Ferrari (1889): Bruno con capucha de condenado, libro en mano izquierda, mirando hacia el Vaticano. Los relieves en la base del pedestal muestran escenas de su juicio y ejecución. El mercado matutino (7 AM–2 PM). El Forno Campo de' Fiori en el número 22 de la plaza, panadería de referencia.",
+      "fun_facts": "El Campo de' Fiori es la única plaza mayor del centro histórico de Roma que no tiene una iglesia mirando hacia ella. Un año antes de la ejecución de Bruno, en 1599, en este mismo lugar fueron decapitados los miembros de la familia Cenci, acusados de haber asesinado a su padre; el caso de Beatrice Cenci generó tal simpatía popular que el papa tuvo que justificar públicamente la ejecución."
+    },
+    "food_nearby": [
+      {
+        "name": "Forno Campo de' Fiori",
+        "type": "Panadería y pizza bianca",
+        "distance": "En la plaza misma (Campo de' Fiori 22)",
+        "price_range": "€",
+        "highlight": "La pizza bianca con aceite de oliva y sal gruesa que sacan del horno caliente en la mañana es una experiencia obligatoria. También hacen pizza roja y focaccia. Llegar antes de las 10 AM."
+      },
+      {
+        "name": "Roscioli",
+        "type": "Salumería, restaurante y bar de vinos",
+        "distance": "3 min caminando (Via dei Giubbonari 21)",
+        "price_range": "€€€",
+        "highlight": "Uno de los templos gastronómicos de Roma: embutidos, quesos, pasta hecha en casa y una bodega excepcional. Hay que reservar con anticipación para sentarse a comer."
+      },
+      {
+        "name": "Emma Pizzeria",
+        "type": "Pizza romana al horno de leña",
+        "distance": "5 min caminando (Via del Monte della Farina 28)",
+        "price_range": "€€",
+        "highlight": "Pizza romana de masa delgada y crujiente. Buen lugar para una cena completa en un espacio más tranquilo que el bullicio de la plaza."
+      }
+    ]
+  },
+  {
+    "id": "castel-sant-angelo",
+    "name": "Castel Sant'Angelo",
+    "city": "roma",
+    "category": [
+      "Historia",
+      "Vistas"
+    ],
+    "tags": [
+      "castel sant angelo",
+      "adriano",
+      "mausoleo",
+      "fortaleza papal",
+      "passetto",
+      "río tíber",
+      "ángel",
+      "prisión"
+    ],
+    "summary": "Un edificio con 1,900 años de historia acumulada en una sola estructura: empezó como mausoleo del emperador Adriano en el año 139, se convirtió en fortaleza papal medieval y terminó como prisión y cuartel militar. Está conectado al Vaticano por un pasadizo secreto elevado de 800 metros que los papas usaban para escapar en caso de ataque. Desde la terraza superior hay una de las mejores vistas de Roma sobre el Tíber.",
+    "lat": 41.9031,
+    "lng": 12.4663,
+    "maps_url": "https://maps.google.com/?q=41.9031,12.4663",
+    "price": "~€15 (precio verificado para 2024; puede variar para julio 2026)",
+    "tips": "Subir hasta la terraza superior es el objetivo principal: el panorama sobre el Tíber, San Pedro y los tejados de Roma es excepcional. Calcular 2–3 horas para recorrer los cinco pisos del museo. Justo afuera, el Ponte Sant'Angelo con las estatuas de ángeles de Bernini es uno de los puentes más fotogénicos de Roma y se recorre gratis. Está a 15 minutos a pie de San Pedro.",
+    "speech_text": "Pueden pensar en este edificio como el que más capas de historia tiene en toda Roma, y eso ya es decir mucho. Lo mandó construir el emperador Adriano en el año 135 como su propia tumba, una torre circular enorme de travertino. Después de los emperadores lo convirtieron en fortaleza y los papas lo conectaron al Vaticano con ese pasadizo que ven arriba, el Passetto di Borgo: 800 metros de corredor secreto elevado. En 1527, cuando las tropas del emperador Carlos V saquearon Roma, el papa Clemente VII escapó por ese pasadizo y se encerró aquí meses. También fue prisión: Giordano Bruno estuvo encerrado aquí antes de que lo ejecutaran en el Campo de' Fiori. Puccini ambientó la ópera Tosca aquí, y el personaje principal salta desde esta terraza en el último acto. Suban hasta arriba: la vista es de las mejores de Roma.",
+    "sections": {
+      "history": "Construido entre los años 135 y 139 d.C. por orden del emperador Adriano como mausoleo para sí mismo y su dinastía. Funcionó como tumba imperial hasta el reinado de Caracalla (217 d.C.). En el año 271 el emperador Aureliano lo incorporó a las nuevas murallas defensivas de Roma. Según la tradición, en el año 590 d.C. el papa Gregorio I tuvo una visión del arcángel Miguel envainando su espada sobre el edificio, señalando el fin de una peste que asolaba Roma: de ahí el nombre de Castel Sant'Angelo y la estatua del ángel en la cima. El Passetto di Borgo fue construido en su forma actual por el papa Alejandro VI (Rodrigo Borgia) a finales del siglo XV.",
+      "context": "El castillo es la frontera arquitectónica entre el Vaticano y el resto de Roma. El Passetto di Borgo fue el seguro de vida de varios papas: Clemente VII lo usó en 1527 durante el Sacco di Roma, cuando las tropas amotinadas de Carlos V saquearon la ciudad durante semanas; el papa escapó con un pequeño grupo y quedó sitiado en el castillo durante meses mientras Roma ardía. La ópera Tosca de Puccini (1900) tiene su escena final en la terraza de Castel Sant'Angelo: la soprano protagonista mata al barón Scarpia y se arroja desde las murallas.",
+      "what_to_see": "La terraza superior con la estatua del arcángel Miguel y la vista panorámica sobre el Tíber, San Pedro y los tejados de Roma. Los apartamentos papales en los pisos superiores: habitaciones decoradas al estilo del Renacimiento con frescos y mobiliario de época. El Passetto di Borgo visible desde fuera como un corredor elevado que corre sobre los tejados hacia el Vaticano. El Ponte Sant'Angelo frente a la entrada: puente romano del siglo II decorado con diez ángeles esculpidos por Bernini y sus discípulos en el siglo XVII.",
+      "fun_facts": "Benvenuto Cellini, el orfebre y escultor florentino del Renacimiento, fue prisionero en Castel Sant'Angelo en 1539. En su autobiografía describe su fuga descolgándose por las murallas con sábanas atadas, torciéndose un tobillo en la caída. La veracidad de la narración es debatida por historiadores, pero Cellini la cuenta con tal detalle cinematográfico que se ha convertido en parte del folclore del castillo. Durante el Sacco di Roma de 1527, aproximadamente 3,000 personas se refugiaron dentro del castillo junto al papa Clemente VII; Roma afuera tardó décadas en recuperarse del saqueo."
+    },
+    "food_nearby": [
+      {
+        "name": "Gelateria dei Gracchi",
+        "type": "Helados artesanales de producción propia",
+        "distance": "8 min caminando (barrio Prati, Via dei Gracchi 272)",
+        "price_range": "€",
+        "highlight": "Una de las mejores heladerías de Roma según crítica local. Sin colorantes artificiales. Probar el pistacho de Bronte o el sabor de temporada de fruta fresca."
+      },
+      {
+        "name": "Il Sorpasso",
+        "type": "Bar-bistró romano, aperitivo y platos del día",
+        "distance": "10 min caminando (barrio Prati, Via Properzio 31)",
+        "price_range": "€€",
+        "highlight": "Buen punto para almorzar o tomar aperitivo después de visitar el castillo. Cocina informal con ingredientes de temporada."
+      },
+      {
+        "name": "Pizzarium",
+        "type": "Pizza al taglio (por trozo, al peso)",
+        "distance": "15 min caminando (barrio Prati, Via della Meloria 43)",
+        "price_range": "€",
+        "highlight": "Vale el camino extra. La pizza de masa madre de Gabriele Bonci es referencia obligada en Roma. Comer de pie, en la calle."
+      }
+    ]
+  },
+  {
+    "id": "trastevere",
+    "name": "Trastevere",
+    "city": "roma",
+    "category": [
+      "Vida local",
+      "Historia"
+    ],
+    "tags": [
+      "trastevere",
+      "barrio",
+      "medieval",
+      "santa maria in trastevere",
+      "roma auténtica",
+      "callejones",
+      "noche",
+      "restaurantes"
+    ],
+    "summary": "El barrio habitado más antiguo de Roma, al otro lado del Tíber. Sus callejones de adoquines negros de basalto, los muros de ladrillo ocre cubiertos de hiedra y la basílica de Santa Maria in Trastevere —una de las primeras iglesias del mundo cristiano— configuran un escenario medieval casi intacto. De día es tranquilo y fotográfico; de noche es el barrio más vivo de la ciudad.",
+    "lat": 41.8898,
+    "lng": 12.4694,
+    "maps_url": "https://maps.google.com/?q=41.8898,12.4694",
+    "price": "Gratis (barrio para explorar a pie; basílica sin costo de entrada)",
+    "tips": "La mejor visita es por la tarde-noche: llegar a las 6–7 PM, cuando el calor baja, la basílica está iluminada y el barrio despierta. Los adoquines de basalto son irregulares: calzado con suela gruesa o chanclas con soporte, no sandalias planas. Reservar con anticipación en Da Enzo al 29 si se quiere cenar ahí: tiene pocas mesas y se llena semanas antes. Subir al Gianicolo al atardecer (10 minutos a pie desde la plaza central) para la mejor vista panorámica de Roma, completamente gratuita y sin filas.",
+    "speech_text": "Trastevere es el barrio más viejo de Roma con gente viviendo ahí sin interrupción. Su nombre viene del latín 'Trans Tiberim': al otro lado del Tíber. En la época romana vivían aquí los artesanos, los marineros y la comunidad judía. Hoy los romanos dicen que es el lugar donde todavía queda algo de la Roma de verdad. Lo que sí se conserva son los callejones: angostos, torcidos, con la ropa tendida entre las ventanas y gatos dormidos en los escalones. La Basílica de Santa Maria in Trastevere tiene mosaicos del siglo XII en el interior que brillan cuando les da la luz de la tarde. Si suben al Gianicolo antes de que oscurezca, van a ver Roma entera extendida frente a ustedes. Es la mejor vista de la ciudad y no hay nadie haciendo fila.",
+    "sections": {
+      "history": "El nombre proviene del latín Trans Tiberim, 'al otro lado del Tíber'. En la época romana, Trastevere albergaba una comunidad judía importante, una comunidad siria, y talleres de artesanos y marineros del puerto fluvial. En el siglo III d.C., el papa Calixto I fundó la primera versión de la basílica de Santa Maria in Trastevere, posiblemente el primer lugar donde los cristianos de Roma pudieron reunirse en culto relativamente abierto. La basílica fue reconstruida entre 1140 y 1148 bajo el papa Inocencio II, originario del barrio.",
+      "context": "Trastevere es hoy un barrio mixto: quedan vecinos romanos de toda la vida, hay una comunidad de expatriados anglosajones y el turismo lo ha transformado en uno de los principales destinos de vida nocturna de Roma. La Villa Farnesina —villa renacentista del siglo XV con frescos de Rafael y Peruzzi— está a 5 minutos de la plaza central y recibe poca visita comparada con su valor artístico.",
+      "what_to_see": "Piazza di Santa Maria in Trastevere: la plaza central con su fuente octogonal romana y la fachada de mosaicos de la basílica, iluminada por la noche. Basílica di Santa Maria in Trastevere: interior con mosaicos dorados del siglo XII en el ábside; sin costo de entrada. Los callejones entre la Piazza di Santa Maria y la Via della Scala: el corazón medieval del barrio. Piazza Trilussa, punto de encuentro vespertino de los romanos. La Villa Farnesina (Via della Lungara 230): villa renacentista con el fresco de Rafael La Galatea; abre en horario reducido de mañana, costo de entrada ~€12.",
+      "fun_facts": "La Basílica di Santa Maria in Trastevere fue disputada en juicio entre la comunidad cristiana y los taberneros del barrio en el siglo III. El fallo del emperador Alejandro Severo fue: 'Mejor que el lugar lo use una comunidad religiosa, cualquiera que sea, que un bar'. En 1849, Trastevere fue el último bastión de la República Romana frente al ejército francés; el barrio combatió calle por calle hasta el final. El general que defendía Roma era Giuseppe Garibaldi."
+    },
+    "food_nearby": [
+      {
+        "name": "Da Enzo al 29",
+        "type": "Trattoria romana tradicional",
+        "distance": "En el barrio mismo (Via dei Vascellari 29)",
+        "price_range": "€€",
+        "highlight": "La trattoria más recomendada de Trastevere: menú clásico romano con cacio e pepe, coda alla vaccinara y carciofi alla giudia. Reservar con semanas de anticipación."
+      },
+      {
+        "name": "Tonnarello",
+        "type": "Osteria romana con terraza exterior",
+        "distance": "En el barrio mismo (Via della Paglia 1–2)",
+        "price_range": "€€",
+        "highlight": "Pasta romana clásica en un espacio animado con terraza. Más accesible que Da Enzo en cuanto a reservas, y buen lugar para cenar en un entorno vivo."
+      },
+      {
+        "name": "Supplì Roma",
+        "type": "Street food romano: supplì y pizza al taglio",
+        "distance": "En el barrio mismo (Via di San Francesco a Ripa 137)",
+        "price_range": "€",
+        "highlight": "Para una parada rápida y económica: el supplì romano es una bola de arroz con ragú y mozzarella, rebozada y frita. El del Supplì Roma está considerado uno de los mejores de la ciudad."
+      }
+    ]
+  },
+  {
+    "id": "aventino",
+    "name": "Aventino: Jardín de los Naranjos y el Ojo de la Cerradura",
+    "city": "roma",
+    "category": [
+      "Vistas",
+      "Vida local"
+    ],
+    "tags": [
+      "aventino",
+      "jardín de los naranjos",
+      "ojo de la cerradura",
+      "caballeros de malta",
+      "piranesi",
+      "vistas",
+      "san pedro",
+      "atardecer",
+      "colina"
+    ],
+    "summary": "Dos de los secretos mejor guardados de Roma a tres minutos a pie uno del otro, ambos gratis. El Jardín de los Naranjos es un parque medieval en lo alto del Aventino con una terraza sobre los tejados de Roma y el Tíber. A pocos pasos, el ojo de la cerradura del Priorato de Malta enmarca con precisión matemática la cúpula de San Pedro al fondo de un jardín de cipreses, en una vista que parece diseñada por un fotógrafo.",
+    "lat": 41.8833,
+    "lng": 12.4773,
+    "maps_url": "https://maps.google.com/?q=41.8833,12.4773",
+    "price": "Gratis (ambos sitios)",
+    "tips": "La mejor hora es entre las 5 y las 8 PM en julio: el jardín da sombra, el calor baja y la luz del atardecer sobre Roma es espectacular. El ojo de la cerradura puede tener una pequeña fila de 10 a 20 minutos, especialmente al atardecer, pero es gratis y vale cualquier espera. Llevar los ojos a la altura del ojo de la cerradura: la alineación con la cúpula es real y sorprende cada vez. El barrio del Aventino es residencial y silencioso, un contrapunto perfecto después de un día en el centro histórico.",
+    "speech_text": "El Aventino es una de las siete colinas de Roma y la más tranquila: viven familias romanas, hay embajadas y pocos turistas. El Jardín de los Naranjos, que los romanos llaman Parco Savello, está rodeado de murallas medievales y tiene una terraza desde donde se ve Roma entera con el Tíber a los pies. Los franciscanos plantaron los naranjos en el siglo XIII. A tres minutos caminando de ahí está la Piazza dei Cavalieri di Malta, una plaza diseñada en el siglo XVIII por Piranesi, el grabador que inmortalizó Roma en sus láminas. Si se asoman por el ojo de la cerradura de esa puerta, van a ver algo que parece imposible: al fondo de un túnel de cipreses perfectamente alineados, la cúpula de San Pedro enmarcada con una precisión que ningún arquitecto moderno podría mejorar. Casi con certeza Piranesi la diseñó así a propósito.",
+    "sections": {
+      "history": "El monte Aventino fue una de las siete colinas fundacionales de Roma. El Giardino degli Aranci (oficialmente Parco Savello) ocupa el terreno de una fortaleza medieval de la familia Savelli, demolida en el siglo XV. En el siglo XIII los franciscanos plantaron los primeros naranjos en el lugar: los árboles actuales son descendientes de esa plantación original. La Piazza dei Cavalieri di Malta y su priorato adyacente fueron rediseñados en 1765 por Giovanni Battista Piranesi en el único encargo arquitectónico que recibió en su vida. El Priorato pertenece a la Orden de Malta —los Caballeros Hospitalarios— que tienen presencia en Roma desde el siglo XII.",
+      "context": "La Orden Soberana Militar de Malta es reconocida como Estado soberano por más de 110 países, emite pasaportes propios y mantiene relaciones diplomáticas con la Santa Sede. Sin territorio propio, su 'sede' es el Priorato del Aventino y el Palazzo Malta en Via Condotti, ambos con estatus de extraterritorialidad. Cuando se asoman por el ojo de la cerradura, técnicamente están mirando desde Italia hacia un territorio soberano distinto, pasando sobre el jardín de Italia, para ver la cúpula de San Pedro en el Vaticano: tres jurisdicciones distintas en una sola mirada.",
+      "what_to_see": "La terraza del Jardín de los Naranjos: vistas sobre el Tíber con el Trastevere y el Gianicolo a la izquierda, la cúpula de San Pedro al fondo y los tejados anaranjados de Roma. Los naranjos que perfuman el jardín. La Piazza dei Cavalieri di Malta diseñada por Piranesi: una plaza pequeña, austera y perfectamente proporcionada, con obeliscos y símbolos de la Orden en los muros perimetrales. El ojo de la cerradura de la puerta verde del priorato para ver la alineación perfecta de cipreses enmarcando la cúpula de San Pedro. La Basílica de Santa Sabina a 2 minutos: una de las basílicas paleocristianas mejor conservadas de Roma, del siglo V.",
+      "fun_facts": "El ojo de la cerradura alinea en una sola mirada tres territorios soberanos distintos: el suelo de Italia donde está la puerta, el jardín del Priorato que pertenece jurisdiccionalmente a la Orden de Malta, y la cúpula de San Pedro en el Estado de la Ciudad del Vaticano. No existe otro punto del mundo donde se pueda ver tres Estados en perspectiva simultánea. Piranesi diseñó esta plaza el año antes de morir, en 1778. La Orden de Malta imprime sus propios sellos postales, que son válidos únicamente dentro de sus dos sedes en Roma."
+    },
+    "food_nearby": [
+      {
+        "name": "Flavio al Velavevodetto",
+        "type": "Trattoria romana clásica",
+        "distance": "8 min caminando (Testaccio, Via di Monte Testaccio 97)",
+        "price_range": "€€",
+        "highlight": "Literalmente excavada en el Monte Testaccio, un cerro artificial hecho de 53 millones de ánforas romanas rotas del siglo II. Los muros del comedor son el interior de la colina. Cocina romana de fondo: rigatoni all'amatriciana, coda alla vaccinara, trippa. Reservar."
+      },
+      {
+        "name": "Mercato Testaccio",
+        "type": "Mercado cubierto con puestos de street food",
+        "distance": "10 min caminando (Testaccio, Via Beniamino Franklin)",
+        "price_range": "€",
+        "highlight": "El mercado de barrio de Testaccio. El puesto de supplì y el de pizza al taglio son los más recomendados por los vecinos. Abre de mañana hasta las 2 PM aproximadamente."
+      },
+      {
+        "name": "Da Remo",
+        "type": "Pizzería romana tradicional, masa delgada al horno de leña",
+        "distance": "10 min caminando (Testaccio, Piazza di Santa Maria Liberatrice 44)",
+        "price_range": "€",
+        "highlight": "Institución de Testaccio: pizza romana de masa delgada, crujiente y con bordes quemados. Sin reservas, hay fila. Abre solo por las noches."
+      }
+    ]
   }
 ]

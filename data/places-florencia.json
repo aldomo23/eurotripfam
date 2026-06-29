@@ -3,33 +3,61 @@
     "id": "florencia-dos-dias",
     "name": "Florencia en dos días",
     "city": "florencia",
-    "category": ["Historia", "Arte", "Arquitectura"],
-    "tags": ["renacimiento", "toscana", "florencia", "itinerario"],
-    "type": "special_itinerary",
-    "summary": "Guía compacta para aprovechar Florencia en dos días: el corazón del Renacimiento, desde el Duomo hasta los Uffizi, con paradas para comer bien.",
-    "photo": "img/places/florencia-duomo.webp",
-    "gallery": [],
+    "category": [
+      "Arte",
+      "Arquitectura",
+      "Historia",
+      "Escapada de un día"
+    ],
+    "tags": [
+      "florencia",
+      "renacimiento",
+      "uffizi",
+      "duomo",
+      "david",
+      "brunelleschi",
+      "botticelli",
+      "miguel ángel",
+      "ponte vecchio",
+      "médici",
+      "tren desde roma"
+    ],
+    "summary": "La cuna del Renacimiento italiano a 1 hora 20 minutos en tren de alta velocidad desde Roma. En dos días se puede ver la colección de pintura más importante del mundo (Uffizi), el David de Miguel Ángel, la cúpula de Brunelleschi, el Ponte Vecchio y el barrio del Oltrarno al atardecer. Tres reservas son obligatorias con semanas de anticipación: Uffizi, Accademia y Cúpula.",
+    "lat": 43.7696,
+    "lng": 11.2558,
+    "maps_url": "https://maps.google.com/?q=43.7696,11.2558",
+    "price": "Tren Roma–Florencia: ~€25–45 por persona (Frecciarossa, 1h 20min; reservar en trenitalia.com). Uffizi: ~€20–25. Galleria dell'Accademia (David): ~€18–22. Complejo del Duomo con cúpula: ~€18–20. Piazzale Michelangelo y Oltrarno: gratis.",
+    "tips": "Reservar Uffizi, Accademia y Cúpula del Duomo antes de viajar en uffizi.it, b-ticket.com y brunelleschi.opera.fi.it respectivamente: en julio se agotan con semanas de anticipación. La cúpula de Brunelleschi son 463 escalones sin ascensor en espacio estrecho: evaluar capacidad física con calma antes de incluirla. Todo el centro histórico es peatonal y compacto: los principales sitios quedan a menos de 20 minutos caminando entre sí. El calor en julio es intenso: salir temprano, descansar de 1 a 4 PM y retomar en la tarde.",
+    "speech_text": "Florencia es la ciudad donde nació el Renacimiento, y eso no es una frase de guía turístico: aquí vivieron y compitieron por los mismos encargos Botticelli, Leonardo, Miguel Ángel y Brunelleschi, todos financiados por la misma familia de banqueros, los Médici. En dos días vamos a ver las dos colecciones de arte más importantes de ese período, una cúpula que cambió para siempre la arquitectura mundial, y un puente medieval con joyerías que lleva en pie desde el siglo XIV. Lo que más me interesa que noten es la escala real de las cosas: el David tiene más de cinco metros, la cúpula domina toda la ciudad y los Uffizi tienen 90 salas. Florencia es pequeña para caminarla pero enorme para entenderla.",
     "sections": {
-      "logistics": "Florencia se llega en tren desde Roma (1h 30min en alta velocidad). La estación Santa Maria Novella está a 10 minutos caminando del centro histórico. Todo el centro es peatonal y se recorre a pie.",
-      "day_1": "Mañana: Duomo de Florencia (subir a la cúpula de Brunelleschi, reservar online). Piazza della Signoria y Palazzo Vecchio. Tarde: Galería Uffizi (reservar con antelación). Ponte Vecchio al atardecer. Cena en el barrio de Santo Spirito (Trattoria Mario o Il Latini).",
-      "day_2": "Mañana: Galería de la Academia (el David de Miguel Ángel, reservar). Mercado de San Lorenzo para souvenirs. Tarde: Piazzale Michelangelo para la mejor vista panorámica de Florencia. Basílica de San Miniato al Monte (justo arriba, poca gente). Helado en Vivoli o La Carraia.",
-      "advance_booking": "Reservar con anticipación: Cúpula del Duomo, Galería Uffizi y Galería de la Academia. En julio se agotan rápido. Los trenes desde Roma también conviene reservarlos antes.",
-      "fun_facts": "Florencia fue la cuna del Renacimiento y hogar de Leonardo da Vinci, Miguel Ángel, Botticelli y Galileo. La familia Médici financió gran parte del arte que hoy se exhibe en los museos. El bistec a la fiorentina es el plato estrella: un corte grueso de res a la parrilla que se sirve poco cocido."
+      "logistics": "El Frecciarossa o Frecciargento de Trenitalia cubre Roma Termini–Florencia Santa Maria Novella en 1 hora y 20 minutos, con precios entre €25 y €45 por persona según clase y anticipación. Comprar en trenitalia.com con tarjeta internacional. La estación de Florencia queda a 15 minutos a pie del Duomo y a 20 del centro histórico: no se necesita taxi ni transporte adicional, el centro es completamente peatonal. Salir de Roma antes de las 9 AM para tener el día completo desde la llegada.",
+      "day_1": "Mañana: llegar y ir directo a la Galleria degli Uffizi (abre 8:15 AM; llegar puntual con reserva). Dedicar 2.5–3 horas a lo esencial: sala de Botticelli con El nacimiento de Venus y La Primavera, sala de Leonardo con la Anunciación, sala de Rafael y sala de Caravaggio. Noventa salas son demasiadas para un día; no intentar verlo todo. Al salir, la Piazza della Signoria queda en la puerta: ver la Loggia dei Lanzi con el Perseo de Cellini y el Rapto de las Sabinas de Giambologna al aire libre y gratis. Almuerzo en Trattoria Mario o en la planta alta del Mercato Centrale (10 minutos a pie). Tarde: cruzar el Ponte Vecchio y explorar el Oltrarno a ritmo tranquilo. Atardecer en el Piazzale Michelangelo —subir en taxi o a pie, 15 minutos de subida moderada— para la panorámica de Florencia con el Duomo al fondo: es la foto del viaje en Florencia.",
+      "day_2": "Mañana: Complejo del Duomo. Empezar por el Baptisterio de San Juan (abre 8:15 AM, incluido en el ticket del complejo): ver las Puertas del Paraíso de Ghiberti, diez paneles de bronce dorado con escenas del Antiguo Testamento que Miguel Ángel bautizó con ese nombre. Después, Galleria dell'Accademia para el David: llegar puntual con reserva. La sala del David también tiene los Esclavos inacabados de Miguel Ángel en las paredes laterales, que la mayoría de los visitantes pasan de largo y son igualmente extraordinarios. El museo es pequeño: 1.5 horas son suficientes. Si la energía lo permite: subir a la Cúpula de Brunelleschi (463 escalones, sin ascensor, espacio estrecho; la vista es excepcional). Tarde opcional: San Miniato al Monte, basílica románica del siglo XI a 10 minutos a pie más arriba del Piazzale Michelangelo, con mosaicos medievales del siglo XIII y una fracción de los visitantes del Duomo.",
+      "advance_booking": "Tres reservas obligatorias, en orden de prioridad: (1) Galleria degli Uffizi: uffizi.it o b-ticket.com — la más crítica, se agota con semanas de anticipación en julio. (2) Galleria dell'Accademia (el David): b-ticket.com — mismo nivel de demanda. (3) Cúpula de Brunelleschi: brunelleschi.opera.fi.it — cupos limitados por franja horaria; el ticket incluye también el Baptisterio, el Campanile y el Museo dell'Opera del Duomo. Hay cargo de reserva de ~€4–5 por persona en Uffizi y Accademia.",
+      "fun_facts": "Brunelleschi ganó el concurso para construir la cúpula del Duomo en 1418 con una propuesta que no explicó a nadie hasta ganar: una cúpula de ladrillo sin andamios internos, usando una espiral en espina de pez que se autosoporta mientras sube. Tardó 16 años (1420–1436) y murió sin revelar el método completo; los ingenieros modernos siguen debatiendo cómo lo logró con la tecnología del siglo XV. Los Esclavos inacabados de Miguel Ángel en la Accademia no están incompletos por accidente: Miguel Ángel los dejó así deliberadamente, como si las figuras emergieran del mármol sin haber terminado de liberarse."
     },
     "food_nearby": [
       {
         "name": "Trattoria Mario",
-        "type": "Cocina toscana tradicional",
-        "distance": "Cerca del Mercado de San Lorenzo",
+        "type": "Trattoria florentina clásica, mesas compartidas",
+        "distance": "2 min del Mercato Centrale (Via Rosina 2)",
         "price_range": "€",
-        "highlight": "Bistecca alla fiorentina y ribollita"
+        "highlight": "Fundada en 1953, sin carta fija: el mesero dice qué hay ese día y uno elige. Pago en efectivo, mesas compartidas con desconocidos. Una de las experiencias más auténticas de Florencia. Llegar antes de que abran (12 PM) para evitar fila."
+      },
+      {
+        "name": "Buca dell'Orafo",
+        "type": "Trattoria toscana clásica junto al Ponte Vecchio",
+        "distance": "1 min del Ponte Vecchio (Vicolo dei Girolami 28r)",
+        "price_range": "€€",
+        "highlight": "Cocina toscana clásica en ambiente íntimo: bistecca alla fiorentina, pappardelle al cinghiale (jabalí), ribollita. Buen lugar para cenar después del Oltrarno. Reservar."
+      },
+      {
+        "name": "Gelateria dei Neri",
+        "type": "Heladería artesanal",
+        "distance": "5 min de los Uffizi (Via dei Neri 9–11r)",
+        "price_range": "€",
+        "highlight": "Una de las heladerías más consistentes del centro histórico. El crema di ricotta y el pistacchio son los más recomendados. Fila habitual pero avanza rápido."
       }
-    ],
-    "lat": 43.7731,
-    "lng": 11.2560,
-    "maps_url": "https://maps.google.com/?q=43.7731,11.2560",
-    "price": "Variable (Uffizi €25, Cúpula €30, Academia €16)",
-    "tips": "Reservar todo online con semanas de anticipación. Julio es temporada alta. Llevar zapatos cómodos: Florencia se camina mucho y hay subidas.",
-    "speech_text": "Florencia es la cuna del Renacimiento italiano. En dos días pueden ver lo esencial: el Duomo con su cúpula de Brunelleschi, la Galería Uffizi con obras de Botticelli y Leonardo, el David de Miguel Ángel, y el Ponte Vecchio al atardecer. Todo el centro es peatonal y se camina fácilmente."
+    ]
   }
 ]
