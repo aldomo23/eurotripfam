@@ -1,0 +1,71 @@
+[
+  {
+    "id": "sagrada-familia",
+    "name": "Sagrada Familia",
+    "city": "barcelona",
+    "category": ["Arquitectura", "Historia"],
+    "tags": ["gaudí", "modernismo", "basílica", "icónico"],
+    "summary": "La obra maestra inacabada de Antoni Gaudí. Esta basílica lleva en construcción desde 1882 y es el monumento más visitado de España. Su fachada del Nacimiento y las columnas interiores en forma de bosque son impresionantes.",
+    "photo": "img/places/sagrada-familia.webp",
+    "gallery": [
+      "img/places/sagrada-familia-interior.webp",
+      "img/places/sagrada-familia-detalle.webp"
+    ],
+    "sections": {
+      "history": "La primera piedra se colocó el 19 de marzo de 1882, bajo la dirección del arquitecto Francisco de Paula del Villar. Un año después, Gaudí tomó el proyecto y lo transformó radicalmente. Dedicó los últimos 15 años de su vida exclusivamente a esta obra. Murió en 1926, atropellado por un tranvía, y fue enterrado en la cripta de la basílica.",
+      "context": "Antoni Gaudí (1852–1926) fue el máximo representante del modernismo catalán. Su arquitectura se inspira en formas de la naturaleza: las columnas del interior imitan árboles, los techos parecen hojas, y la luz entra filtrada como en un bosque. Gaudí decía: 'Mi cliente no tiene prisa', refiriéndose a Dios.",
+      "what_to_see": "No se pierdan: la Fachada del Nacimiento (la única que Gaudí vio terminada), las columnas interiores en forma de bosque, los vitrales que proyectan arcoíris por la tarde, y si suben a las torres, la vista panorámica de Barcelona. La Fachada de la Pasión, más austera, cuenta la crucifixión.",
+      "fun_facts": "La Sagrada Familia no es técnicamente una catedral sino una basílica menor. Se estima que estará terminada en 2026, coincidiendo con el centenario de la muerte de Gaudí, aunque podría retrasarse. Gaudí sabía que no la vería terminada y dejó maquetas y planos para guiar a futuros arquitectos."
+    },
+    "food_nearby": [
+      {
+        "name": "La Pepita",
+        "type": "Tapas creativas",
+        "distance": "5 min caminando",
+        "price_range": "€€",
+        "highlight": "Pepito de ternera y patatas bravas"
+      }
+    ],
+    "video_url": "https://www.youtube.com/watch?v=example",
+    "lat": 41.4036,
+    "lng": 2.1744,
+    "maps_url": "https://maps.google.com/?q=41.4036,2.1744",
+    "price": "€26",
+    "tips": "Reservar en línea con semanas de antelación. Las entradas se agotan rápido en julio. Mejor visitar por la tarde cuando los vitrales del lado poniente iluminan el interior.",
+    "speech_text": "La Sagrada Familia es la obra maestra de Antoni Gaudí, en construcción desde 1882. Es el monumento más visitado de España. Por dentro parece un bosque de piedra, con columnas que imitan árboles y vitrales que llenan todo de colores. Gaudí dedicó los últimos 15 años de su vida a esta basílica y está enterrado aquí, en la cripta."
+  },
+  {
+    "id": "park-guell",
+    "name": "Park Güell",
+    "city": "barcelona",
+    "category": ["Arquitectura", "Vistas", "Naturaleza"],
+    "tags": ["gaudí", "modernismo", "parque", "mosaico", "panorámica"],
+    "summary": "Parque público diseñado por Gaudí con mosaicos coloridos, formas orgánicas y una vista panorámica espectacular de Barcelona y el mar. La zona monumental requiere entrada.",
+    "photo": "img/places/park-guell.webp",
+    "gallery": [
+      "img/places/park-guell-dragon.webp",
+      "img/places/park-guell-vista.webp"
+    ],
+    "sections": {
+      "history": "Originalmente fue un proyecto de urbanización encargado por el empresario Eusebi Güell en 1900. La idea era crear una ciudad-jardín para familias adineradas, pero solo se construyeron 2 de las 60 casas planeadas. El proyecto fracasó comercialmente y en 1926 se convirtió en parque público.",
+      "context": "Gaudí diseñó el parque integrando la arquitectura con la naturaleza del terreno. Usó la técnica del trencadís (mosaico con piezas rotas de cerámica) que da ese aspecto tan colorido. El famoso dragón de la entrada se ha convertido en símbolo de Barcelona.",
+      "what_to_see": "El dragón (salamandra) de mosaico en la escalinata, la Sala Hipóstila con sus 86 columnas, el banco ondulado más largo del mundo en la terraza superior con vistas a toda Barcelona, y las casas de cuento de hadas en la entrada.",
+      "fun_facts": "El dragón de la entrada en realidad no es un dragón: algunos expertos creen que representa una salamandra o incluso un cocodrilo. Gaudí vivió en una de las casas del parque durante 20 años, aunque no la diseñó él. Hoy es la Casa Museo Gaudí."
+    },
+    "food_nearby": [
+      {
+        "name": "La Pepita",
+        "type": "Tapas creativas",
+        "distance": "15 min caminando (bajando)",
+        "price_range": "€€",
+        "highlight": "Pepito de ternera y patatas bravas"
+      }
+    ],
+    "lat": 41.4145,
+    "lng": 2.1527,
+    "maps_url": "https://maps.google.com/?q=41.4145,2.1527",
+    "price": "€10",
+    "tips": "Comprar entrada online con anticipación. La zona gratuita del parque también tiene buenas vistas. Llevar agua y sombrero en julio: hay poca sombra en la zona monumental.",
+    "speech_text": "El Park Güell es un parque diseñado por Gaudí lleno de mosaicos coloridos y formas que parecen de cuento de hadas. Desde la terraza de arriba hay una vista panorámica increíble de toda Barcelona y el mar. No se pierdan el famoso dragón de mosaico en la entrada y el banco ondulado más largo del mundo."
+  }
+]

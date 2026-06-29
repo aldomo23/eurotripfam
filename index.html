@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Guía turística familiar para el viaje por Europa 2026">
+  <meta name="theme-color" content="#C2562F">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Guía Europa">
+  <title>Guía Europa 2026</title>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json">
+
+  <!-- Íconos -->
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/ui/icon-192.png">
+  <link rel="apple-touch-icon" href="./img/ui/icon-192.png">
+
+  <!-- Fuentes (precargadas para rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- PANTALLA DE CARGA (se oculta cuando la app está lista) -->
+  <!-- ============================================ -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <span class="loading-emoji" aria-hidden="true">🌍</span>
+      <p class="loading-text">Cargando guía...</p>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- ONBOARDING (primer uso) -->
+  <!-- ============================================ -->
+  <section id="view-onboarding" class="view" data-view="onboarding" hidden>
+    <div class="onboarding-container">
+      <div class="onboarding-header">
+        <span class="onboarding-emoji" aria-hidden="true">✈️</span>
+        <h1 class="onboarding-title">¡Bienvenidos!</h1>
+        <p class="onboarding-subtitle">Elijan qué les interesa ver durante el viaje:</p>
+      </div>
+
+      <div id="onboarding-categories" class="category-chips" role="group" aria-label="Categorías de interés">
+        <!-- Se llenan dinámicamente desde config.json -->
+      </div>
+
+      <button id="btn-start" class="btn btn-primary btn-large" disabled>
+        Empezar →
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PANTALLA DE INICIO -->
+  <!-- ============================================ -->
+  <section id="view-home" class="view" data-view="home" hidden>
+    <!-- Barra de búsqueda -->
+    <div class="search-bar-container">
+      <button id="btn-search-home" class="search-bar" aria-label="Buscar lugar">
+        <svg class="icon-search" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <span>Buscar lugar...</span>
+      </button>
+    </div>
+
+    <!-- Selector de ciudad -->
+    <nav class="city-selector" aria-label="Seleccionar ciudad">
+      <div id="city-pills" class="city-pills">
+        <!-- Se llenan dinámicamente -->
+      </div>
+    </nav>
+
+    <!-- Reto del día (resumen) -->
+    <div id="home-daily-challenge" class="card card-challenge">
+      <!-- Se llena dinámicamente -->
+    </div>
+
+    <!-- Recomendados para ti -->
+    <section id="home-recommended" class="home-section" aria-label="Recomendados para ti">
+      <h2 class="section-title">⭐ Recomendados para ti</h2>
+      <div id="recommended-cards" class="cards-scroll">
+        <!-- Se llenan dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Guías de comida (solo Barcelona) -->
+    <section id="home-food-guides" class="home-section" aria-label="Guías de comida" hidden>
+      <h2 class="section-title">🍴 Qué comer</h2>
+      <div id="food-guide-cards" class="cards-list">
+        <!-- Se llenan dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="home-categories" class="home-section" aria-label="Explorar por categoría">
+      <h2 class="section-title">Explorar</h2>
+      <div id="category-list" class="category-list">
+        <!-- Se llenan dinámicamente -->
+      </div>
+    </section>
+
+    <!-- Acceso rápido a IA -->
+    <div class="card card-ai">
+      <p class="card-ai-text">🤖 ¿Tienes alguna pregunta?</p>
+      <button id="btn-ai-home" class="btn btn-secondary">Preguntar a la guía</button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FICHA DE LUGAR -->
+  <!-- ============================================ -->
+  <section id="view-place" class="view" data-view="place" hidden>
+    <header class="place-header">
+      <button id="btn-back-place" class="btn-back" aria-label="Volver atrás">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Atrás
+      </button>
+    </header>
+
+    <div id="place-content" class="place-content">
+      <!-- Se llena dinámicamente por app.js -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FICHA DE GUÍA DE COMIDA -->
+  <!-- ============================================ -->
+  <section id="view-food" class="view" data-view="food" hidden>
+    <header class="place-header">
+      <button id="btn-back-food" class="btn-back" aria-label="Volver atrás">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Atrás
+      </button>
+    </header>
+
+    <div id="food-content" class="place-content">
+      <!-- Se llena dinámicamente -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- BÚSQUEDA -->
+  <!-- ============================================ -->
+  <section id="view-search" class="view" data-view="search" hidden>
+    <div class="search-view-container">
+      <div class="search-input-container">
+        <svg class="icon-search" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input
+          id="search-input"
+          type="search"
+          class="search-field"
+          placeholder="Buscar lugar, categoría o palabra..."
+          autocomplete="off"
+          aria-label="Buscar"
+        >
+        <button id="btn-clear-search" class="btn-clear" aria-label="Limpiar búsqueda" hidden>✕</button>
+      </div>
+
+      <div id="search-results" class="search-results">
+        <p class="search-hint">Escribe para buscar entre todos los lugares y guías de comida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- RETOS DE FOTOS -->
+  <!-- ============================================ -->
+  <section id="view-challenges" class="view" data-view="challenges" hidden>
+    <header class="view-header">
+      <h1 class="view-title">📸 Retos de fotos</h1>
+    </header>
+
+    <!-- Reto del día -->
+    <div id="challenge-daily" class="card card-challenge card-challenge-full">
+      <!-- Se llena dinámicamente -->
+    </div>
+
+    <!-- Lista scavenger hunt -->
+    <div class="challenges-section">
+      <h2 class="section-title">Lista de aventura</h2>
+      <div id="scavenger-list" class="scavenger-list">
+        <!-- Se llena dinámicamente -->
+      </div>
+    </div>
+
+    <!-- Puntuación -->
+    <div id="challenge-score" class="score-card">
+      <!-- Se llena dinámicamente -->
+    </div>
+
+    <!-- Input oculto para la cámara -->
+    <input
+      type="file"
+      id="camera-input"
+      accept="image/*"
+      capture="environment"
+      hidden
+      aria-hidden="true"
+    >
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CHAT CON IA -->
+  <!-- ============================================ -->
+  <section id="view-chat" class="view" data-view="chat" hidden>
+    <header class="view-header">
+      <h1 class="view-title">🤖 Guía inteligente</h1>
+    </header>
+
+    <div id="chat-messages" class="chat-messages">
+      <div class="chat-welcome">
+        <p>Pregúntame lo que quieras sobre las ciudades, los lugares o dónde comer.</p>
+        <div class="chat-suggestions">
+          <button class="chip chip-suggestion" data-question="¿Qué hay cerca del Coliseo?">¿Qué hay cerca?</button>
+          <button class="chip chip-suggestion" data-question="¿Dónde como bien y barato en Barcelona?">¿Dónde como bien?</button>
+          <button class="chip chip-suggestion" data-question="¿Qué lugar me recomiendas si me gusta la historia?">Recomiéndame un lugar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-input-container">
+      <input
+        id="chat-input"
+        type="text"
+        class="chat-input"
+        placeholder="Escribe tu pregunta..."
+        aria-label="Escribe tu pregunta"
+      >
+      <button id="btn-send-chat" class="btn-send" aria-label="Enviar pregunta">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- NAVEGACIÓN INFERIOR (TABS) -->
+  <!-- ============================================ -->
+  <nav id="bottom-nav" class="bottom-nav" aria-label="Navegación principal" hidden>
+    <button class="nav-tab active" data-tab="home" aria-label="Inicio" aria-current="page">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+        <polyline points="9 22 9 12 15 12 15 22"/>
+      </svg>
+      <span>Inicio</span>
+    </button>
+    <button class="nav-tab" data-tab="search" aria-label="Buscar">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <span>Buscar</span>
+    </button>
+    <button class="nav-tab" data-tab="challenges" aria-label="Retos">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+        <line x1="9" y1="9" x2="15" y2="15"/>
+        <line x1="15" y1="9" x2="9" y2="15"/>
+      </svg>
+      <span>Retos</span>
+    </button>
+    <button class="nav-tab" data-tab="chat" aria-label="Guía IA">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+      <span>Guía IA</span>
+    </button>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS (módulos ES6) -->
+  <!-- ============================================ -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

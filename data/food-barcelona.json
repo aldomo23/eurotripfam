@@ -1,0 +1,48 @@
+[
+  {
+    "id": "pa-amb-tomaquet",
+    "name": "Pa amb tomàquet",
+    "type": "food_guide",
+    "city": "barcelona",
+    "category": ["Comida típica"],
+    "tags": ["pan", "tomate", "catalán", "básico"],
+    "description": "El pan con tomate es LA base de la cocina catalana. Es simplemente pan tostado frotado con tomate maduro, un chorro de aceite de oliva y una pizca de sal. Parece sencillo, pero la calidad de los ingredientes lo es todo. Se come como acompañamiento de casi cualquier comida.",
+    "where_to_try": [
+      {
+        "name": "Bar del Pla",
+        "location": "El Born",
+        "why": "Lo sirven con pan de coca catalán y tomate de temporada. Perfecto para empezar antes de unas tapas."
+      },
+      {
+        "name": "Can Paixano (La Xampanyeria)",
+        "location": "Barceloneta",
+        "why": "Ambiente local auténtico. El pa amb tomàquet con jamón es espectacular, y el cava de la casa cuesta menos de €2."
+      }
+    ],
+    "fun_fact": "Los catalanes son muy específicos: el tomate debe ser de la variedad 'de penjar' (para colgar), que es más jugoso y se frota mejor. Si ven tomates colgados en racimos en un mercado, son esos.",
+    "speech_text": "El pa amb tomàquet, o pan con tomate, es el plato más básico y más importante de la cocina catalana. Es pan tostado frotado con tomate maduro, aceite de oliva y sal. Parece simple, pero aquí se lo toman muy en serio. Lo van a encontrar en todos los restaurantes como acompañamiento."
+  },
+  {
+    "id": "crema-catalana",
+    "name": "Crema catalana",
+    "type": "food_guide",
+    "city": "barcelona",
+    "category": ["Postres"],
+    "tags": ["postre", "crema", "dulce", "tradicional"],
+    "description": "La prima catalana del crème brûlée (aunque los catalanes insisten en que su crema vino primero). Es una crema pastelera con base de leche, yema de huevo, azúcar, canela y limón, cubierta con una capa de azúcar caramelizado que se quiebra con la cuchara.",
+    "where_to_try": [
+      {
+        "name": "Can Culleretes",
+        "location": "Barrio Gótico",
+        "why": "El restaurante más antiguo de Barcelona (desde 1786). Su crema catalana es tradicional y generosa."
+      },
+      {
+        "name": "Els Quatre Gats",
+        "location": "Barrio Gótico",
+        "why": "El café donde se reunían Picasso y los modernistas. La crema catalana viene en cazuela de barro."
+      }
+    ],
+    "fun_fact": "La crema catalana se come tradicionalmente el 19 de marzo, día de San José (el Día del Padre en España). La diferencia principal con el crème brûlée francés es que la catalana usa leche (no crema) y se aromatiza con canela y cáscara de limón.",
+    "speech_text": "La crema catalana es el postre más tradicional de Cataluña. Es una crema suave de leche con canela y limón, cubierta con una capita de azúcar quemado que se quiebra con la cuchara. Aquí dicen que se inventó antes que el crème brûlée francés, y la verdad es que sabe diferente: más ligera y con toque de canela."
+  }
+]

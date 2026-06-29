@@ -1,0 +1,45 @@
+{
+  "trip_start_date": "2026-07-10",
+  "daily": [
+    { "day": 1, "emoji": "📸", "title": "Primera impresión", "challenge": "Selfie familiar en el primer lugar que visiten hoy", "points": 10 },
+    { "day": 2, "emoji": "🍽️", "title": "Plato estrella", "challenge": "Foto del plato más colorido o apetitoso que encuentren", "points": 10 },
+    { "day": 3, "emoji": "🗿", "title": "Estatua viviente", "challenge": "Alguien de la familia imitando la pose de una escultura o estatua", "points": 15 },
+    { "day": 4, "emoji": "🚪", "title": "Puerta secreta", "challenge": "La puerta, portón o entrada más bonita que encuentren", "points": 10 },
+    { "day": 5, "emoji": "🌅", "title": "Hora dorada", "challenge": "Foto de la ciudad durante el atardecer (entre 8 y 9 PM)", "points": 15 },
+    { "day": 6, "emoji": "😂", "title": "Cara y cruz", "challenge": "Una foto donde alguien ponga su mejor cara seria y otra donde todos se rían", "points": 10 },
+    { "day": 7, "emoji": "🐱", "title": "Encuentro animal", "challenge": "Foto con un animal callejero (gato, perro, paloma con actitud)", "points": 10 },
+    { "day": 8, "emoji": "🏗️", "title": "Mirar arriba", "challenge": "Foto mirando directo hacia arriba (techo, bóveda, cielo entre edificios)", "points": 15 },
+    { "day": 9, "emoji": "🍦", "title": "Postre del día", "challenge": "Foto del postre o helado más tentador que prueben", "points": 10 },
+    { "day": 10, "emoji": "👟", "title": "Los pies viajeros", "challenge": "Foto de los pies de todos en el lugar más inesperado", "points": 10 },
+    { "day": 11, "emoji": "🇲🇽", "title": "Esto me recuerda a casa", "challenge": "Foto de algo que les recuerde a México", "points": 20 },
+    { "day": 12, "emoji": "🎵", "title": "Sonido de la calle", "challenge": "Foto de un músico callejero o artista urbano", "points": 10 },
+    { "day": 13, "emoji": "🪞", "title": "Reflejo", "challenge": "Foto de un reflejo (en agua, vidrio, espejo) que incluya algo de la ciudad", "points": 15 },
+    { "day": 14, "emoji": "🧓❤️", "title": "Generaciones", "challenge": "Foto especial de papá y mamá juntos en su lugar favorito del viaje", "points": 20 },
+    { "day": 15, "emoji": "👨‍👩‍👧‍👧", "title": "La última", "challenge": "Selfie familiar de despedida en el último lugar que visiten", "points": 25 }
+  ],
+  "scavenger": [
+    { "id": "S1", "challenge": "Un letrero o cartel escrito en un idioma que no entiendan", "points": 10 },
+    { "id": "S2", "challenge": "Una bicicleta estacionada en un lugar inusual", "points": 10 },
+    { "id": "S3", "challenge": "Una ventana que les parezca especial", "points": 10 },
+    { "id": "S4", "challenge": "La calle más angosta que encuentren (con alguien dentro para escala)", "points": 15 },
+    { "id": "S5", "challenge": "Un grafiti o arte urbano que les guste", "points": 10 },
+    { "id": "S6", "challenge": "Algo que cueste menos de €1", "points": 10 },
+    { "id": "S7", "challenge": "Una fuente de agua donde alguien esté llenando su botella", "points": 10 },
+    { "id": "S8", "challenge": "El peor plato turístico que vean en un restaurante (menú con foto sospechosa)", "points": 15 },
+    { "id": "S9", "challenge": "Una persona leyendo un libro en un espacio público", "points": 10 },
+    { "id": "S10", "challenge": "Un detalle arquitectónico que nadie más esté mirando", "points": 15 },
+    { "id": "S11", "challenge": "Una tienda o negocio con un nombre gracioso", "points": 10 },
+    { "id": "S12", "challenge": "El mejor pan o pieza de panadería que encuentren", "points": 10 },
+    { "id": "S13", "challenge": "Un mapa (de cualquier tipo) que no sea de Google", "points": 10 },
+    { "id": "S14", "challenge": "Una escalera que valga la pena fotografiar", "points": 10 },
+    { "id": "S15", "challenge": "Su rincón secreto favorito: un lugar bonito donde no haya casi nadie", "points": 20 }
+  ],
+  "scoring": {
+    "levels": [
+      { "min": 0, "label": "Turistas principiantes 🐣" },
+      { "min": 101, "label": "Exploradores 🧭" },
+      { "min": 201, "label": "Viajeros expertos 🌍" },
+      { "min": 301, "label": "Leyendas del viaje 🏆" }
+    ]
+  }
+}

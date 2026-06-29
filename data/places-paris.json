@@ -1,0 +1,33 @@
+[
+  {
+    "id": "torre-eiffel",
+    "name": "Torre Eiffel",
+    "city": "paris",
+    "category": ["Arquitectura", "Vistas"],
+    "tags": ["icónico", "panorámica", "hierro", "gustave eiffel"],
+    "summary": "El monumento más famoso de París y símbolo de Francia. Construida en 1889 para la Exposición Universal, tiene 330 metros de altura y ofrece vistas panorámicas de toda la ciudad.",
+    "photo": "img/places/torre-eiffel.webp",
+    "gallery": [],
+    "sections": {
+      "history": "Diseñada por Gustave Eiffel para la Exposición Universal de 1889, conmemorando el centenario de la Revolución Francesa. Fue muy criticada por artistas e intelectuales de la época que la consideraban un 'monstruo de hierro'. Iba a ser desmontada después de 20 años, pero se salvó porque era útil como antena de radio.",
+      "context": "Gustave Eiffel (1832–1923) fue un ingeniero especializado en estructuras metálicas. También diseñó la estructura interna de la Estatua de la Libertad en Nueva York. La torre tiene 18,038 piezas de hierro unidas por 2.5 millones de remaches.",
+      "what_to_see": "Hay tres niveles abiertos al público. El segundo piso tiene el mejor equilibrio entre altura y detalle de la ciudad. La cima (276 metros) ofrece vistas de hasta 80 km en días claros. De noche, la torre se ilumina y hace un espectáculo de luces cada hora en punto.",
+      "fun_facts": "La torre 'crece' unos 15 cm en verano porque el calor dilata el hierro. Se repinta cada 7 años con 60 toneladas de pintura. Tiene su propio apartamento en la cima que Gustave Eiffel usaba para recibir invitados."
+    },
+    "food_nearby": [
+      {
+        "name": "Café de l'Homme",
+        "type": "Cocina francesa con vista a la torre",
+        "distance": "5 min caminando (Trocadéro)",
+        "price_range": "€€€",
+        "highlight": "La vista de la torre desde la terraza"
+      }
+    ],
+    "lat": 48.8584,
+    "lng": 2.2945,
+    "maps_url": "https://maps.google.com/?q=48.8584,2.2945",
+    "price": "€29.40 (cima con elevador)",
+    "tips": "Reservar online con antelación, especialmente en julio. La mejor vista de la torre es desde el Trocadéro, al otro lado del río. Para subir, la opción de escaleras (segundo piso) es más barata y sin tanta fila.",
+    "speech_text": "La Torre Eiffel es el monumento más famoso de París. Fue construida en 1889 y mide 330 metros de altura. Desde arriba se ve toda la ciudad. Un dato curioso: iba a ser desmontada después de 20 años, pero se salvó porque servía como antena de radio. De noche se ilumina con un espectáculo de luces cada hora."
+  }
+]

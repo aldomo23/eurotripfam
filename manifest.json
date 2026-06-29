@@ -1,0 +1,26 @@
+{
+  "name": "Guía Europa 2026",
+  "short_name": "Guía",
+  "description": "Guía turística familiar para el viaje por Europa 2026",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF3E6",
+  "theme_color": "#C2562F",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "./img/ui/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./img/ui/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

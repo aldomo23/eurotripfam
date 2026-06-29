@@ -1,0 +1,33 @@
+[
+  {
+    "id": "coliseo-romano",
+    "name": "Coliseo Romano",
+    "city": "roma",
+    "category": ["Historia", "Arquitectura"],
+    "tags": ["roma antigua", "anfiteatro", "gladiadores", "icónico"],
+    "summary": "El anfiteatro más grande del mundo antiguo, donde combatían gladiadores ante 50,000 espectadores. Tiene casi 2,000 años y sigue siendo el símbolo de Roma.",
+    "photo": "img/places/coliseo-romano.webp",
+    "gallery": [],
+    "sections": {
+      "history": "Construido entre el año 72 y 80 d.C. por los emperadores Vespasiano y Tito. Se usó durante casi 500 años para espectáculos de gladiadores, caza de animales y simulacros de batallas navales.",
+      "context": "El Coliseo es una obra maestra de ingeniería romana. Tenía un sistema de toldos (velarium) para proteger del sol y pasadizos subterráneos (hipogeo) donde esperaban gladiadores y animales.",
+      "what_to_see": "El piso de la arena (donde combatían), los túneles subterráneos del hipogeo, y las gradas superiores con vista panorámica del Foro Romano. Desde afuera, el Arco de Constantino está justo al lado.",
+      "fun_facts": "Se estima que en el Coliseo murieron entre 400,000 y 1 millón de personas a lo largo de su historia. Los espectáculos eran gratuitos para los ciudadanos romanos: los emperadores los usaban para mantener contento al pueblo."
+    },
+    "food_nearby": [
+      {
+        "name": "Roscioli",
+        "type": "Pasta y gastronomía romana",
+        "distance": "15 min caminando",
+        "price_range": "€€€",
+        "highlight": "Carbonara y cacio e pepe auténticos"
+      }
+    ],
+    "lat": 41.8902,
+    "lng": 12.4922,
+    "maps_url": "https://maps.google.com/?q=41.8902,12.4922",
+    "price": "€16 (combinado con Foro Romano y Palatino)",
+    "tips": "Comprar entrada combinada online. Llegar temprano (8:30 AM) para evitar filas. El boleto incluye Foro Romano y Palatino, que están justo al lado.",
+    "speech_text": "El Coliseo es el anfiteatro más grande que construyeron los romanos, con casi 2,000 años de antigüedad. Aquí combatían gladiadores frente a 50,000 espectadores. Abajo del piso de la arena hay túneles donde esperaban los gladiadores y los animales antes de salir a pelear."
+  }
+]

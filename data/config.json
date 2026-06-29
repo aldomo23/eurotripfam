@@ -1,0 +1,58 @@
+{
+  "app_name": "Guía Europa 2026",
+  "app_short_name": "Guía",
+  "trip_start_date": "2026-07-10",
+  "demo_mode": true,
+  "proxy_url": "https://gemini-proxy.TU-SUBDOMINIO.workers.dev/",
+  "cities": [
+    {
+      "id": "barcelona",
+      "name": "Barcelona",
+      "emoji": "🇪🇸",
+      "start": "2026-07-10",
+      "end": "2026-07-15",
+      "data_file": "places-barcelona.json",
+      "has_food_guide": true
+    },
+    {
+      "id": "roma",
+      "name": "Roma",
+      "emoji": "🇮🇹",
+      "start": "2026-07-16",
+      "end": "2026-07-20",
+      "data_file": "places-roma.json",
+      "has_food_guide": false
+    },
+    {
+      "id": "florencia",
+      "name": "Florencia",
+      "emoji": "🇮🇹",
+      "start": "2026-07-16",
+      "end": "2026-07-20",
+      "data_file": "places-florencia.json",
+      "has_food_guide": false
+    },
+    {
+      "id": "paris",
+      "name": "París",
+      "emoji": "🇫🇷",
+      "start": "2026-07-21",
+      "end": "2026-07-23",
+      "data_file": "places-paris.json",
+      "has_food_guide": false
+    }
+  ],
+  "categories": [
+    { "id": "Arquitectura", "emoji": "🏛️", "label": "Arquitectura" },
+    { "id": "Historia", "emoji": "📜", "label": "Historia" },
+    { "id": "Arte", "emoji": "🎨", "label": "Arte" },
+    { "id": "Naturaleza", "emoji": "🌿", "label": "Naturaleza" },
+    { "id": "Vistas", "emoji": "🌅", "label": "Vistas" },
+    { "id": "Playa", "emoji": "🏖️", "label": "Playa" },
+    { "id": "Mercados", "emoji": "🛒", "label": "Mercados" },
+    { "id": "Vida local", "emoji": "🍷", "label": "Vida local" },
+    { "id": "Comida típica", "emoji": "🍴", "label": "Comida típica" },
+    { "id": "Postres", "emoji": "🍮", "label": "Postres" },
+    { "id": "Escapada de un día", "emoji": "🚂", "label": "Escapada" }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "florencia-dos-dias",
+    "name": "Florencia en dos días",
+    "city": "florencia",
+    "category": ["Historia", "Arte", "Arquitectura"],
+    "tags": ["renacimiento", "toscana", "florencia", "itinerario"],
+    "type": "special_itinerary",
+    "summary": "Guía compacta para aprovechar Florencia en dos días: el corazón del Renacimiento, desde el Duomo hasta los Uffizi, con paradas para comer bien.",
+    "photo": "img/places/florencia-duomo.webp",
+    "gallery": [],
+    "sections": {
+      "logistics": "Florencia se llega en tren desde Roma (1h 30min en alta velocidad). La estación Santa Maria Novella está a 10 minutos caminando del centro histórico. Todo el centro es peatonal y se recorre a pie.",
+      "day_1": "Mañana: Duomo de Florencia (subir a la cúpula de Brunelleschi, reservar online). Piazza della Signoria y Palazzo Vecchio. Tarde: Galería Uffizi (reservar con antelación). Ponte Vecchio al atardecer. Cena en el barrio de Santo Spirito (Trattoria Mario o Il Latini).",
+      "day_2": "Mañana: Galería de la Academia (el David de Miguel Ángel, reservar). Mercado de San Lorenzo para souvenirs. Tarde: Piazzale Michelangelo para la mejor vista panorámica de Florencia. Basílica de San Miniato al Monte (justo arriba, poca gente). Helado en Vivoli o La Carraia.",
+      "advance_booking": "Reservar con anticipación: Cúpula del Duomo, Galería Uffizi y Galería de la Academia. En julio se agotan rápido. Los trenes desde Roma también conviene reservarlos antes.",
+      "fun_facts": "Florencia fue la cuna del Renacimiento y hogar de Leonardo da Vinci, Miguel Ángel, Botticelli y Galileo. La familia Médici financió gran parte del arte que hoy se exhibe en los museos. El bistec a la fiorentina es el plato estrella: un corte grueso de res a la parrilla que se sirve poco cocido."
+    },
+    "food_nearby": [
+      {
+        "name": "Trattoria Mario",
+        "type": "Cocina toscana tradicional",
+        "distance": "Cerca del Mercado de San Lorenzo",
+        "price_range": "€",
+        "highlight": "Bistecca alla fiorentina y ribollita"
+      }
+    ],
+    "lat": 43.7731,
+    "lng": 11.2560,
+    "maps_url": "https://maps.google.com/?q=43.7731,11.2560",
+    "price": "Variable (Uffizi €25, Cúpula €30, Academia €16)",
+    "tips": "Reservar todo online con semanas de anticipación. Julio es temporada alta. Llevar zapatos cómodos: Florencia se camina mucho y hay subidas.",
+    "speech_text": "Florencia es la cuna del Renacimiento italiano. En dos días pueden ver lo esencial: el Duomo con su cúpula de Brunelleschi, la Galería Uffizi con obras de Botticelli y Leonardo, el David de Miguel Ángel, y el Ponte Vecchio al atardecer. Todo el centro es peatonal y se camina fácilmente."
+  }
+]
