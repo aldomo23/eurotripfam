@@ -50,7 +50,9 @@
         "price_range": "€€",
         "highlight": "Frente a los Foros Imperiales. Especialidad en vinos y productos del Lazio: cacio e pepe, carciofi, abbacchio. Buena opción para almorzar antes o después del Foro Romano."
       }
-    ]
+    ],
+    "photo": "img/places/coliseo.webp",
+    "gallery": []
   },
   {
     "id": "foro-romano",
@@ -104,7 +106,9 @@
         "price_range": "€€",
         "highlight": "Pizza romana de masa fina y crujiente, sin trampa turística a pesar de la cercanía con el Coliseo. También sirven pasta y platos del día."
       }
-    ]
+    ],
+    "photo": "img/places/foro-romano.webp",
+    "gallery": []
   },
   {
     "id": "basilica-san-pedro",
@@ -159,7 +163,9 @@
         "price_range": "€",
         "highlight": "Del pizzaiolo Gabriele Bonci, considerado la mejor pizza al taglio de Roma. Pedir lo que salga del horno en ese momento. Comer de pie en la calle."
       }
-    ]
+    ],
+    "photo": "img/places/basilica-san-pedro.webp",
+    "gallery": []
   },
   {
     "id": "fontana-di-trevi",
@@ -213,7 +219,9 @@
         "price_range": "€€",
         "highlight": "Junto al Templo de Adriano en Piazza di Pietra. Buena selección de vinos del Lazio y platos ligeros: tablas de embutidos, pasta y ensaladas. Para un almuerzo informal en la zona del centro histórico."
       }
-    ]
+    ],
+    "photo": "img/places/fontana-di-trevi.webp",
+    "gallery": []
   },
   {
     "id": "panteon",
@@ -267,7 +275,9 @@
         "price_range": "€€",
         "highlight": "Documentada desde 1518, es la osteria en funcionamiento más antigua de Roma. Cocina romana sin concesiones al turismo: rigatoni con pajata, trippa, cacio e pepe. Sin carta fija; el menú cambia con la temporada."
       }
-    ]
+    ],
+    "photo": "img/places/panteon.webp",
+    "gallery": []
   },
   {
     "id": "museos-vaticanos",
@@ -321,7 +331,9 @@
         "price_range": "€€",
         "highlight": "Menú fijo con platos clásicos romanos: cacio e pepe, rigatoni alla gricia, abbacchio. Sin carta: comen lo que hay ese día."
       }
-    ]
+    ],
+    "photo": "img/places/museos-vaticanos.webp",
+    "gallery": []
   },
   {
     "id": "piazza-navona",
@@ -375,7 +387,9 @@
         "price_range": "€€",
         "highlight": "Menú reducido con platos del día según temporada. Verificar disponibilidad antes del viaje, locales pequeños pueden cerrar por vacaciones en julio."
       }
-    ]
+    ],
+    "photo": "img/places/piazza-navona.webp",
+    "gallery": []
   },
   {
     "id": "campo-de-fiori",
@@ -429,7 +443,9 @@
         "price_range": "€€",
         "highlight": "Pizza romana de masa delgada y crujiente. Buen lugar para una cena completa en un espacio más tranquilo que el bullicio de la plaza."
       }
-    ]
+    ],
+    "photo": "img/places/campo-de-fiori.webp",
+    "gallery": []
   },
   {
     "id": "castel-sant-angelo",
@@ -484,7 +500,9 @@
         "price_range": "€",
         "highlight": "Vale el camino extra. La pizza de masa madre de Gabriele Bonci es referencia obligada en Roma. Comer de pie, en la calle."
       }
-    ]
+    ],
+    "photo": "img/places/castel-sant-angelo.webp",
+    "gallery": []
   },
   {
     "id": "trastevere",
@@ -539,7 +557,9 @@
         "price_range": "€",
         "highlight": "Para una parada rápida y económica: el supplì romano es una bola de arroz con ragú y mozzarella, rebozada y frita. El del Supplì Roma está considerado uno de los mejores de la ciudad."
       }
-    ]
+    ],
+    "photo": "img/places/trastevere.webp",
+    "gallery": []
   },
   {
     "id": "aventino",
@@ -595,6 +615,8 @@
         "price_range": "€",
         "highlight": "Institución de Testaccio: pizza romana de masa delgada, crujiente y con bordes quemados. Sin reservas, hay fila. Abre solo por las noches."
       }
-    ]
+    ],
+    "photo": "img/places/aventino.webp",
+    "gallery": []
   }
 ]

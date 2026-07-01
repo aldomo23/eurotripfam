@@ -53,7 +53,9 @@
         "price_range": "€€€",
         "highlight": "Dentro del Palais de Tokyo, con terraza con vista al Sena y a la Torre Eiffel al fondo. Buena opción para cenar con ambiente. Reservar."
       }
-    ]
+    ],
+    "photo": "img/places/torre-eiffel.webp",
+    "gallery": []
   },
   {
     "id": "musee-dorsay",
@@ -110,7 +112,9 @@
         "price_range": "€€",
         "highlight": "Del chef Yves Camdeborde, referente de la bistronomie parisina. Sin reservas al mediodía; llegar antes de la apertura para conseguir mesa. Cocina de bistró de alta calidad a precio razonable para el barrio."
       }
-    ]
+    ],
+    "photo": "img/places/musee-dorsay.webp",
+    "gallery": []
   },
   {
     "id": "louvre",
@@ -167,7 +171,9 @@
         "price_range": "€€€",
         "highlight": "Terraza dentro de los jardines del Palais Royal. Cocina francesa contemporánea en un entorno más tranquilo que los restaurantes de la Rue de Rivoli. Reservar."
       }
-    ]
+    ],
+    "photo": "img/places/louvre.webp",
+    "gallery": []
   },
   {
     "id": "notre-dame-paris",
@@ -223,7 +229,9 @@
         "price_range": "€€",
         "highlight": "En una calle medieval detrás de Notre-Dame. Cocina francesa tradicional en un entorno histórico tranquilo, lejos del bullicio de la plaza principal."
       }
-    ]
+    ],
+    "photo": "img/places/notre-dame-paris.webp",
+    "gallery": []
   },
   {
     "id": "sainte-chapelle",
@@ -279,7 +287,9 @@
         "price_range": "€€€",
         "highlight": "En la Place Dauphine, una plaza triangular del siglo XVII al extremo oeste de la Île de la Cité que la mayoría de los turistas no conocen. Cocina francesa clásica en un entorno histórico tranquilo."
       }
-    ]
+    ],
+    "photo": "img/places/sainte-chapelle.webp",
+    "gallery": []
   },
   {
     "id": "montmartre-sacre-coeur",
@@ -337,7 +347,9 @@
         "price_range": "€€",
         "highlight": "La fachada rosada es uno de los íconos visuales del barrio. Cocina francesa sencilla. Vale más por el entorno que por la comida en sí, pero es un lugar bonito para almorzar en la parte más tranquila de Montmartre."
       }
-    ]
+    ],
+    "photo": "img/places/montmartre-sacre-coeur.webp",
+    "gallery": []
   },
   {
     "id": "marais-place-des-vosges",
@@ -393,7 +405,9 @@
         "price_range": "€",
         "highlight": "El mercado cubierto más antiguo de París. Puestos de cocina marroquí, japonesa, italiana y antillana. Comer en las mesas comunes dentro del mercado. Cierra los lunes."
       }
-    ]
+    ],
+    "photo": "img/places/marais-place-des-vosges.webp",
+    "gallery": []
   },
   {
     "id": "crucero-sena",
@@ -448,7 +462,9 @@
         "price_range": "€€",
         "highlight": "Opción más accesible en precio para la zona del Trocadéro: un café o una comida rápida antes del crucero sin largas esperas."
       }
-    ]
+    ],
+    "photo": "img/places/crucero-sena.webp",
+    "gallery": []
   },
   {
     "id": "versalles",
@@ -504,7 +520,9 @@
         "price_range": "€€",
         "highlight": "Fuera del recinto del palacio, en el barrio residencial. Cocina francesa de temporada. Buena opción para cenar antes de volver a París sin los precios del interior del parque."
       }
-    ]
+    ],
+    "photo": "img/places/versalles.webp",
+    "gallery": []
   },
   {
     "id": "palais-royal",
@@ -560,6 +578,8 @@
         "price_range": "€€€€",
         "highlight": "Fundado en 1784, uno de los restaurantes más históricos de Francia. Aquí cenaron Napoleón, Hugo y Colette. La sala con su decoración Empire original es excepcionalmente bella. Para un almuerzo muy especial o simplemente asomarse a ver el interior. Reservar con mucha anticipación."
       }
-    ]
+    ],
+    "photo": "img/places/palais-royal.webp",
+    "gallery": []
   }
 ]
