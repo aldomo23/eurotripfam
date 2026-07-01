@@ -9,7 +9,7 @@
  */
 
 // Versión del caché — cambiar al hacer deploy con cambios
-const CACHE_VERSION = 'guia-v1.0.0';
+const CACHE_VERSION = 'guia-v1.2.0';
 
 // Archivos esenciales que se precargan al instalar
 // Las fotos principales de lugares se cachean aquí

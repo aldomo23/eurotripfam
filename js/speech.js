@@ -84,11 +84,14 @@ function stop() {
 
 /**
  * Actualiza el texto y estilo del botón de escuchar.
+ * Preserva la estructura HTML (.btn-listen-icon + texto).
  */
 function updateButtonState(button, playing) {
   if (!button) return;
-  button.textContent = playing ? '⏹ Detener' : '▶ Escuchar';
-  button.classList.toggle('playing', playing);
+  // Preservar la estructura del botón con su ícono circular
+  button.innerHTML = playing
+    ? '<div class="btn-listen-icon">⏹</div> Detener'
+    : '<div class="btn-listen-icon">▶</div> Escuchar descripción';
 }
 
 // Precargar voces (algunos navegadores las cargan de forma asíncrona)

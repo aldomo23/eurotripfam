@@ -250,21 +250,33 @@ function renderRecommended() {
   const container = document.getElementById('recommended-cards');
   const preferences = getPreferences();
 
-  // Excluir day_trips de la sección recomendados
-  let cityPlaces = state.places.filter(p =>
-    p.city === state.currentCity && p.type !== 'day_trip' && p.type !== 'special_itinerary'
+  // Excluir day_trips de recomendados (tienen su categoría "Escapada")
+  // NO excluir special_itinerary: Florencia solo tiene una ficha con ese type
+  const cityPlaces = state.places.filter(p =>
+    p.city === state.currentCity && p.type !== 'day_trip'
   );
 
+  let toShow = [];
+
   if (preferences.length > 0) {
-    cityPlaces = [...cityPlaces].sort((a, b) => {
-      const aMatch = a.category.some(c => preferences.includes(c)) ? 1 : 0;
-      const bMatch = b.category.some(c => preferences.includes(c)) ? 1 : 0;
-      return bMatch - aMatch;
-    });
+    // Primero: lugares que coinciden con las preferencias del usuario
+    const matched = cityPlaces.filter(p =>
+      p.category.some(c => preferences.includes(c))
+    );
+    toShow = matched;
+
+    // Si hay menos de 6 coincidencias, rellenar con los demás
+    if (toShow.length < 6) {
+      const rest = cityPlaces.filter(p => !matched.includes(p));
+      toShow = [...toShow, ...rest];
+    }
+  } else {
+    // Sin preferencias: mostrar todos en orden original
+    toShow = cityPlaces;
   }
 
   container.innerHTML = '';
-  cityPlaces.slice(0, 6).forEach(place => {
+  toShow.slice(0, 6).forEach(place => {
     container.appendChild(createPlaceCard(place));
   });
 }

@@ -1369,3 +1369,13 @@ a { color: var(--terra); }
   white-space: nowrap;
   border-width: 0;
 }
+
+
+/* ============================================================
+   FIX: galería de fotos más grande para accesibilidad (v1.2)
+   80px es muy pequeño para usuarios de 60 años
+   ============================================================ */
+.place-gallery img {
+  height: 140px;
+  border-radius: var(--r-md);
+}
