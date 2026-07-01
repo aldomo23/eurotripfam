@@ -8,10 +8,30 @@
 
 let config = null;
 let chatHistory = [];
+let placesContext = ''; // Nombres de lugares curados para anclar a la IA
 
 export function initChat(appConfig) {
   config = appConfig;
   setupChatListeners();
+}
+
+/**
+ * Recibe el estado de la app para construir el contexto de lugares.
+ * La IA recomendará primero los lugares que YA están en la guía.
+ */
+export function setChatContext(places, food) {
+  const byCity = {};
+  places.forEach(p => {
+    if (!byCity[p.city]) byCity[p.city] = [];
+    byCity[p.city].push(p.name);
+  });
+  const cityLines = Object.entries(byCity)
+    .map(([city, names]) => `${city}: ${names.join(', ')}`)
+    .join('\n');
+  const foodLine = food.length
+    ? `\nGuías de comida en Barcelona: ${food.map(f => f.name).join(', ')}`
+    : '';
+  placesContext = `\n\nLugares que YA están en la guía de la familia (recomiéndalos primero y menciona que pueden ver su ficha en la app):\n${cityLines}${foodLine}`;
 }
 
 function setupChatListeners() {
@@ -101,7 +121,7 @@ async function queryGemini(userMessage) {
 function buildPrompt(userMessage) {
   const systemPrompt = `Eres una guía turística experta y amable para una familia mexicana visitando Europa. Respondes en español mexicano (sin voseo). Tus respuestas son breves (máximo 3 párrafos), prácticas y con datos verificables. Si te preguntan por un lugar, recomiendas 2-3 cosas cercanas. No inventas horarios ni precios sin estar seguro. Si no sabes algo, lo dices.
 
-Las ciudades del viaje son: Barcelona, Roma, Florencia y París (julio 2026).`;
+Las ciudades del viaje son: Barcelona, Roma, Florencia y París (julio 2026).${placesContext}`;
 
   let context = '';
   if (chatHistory.length > 0) {

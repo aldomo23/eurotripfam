@@ -65,10 +65,15 @@ function renderDailyChallenge() {
 
 function getCurrentDailyChallenge() {
   if (!challengesData?.daily?.length) return null;
-  if (getDemoMode()) return challengesData.daily[0];
 
   const tripStart = new Date((challengesData.trip_start_date || '2026-07-10') + 'T00:00:00');
-  const dayNumber = Math.floor((new Date() - tripStart) / 86400000) + 1;
+  const now = new Date();
+
+  // Modo demo: SOLO antes del viaje. Desde el 10 de julio, modo real
+  // automático aunque demo_mode siga en true (a prueba de olvidos).
+  if (getDemoMode() && now < tripStart) return challengesData.daily[0];
+
+  const dayNumber = Math.floor((now - tripStart) / 86400000) + 1;
   if (dayNumber < 1 || dayNumber > challengesData.daily.length) return null;
   return challengesData.daily[dayNumber - 1];
 }

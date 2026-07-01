@@ -9,7 +9,7 @@
  */
 
 // Versión del caché — cambiar al hacer deploy con cambios
-const CACHE_VERSION = 'guia-v1.2.0';
+const CACHE_VERSION = 'guia-v1.3.0';
 
 // Archivos esenciales que se precargan al instalar
 // Las fotos principales de lugares se cachean aquí
@@ -30,23 +30,59 @@ const PRECACHE_URLS = [
   './data/places-florencia.json',
   './data/places-paris.json',
   './data/food-barcelona.json',
-  './data/challenges.json'
+  './data/challenges.json',
+  './img/ui/icon-192.png',
+  './img/ui/icon-512.png',
+  './img/ui/icon-192-maskable.png',
+  './img/ui/icon-512-maskable.png',
+  './img/ui/favicon-48.png'
   // Las imágenes principales se agregan dinámicamente abajo
   // Las imágenes de galería NO se precargan (se cachean al verlas)
 ];
 
-// --- INSTALL: precargar archivos esenciales ---
+// --- INSTALL: precargar archivos esenciales + fotos de lugares ---
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_VERSION)
-      .then(cache => {
+      .then(async (cache) => {
         console.log('[SW] Precargando archivos esenciales...');
-        return cache.addAll(PRECACHE_URLS);
+        // 1. Archivos core (atómico: si falla uno, falla la instalación)
+        await cache.addAll(PRECACHE_URLS);
+
+        // 2. Fotos principales de lugares (dinámico y tolerante:
+        //    se leen de los JSONs; si una foto falta, no rompe nada).
+        //    Esto cumple el requisito del PRD: fotos visibles offline.
+        try {
+          const dataFiles = [
+            './data/places-barcelona.json',
+            './data/places-roma.json',
+            './data/places-florencia.json',
+            './data/places-paris.json',
+            './data/food-barcelona.json'
+          ];
+          const photoUrls = new Set();
+          for (const file of dataFiles) {
+            const resp = await cache.match(file);
+            if (!resp) continue;
+            const items = await resp.json();
+            items.forEach(item => {
+              if (item.photo) photoUrls.add('./' + item.photo.replace(/^\.?\//, ''));
+            });
+          }
+          console.log(`[SW] Precargando ${photoUrls.size} fotos...`);
+          // Cachear una por una: una foto rota no bloquea las demás
+          await Promise.allSettled(
+            [...photoUrls].map(url =>
+              fetch(url).then(resp => {
+                if (resp.ok) return cache.put(url, resp);
+              })
+            )
+          );
+        } catch (err) {
+          console.warn('[SW] Precarga de fotos parcial:', err);
+        }
       })
-      .then(() => {
-        // Activar inmediatamente sin esperar a que se cierren pestañas anteriores
-        return self.skipWaiting();
-      })
+      .then(() => self.skipWaiting())
       .catch(err => {
         console.error('[SW] Error en precarga:', err);
       })

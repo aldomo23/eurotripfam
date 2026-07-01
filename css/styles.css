@@ -820,7 +820,9 @@ a { color: var(--terra); }
 }
 
 .accordion-body.open {
-  max-height: 800px;
+  /* 2000px: margen para textos largos + letra del sistema agrandada
+     (usuarios de 60 años suelen tener el texto del teléfono en grande) */
+  max-height: 2000px;
   padding-bottom: 16px;
 }
 

@@ -12,7 +12,7 @@
 
 import { initSearch } from './search.js';
 import { initSpeech } from './speech.js';
-import { initChat } from './ai-chat.js';
+import { initChat, setChatContext } from './ai-chat.js';
 import { initChallenges } from './challenges.js';
 import { initPreferences, getPreferences, hasCompletedOnboarding } from './preferences.js';
 
@@ -97,6 +97,7 @@ function initModules() {
   initSearch(state);
   initSpeech();
   initChat(state.config);
+  setChatContext(state.places, state.food); // Anclar IA a lugares curados
   initChallenges(state.challenges);
 }
 
@@ -148,6 +149,10 @@ export function navigateTo(view, param) {
 }
 
 function showView(viewName) {
+  // Detener lectura en voz alta al cambiar de vista
+  // (si no, la voz sigue hablando después de tocar "Atrás")
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+
   document.querySelectorAll('.view').forEach(v => v.hidden = true);
   const view = document.querySelector(`[data-view="${viewName}"]`);
   if (view) { view.hidden = false; window.scrollTo(0, 0); }
@@ -176,8 +181,18 @@ function setupEventListeners() {
   });
 
   document.getElementById('btn-ai-home')?.addEventListener('click', () => navigateTo('chat'));
-  document.getElementById('btn-back-place')?.addEventListener('click', () => window.history.back());
-  document.getElementById('btn-back-food')?.addEventListener('click', () => window.history.back());
+
+  // Botones "Atrás": si llegaron por link directo (sin historial dentro de
+  // la app), volver al inicio en vez de salir de la app
+  const goBack = () => {
+    if (window.history.length > 2) {
+      window.history.back();
+    } else {
+      navigateTo('home');
+    }
+  };
+  document.getElementById('btn-back-place')?.addEventListener('click', goBack);
+  document.getElementById('btn-back-food')?.addEventListener('click', goBack);
 }
 
 function hideLoadingScreen() {
@@ -237,11 +252,18 @@ function renderDailyChallengePreview() {
 
 function getCurrentDailyChallenge() {
   if (!state.challenges?.daily?.length) return null;
-  const demoMode = state.config?.demo_mode;
-  if (demoMode) return state.challenges.daily[0];
 
   const tripStart = new Date(state.config.trip_start_date + 'T00:00:00');
-  const dayNumber = Math.floor((new Date() - tripStart) / 86400000) + 1;
+  const now = new Date();
+
+  // Modo demo: SOLO aplica antes del viaje. A partir del 10 de julio,
+  // la app cambia sola a modo real aunque demo_mode siga en true
+  // (a prueba de olvidos).
+  if (state.config?.demo_mode && now < tripStart) {
+    return state.challenges.daily[0];
+  }
+
+  const dayNumber = Math.floor((now - tripStart) / 86400000) + 1;
   if (dayNumber < 1 || dayNumber > state.challenges.daily.length) return null;
   return state.challenges.daily[dayNumber - 1];
 }
@@ -371,9 +393,9 @@ function createPlaceCard(place) {
     : '';
 
   card.innerHTML = `
-    <div class="place-card-img" role="img" aria-label="${place.name}">
+    <div class="place-card-img" role="img" aria-label="${escapeAttr(place.name)}">
       ${place.photo
-        ? `<img src="${place.photo}" alt="${place.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.textContent='🏛️'">`
+        ? `<img src="${place.photo}" alt="${escapeAttr(place.name)}" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.textContent='🏛️'">`
         : '🏛️'}
     </div>
     <div class="place-card-body">
@@ -402,9 +424,9 @@ function renderPlace(placeId) {
 
   // --- Hero image (.place-hero del CSS) ---
   if (place.photo) {
-    html += `<img class="place-hero" src="${place.photo}" alt="${place.name}" onerror="this.style.display='none'">`;
+    html += `<img class="place-hero" src="${place.photo}" alt="${escapeAttr(place.name)}" onerror="this.style.display='none'">`;
   } else {
-    html += `<div class="place-hero" role="img" aria-label="${place.name}" style="display:flex;align-items:center;justify-content:center;font-size:48px;">🏛️</div>`;
+    html += `<div class="place-hero" role="img" aria-label="${escapeAttr(place.name)}" style="display:flex;align-items:center;justify-content:center;font-size:48px;">🏛️</div>`;
   }
 
   // --- Pills de categoría (.place-categories / .pill / .pill-terra) ---
@@ -500,7 +522,7 @@ function renderPlace(placeId) {
       <div style="margin:18px 0 4px;">
         <div style="font-family:var(--serif);font-size:18px;font-weight:600;margin-bottom:8px;">📷 Galería</div>
         <div class="place-gallery">
-          ${place.gallery.map(img => `<img src="${img}" alt="Foto de ${place.name}" loading="lazy" onerror="this.remove()">`).join('')}
+          ${place.gallery.map(img => `<img src="${img}" alt="Foto de ${escapeAttr(place.name)}" loading="lazy" onerror="this.remove()">`).join('')}
         </div>
       </div>
     `;

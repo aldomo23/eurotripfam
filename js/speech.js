@@ -21,6 +21,12 @@ export function initSpeech() {
     const text = btn.dataset.speechText;
     if (!text) return;
 
+    // Si speechSynthesis fue cancelado externamente (ej. al navegar),
+    // re-sincronizar el flag antes de decidir
+    if (isPlaying && !window.speechSynthesis.speaking) {
+      isPlaying = false;
+    }
+
     if (isPlaying) {
       stop();
       updateButtonState(btn, false);
